@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+    padding: 90 64;
+    width: 90rem;
+    height: 64rem;
+}
+body{
+    background-color: white;
+}
