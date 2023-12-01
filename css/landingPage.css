@@ -18,10 +18,10 @@ header {
   z-index: -1;
 }
 
-.logo-icon-img{
-    width: 15rem;
-    height: 15rem;
-    margin-right: 4rem;
+.logo-icon-img {
+  width: 15rem;
+  height: 15rem;
+  margin-right: 4rem;
 }
 
 ul {
@@ -114,26 +114,36 @@ h1 {
   font-weight: 600;
 }
 
-.subtitle {
-  display: flex;
-  margin-left: 7.5rem;
-}
-
-.txt-subtitle {
+/* HOTEL, PLACES, BEST OFFER */
+/* SUBHEADLINE */
+.txt-subtitle2,
+.txt-subtitle3 {
   margin-right: 3.12rem;
+  color: #121212;
+  font-size: 1.5625rem;
+  font-weight: 500;
 }
 
-/* HOREL CONTAINER */
+.txt-subtitle1 {
+  text-decoration: underline;
+  margin-right: 3.12rem;
+  color: #121212;
+  font-size: 1.5625rem;
+  font-weight: 500;
+}
+
+/* HOTEL CONTAINER */
 .Hotel-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 0;
 }
 
-/* SUBHEADLINE */
 .hotel-img {
   border-radius: 0.625rem;
   width: 17.73888rem;
   height: 11.5625rem;
+  margin: 0;
 }
 
 .hotel-photo-headline {
