@@ -1,0 +1,200 @@
+component-4,
+.component-4 * {
+  box-sizing: border-box;
+}
+.component-4 {
+  width: 1232px;
+  height: 1024px;
+  position: relative;
+}
+.retrieve-password {
+  color: #121212;
+  text-align: left;
+  font: 700 32px "Inter-Bold", sans-serif;
+  position: absolute;
+  right: 3.41%;
+  left: 67.78%;
+  width: 30%;
+  bottom: 70.9%;
+  top: 25.29%;
+  height: 3.81%;
+}
+.group-17 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-16 {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #0d374f;
+  border-width: 3px;
+  position: absolute;
+  right: 0%;
+  left: 64.29%;
+  width: 35.71%;
+  bottom: 25.29%;
+  top: 68.46%;
+  height: 6.25%;
+}
+.group-51 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-60 {
+  position: absolute;
+  right: 53.49%;
+  left: 0%;
+  width: 46.51%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+.group-3460 {
+  position: absolute;
+  inset: 0;
+}
+.group-3456 {
+  width: 416.38px;
+  height: 162.64px;
+  position: static;
+}
+.group-57 {
+  width: 186.04px;
+  height: 34.24px;
+  position: static;
+}
+.code {
+  color: #121212;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  right: 19.72%;
+  left: 65.18%;
+  width: 15.1%;
+  bottom: 60.91%;
+  top: 35.74%;
+  height: 3.34%;
+}
+.group-14 {
+  width: 209px;
+  height: 34px;
+  position: static;
+}
+.new-password {
+  color: #121212;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  right: 17.86%;
+  left: 65.18%;
+  width: 16.96%;
+  bottom: 51.46%;
+  top: 45.21%;
+  height: 3.32%;
+}
+.line-4 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  position: absolute;
+  right: 1.02%;
+  left: 65.42%;
+  width: 33.56%;
+  bottom: 57.99%;
+  top: 42.01%;
+  height: 0%;
+}
+.line-5 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  position: absolute;
+  right: 1.02%;
+  left: 65.42%;
+  width: 33.56%;
+  bottom: 48.38%;
+  top: 51.62%;
+  height: 0%;
+}
+.group-3457 {
+  width: 416.38px;
+  height: 64.2px;
+  position: static;
+}
+.confirm-password {
+  color: #121212;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  right: 19.48%;
+  left: 65.42%;
+  width: 15.1%;
+  bottom: 41.77%;
+  top: 54.88%;
+  height: 3.34%;
+}
+.line-42 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  position: absolute;
+  right: 0.78%;
+  left: 65.66%;
+  width: 33.56%;
+  bottom: 38.85%;
+  top: 61.15%;
+  height: 0%;
+}
+.save {
+  color: #000000;
+  text-align: center;
+  font: 500 20px "Inter-Medium", sans-serif;
+  position: absolute;
+  right: 15.11%;
+  left: 80.03%;
+  width: 4.86%;
+  bottom: 26.96%;
+  top: 70.21%;
+  height: 2.83%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+._3 {
+  position: absolute;
+  right: 32.39%;
+  left: 65.99%;
+  width: 1.62%;
+  bottom: 49.22%;
+  top: 48.83%;
+  height: 1.95%;
+}
+._4 {
+  position: absolute;
+  right: 32.39%;
+  left: 65.99%;
+  width: 1.62%;
+  bottom: 39.84%;
+  top: 58.2%;
+  height: 1.95%;
+}
+.please-enter-verification-code-here {
+  color: #a7a7a7;
+  text-align: left;
+  font: 400 italic 16px "Inter-Italic", sans-serif;
+  position: absolute;
+  right: 12.58%;
+  left: 65.99%;
+  width: 21.43%;
+  bottom: 59.18%;
+  top: 38.96%;
+  height: 1.86%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.img-view {
+  width: 35.8125rem;
+  height: 64rem;
+  flex-shrink: 0;
+}
