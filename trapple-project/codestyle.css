@@ -1,0 +1,201 @@
+.code-styling,
+.code-styling * {
+  box-sizing: border-box;
+}
+.code-styling {
+  width: 1232px;
+  height: 1024px;
+  position: relative;
+}
+.retrieve-password {
+  color: #121212;
+  text-align: left;
+  font: 700 32px "Inter-Bold", sans-serif;
+  position: absolute;
+  right: 3%;
+  left: 67%;
+  width: 30%;
+  bottom: 70%;
+  top: 25%;
+  height: 3%;
+}
+.group-background {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-button {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #0d374f;
+  border-width: 3px;
+  position: absolute;
+  right: 0%;
+  left: 64%;
+  width: 35%;
+  bottom: 25%;
+  top: 68%;
+  height: 6%;
+}
+.all-selection {
+  position: absolute;
+  inset: 0;
+}
+.img-view {
+  position: absolute;
+  right: 53%;
+  left: 0%;
+  width: 46%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+.group-selection {
+  position: absolute;
+  inset: 0;
+}
+.retrieve-selection {
+  width: 416px;
+  height: 162px;
+  position: static;
+}
+.front-selection {
+  width: 186px;
+  height: 34px;
+  position: static;
+}
+.code {
+  color: #121212;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  right: 19%;
+  left: 65%;
+  width: 15%;
+  bottom: 60%;
+  top: 35%;
+  height: 3%;
+}
+.pic-selection {
+  width: 209px;
+  height: 34px;
+  position: static;
+}
+.new-password {
+  color: #121212;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  right: 17.86%;
+  left: 65.18%;
+  width: 16.96%;
+  bottom: 51.46%;
+  top: 45.21%;
+  height: 3.32%;
+}
+.line-code {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  position: absolute;
+  right: 1.02%;
+  left: 65.42%;
+  width: 33.56%;
+  bottom: 57.99%;
+  top: 42.01%;
+  height: 0%;
+}
+.line-newpassword {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  position: absolute;
+  right: 1.02%;
+  left: 65.42%;
+  width: 33.56%;
+  bottom: 48.38%;
+  top: 51.62%;
+  height: 0%;
+}
+.middle-selection {
+  width: 416.38px;
+  height: 64.2px;
+  position: static;
+}
+.confirm-password {
+  color: #121212;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  right: 19.48%;
+  left: 65.42%;
+  width: 15.1%;
+  bottom: 41%;
+  top: 54%;
+  height: 3.34%;
+}
+.line-confirm {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  position: absolute;
+  right: 0.78%;
+  left: 65%;
+  width: 33%;
+  bottom: 38%;
+  top: 61%;
+  height: 0%;
+}
+.save {
+  color: #000000;
+  text-align: center;
+  font: 500 20px "Inter-Medium", sans-serif;
+  position: absolute;
+  right: 15.11%;
+  left: 80.03%;
+  width: 4%;
+  bottom: 26%;
+  top: 70%;
+  height: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containing-element {
+  position: absolute;
+  right: 32.39%;
+  left: 65.99%;
+  width: 1.62%;
+  bottom: 49.22%;
+  top: 48.83%;
+  height: 1.95%;
+}
+.containing-element1 {
+  position: absolute;
+  right: 32%;
+  left: 65%;
+  width: 1.62%;
+  bottom: 39%;
+  top: 58%;
+  height: 1.95%;
+}
+.verification-code {
+  color: #a7a7a7;
+  text-align: left;
+  font: 400 italic 16px "Inter-Italic", sans-serif;
+  position: absolute;
+  right: 12%;
+  left: 65%;
+  width: 21%;
+  bottom: 59%;
+  top: 38%;
+  height: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.img-view {
+  width: 35rem;
+  height: 64rem;
+  flex-shrink: 0;
+}
