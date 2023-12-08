@@ -1,0 +1,5395 @@
+:root{
+  /* fonts */
+  --font-inter: Inter;
+  --font-filters: 700; /* Side section filter group. 700 is normally bold value. 600~700 */
+
+  /* font sizes */
+  --font-size-normal: 1rem;
+  --font-size-footer: 1.25rem;
+  --font-size-hotels: 2rem;
+  --font-size-registration: 0.90rem; /* Log in & Sign up buttons */
+  --font-size-big: 1.5rem;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-close-to-font: #7d7d7d;
+  --color-font: #121212;
+  --color-button-price-orange: #ffa268; /* Search button and price color */
+  --color-button-blue: #16507A;
+  --color-raking-gray: #d9d9d9; /* This is rating mark color*/
+  --color-footer: #0D374F; 
+
+  /* Gaps */
+  --gap-small: 0.75rem;
+  --gap-middle: 0.44rem;
+  --gap-filter-text: 0.50rem; /* Gap between check box (or radio button) and text */
+  /* e.g: (checkbox) (Pet friendly)*/
+
+  /* Paddings */
+  --padding-view-bookable-button: 1rem; /* Keep it just 1rem. Original size is 1.06 0.88 1 0.88 */
+  /* Give the same padding for wrapped text in menu-items, sign-up-wrapper, log-in-wrapper */
+  --padding-search-boxes: 0.65rem; 
+
+  /* Border radiuses */
+  --br-accommodation-pics: 0.625rem;
+  --br-ranking: 20px;
+  --br-ranking-bottom: 1px; /* By giving different values to the bottom, it looks like a speech bubble */
+  --br-hotel-white-frame: 2.75rem;
+  --br-check-box: 0.4375rem;
+  --br-search: 0.5625rem; /* Search boxes border radius */
+  --br-round: 50px; /* SIDE SECTION - second category */
+}
+
+/* Apply the same font */
+*{
+  font-family: var(--font-inter);
+}
+
+/* HEADER */
+.product-frame{
+  margin-bottom: 18rem;
+}
+
+/* FRAME IMAGE*/
+.frame-image{
+  width: 100%;
+  height: 22.125rem;
+  object-fit: cover; /* As cover */
+}
+
+/* nav-menu items: the top menu bar */
+.nav-menu, .menu-items{
+  position: absolute;
+  top: 0;
+  height: 11.94rem;
+}
+
+/* Logo position setting */
+.nav-menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-white);
+  font-weight: 800;
+  width: 100%; /* Full width of the viewport */
+  z-index: 1000; /* Ensure it's above other elements if needed */
+}
+
+.menu-items{
+  top: 0;
+  left: 0;  
+}
+
+.accommodation{
+  margin-right: 3rem; /* Add a right margin of 1rem */
+  margin-left: 3rem; 
+}
+
+/* LOGO */
+.trapple-logo{
+  display: flex;
+  width: 100%;
+  height: 11.9375rem;
+  object-fit: cover; /* Stretch a bit to fit in width and height */
+  margin-left: 4.12rem;
+  margin-top: 0.5rem;
+}
+
+.sign-up-wrapper, .log-in-wrapper{
+  font-size: var(--font-size-registration);
+  display: flex;
+  flex-direction: column;
+  /* Place text in the middle of button */
+  padding: var(--padding-search-boxes); /* Position text in the middle */
+  padding: 0.5rem;
+  box-sizing: border-box; /* Fix box side, so it doesn't calculate it as content-box */ 
+  background: var(--color-button-blue);
+  border-radius: 0.625rem;
+  width: 6.8125rem;
+  height: 2.375rem;
+}
+
+.sign-up-wrapper{
+  position: fixed;
+  top: 40%; 
+  left: 80%;
+  transform: translateX(-50%);
+}
+
+.log-in-wrapper{
+  position: fixed;
+  top: 40%; 
+  left: 90%;
+  transform: translateX(-50%);
+
+}
+
+.sign-up, .log-in{
+  border: none;
+  background: none;
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: var(--font-size-normal);
+}
+
+/* Search boxes */
+.frame-search-boxes{
+  position: absolute;
+  top: 19.31rem;
+  left: 10.5rem;
+  width: 80%;
+  align-items: center;
+  font-size: var(--font-size-normal);
+}
+
+/* This is orange search button, it doesn't interact any. 
+Because search result page is productDetail page. */
+.search-box-positioning, .search-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.search-box-positioning{
+  gap: 0.62rem; /* Between boxes */
+}
+
+.destination-wrapper{
+  flex: 1;
+  position: relative;
+  background-color: var(--color-white);
+  border-radius: var(--br-search);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+  height: 5.25rem;
+}
+
+/* Text inside of destination search box */
+.destination{
+  position: absolute;
+  top: 0.69rem;
+  left: 0.81rem;
+  display: inline-block;
+  width: 6.19rem;
+  height: 1.44rem;
+}
+
+.check-in-date-wrapper{
+  flex: 1;
+  border-radius: var(--br-search);
+  background-color: var(--color-white);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+  height: 5.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-search-boxes); /* Inside. margin: outside of box */
+  box-sizing: border-box;
+}
+
+/* Text inside of check in date search box */
+.check-in-date{
+  position: relative;
+  display: inline-block;
+  width: 7.56rem;
+  height: 1.19rem;
+  flex-shrink: 0;
+}
+
+.check-out-date-wrapper{
+  flex: 1;
+  border-radius: var(--br-search);
+  background-color: var(--color-white);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+  height: 5.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-search-boxes);
+  box-sizing: border-box;
+}
+
+/* Text inside of check out date search box */
+.check-out-date{
+  position: relative;
+  display: inline-block;
+  width: 7.88rem;
+  height: 1.19rem;
+  flex-shrink: 0;
+}
+
+.guest-wrapper{
+  flex: 1;
+  border-radius: var(--br-search);
+  background-color: var(--color-white);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+  height: 5.13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-search-boxes);
+  box-sizing: border-box;
+}
+
+/* Text inside of guest box */
+.guest{
+  position: relative;
+  display: inline-block;
+  width: 4.19rem;
+  height: 1.24rem;
+  flex-shrink: 0;
+}
+
+/* Search button */
+.search-wrapper{
+  border: none;
+  background-color: #ffa149;
+  padding: 1.5rem 1.5rem;
+  border-radius: var(--br-search);
+  font-size: 1.375rem;
+  color: var(--color-white);
+  cursor: pointer;
+  width: 8rem;
+  height: 5.125rem;
+}
+
+/* MAIN */
+.accommodation-pic1{
+  position: relative; 
+  width: 17.8125rem;
+  height: 14.125rem;
+  border-radius: var(--br-accommodation-pics);
+  object-fit: cover;
+  top: 4rem;
+  left: 33vw; /* Using viewport units for responsiveness */
+}
+
+.bangkok-city-hotel{
+  position: relative;
+  white-space: nowrap;
+  font-size: var(--font-size-hotels);
+  font-weight: 500;
+  top: 6rem;
+  left: 57vw; /* Using viewport units for responsiveness */
+}
+
+.ranking1{
+  position: absolute;
+  top: 31rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  background: var(--color-raking-gray);
+  width: 3.1875rem;
+  height: 3.1875rem;
+}
+
+.ranking-text1{
+  position: absolute;
+  top: 31rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.excellent1{
+  font-size: var(--font-size-footer);
+  font-weight: 600;
+  color: var(--color-button-blue);
+  position: absolute;
+  top: 32rem;
+  left: 57.5vw; /* Using viewport units for responsiveness */
+}
+
+.reviews1{
+  font-size: var(--font-size-footer);
+  font-style: italic;
+  font-weight: 400;
+  position: absolute;
+  top: 32rem;
+  left: 66vw; /* Using viewport units for responsiveness */
+}
+
+.close-to-the1{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-weight: 500;
+  position: absolute;
+  top: 34rem;
+  left: 57.5vw; /* Using viewport units for responsiveness */
+}
+
+.barcelona-spain1{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  font-weight: 500;
+  position: absolute;
+  top: 39.5rem;
+  left: 57.5vw; /* Using viewport units for responsiveness */
+}
+
+.wifi-sign1{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 42rem;
+  left: 58vw;
+}
+
+.wifi-text1{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 42rem;
+  left: 59vw;
+}
+
+.parking-sign1{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 42rem;
+  left: 64vw; /* Using viewport units for responsiveness */
+}
+
+.parking-text1{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 42rem;
+  left: 64.7vw; /* Using viewport units for responsiveness */
+}
+
+.per-night1{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-style: italic;
+  font-weight: 500;
+  position: absolute;
+  top: 34rem;
+  left: 86vw; /* Using viewport units for responsiveness */
+}
+
+.price1{
+  font-weight: 600;
+  color: var(--color-button-price-orange);
+  font-size: var(--font-size-big);
+  text-align: right;
+  position: absolute;
+  top: 36rem;
+  left: 88vw; /* Using viewport units for responsiveness */
+}
+
+/* This is an actual button, it is connected to the next page. */
+.view-bookable-wrapper1{
+  border-radius: var(--br-accommodation-pics); /* It's the same value */
+  background-color: var(--color-button-blue);
+  color: var(--color-white);
+  width: 8.4375rem;
+  height: 3.1875rem;
+  padding: var(--padding-view-bookable-button);
+  box-sizing: border-box;
+  border: none;
+  position: absolute;
+  top: 40rem;
+  left: 85.5vw;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+}
+
+/* apartment city */
+.accommodation-pic2{
+  position: relative; 
+  width: 17.8125rem;
+  height: 14.125rem;
+  border-radius: var(--br-accommodation-pics);
+  object-fit: cover;
+  top: 5rem;
+  left: 33vw; /* Using viewport units for responsiveness */
+}
+
+.apartment-city{
+  position: relative;
+  white-space: nowrap;
+  font-size: var(--font-size-hotels);
+  font-weight: 500;
+  top: 7rem;
+  left: 57vw; /* Using viewport units for responsiveness */
+}
+
+.ranking2{
+  position: absolute;
+  top: 48rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  background: var(--color-raking-gray);
+  width: 3.1875rem;
+  height: 3.1875rem;
+}
+
+.ranking-text2{
+  position: absolute;
+  top: 48rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.excellent2{
+  font-size: var(--font-size-footer);
+  font-weight: 600;
+  color: var(--color-button-blue);
+  position: absolute;
+  top: 50rem;
+  left: 57.5vw;
+}
+
+.reviews2{
+  font-size: var(--font-size-footer);
+  font-style: italic;
+  font-weight: 400;
+  position: absolute;
+  top: 50rem;
+  left: 66vw; /* Using viewport units for responsiveness */
+}
+
+.close-to-the2{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-weight: 500;
+  position: absolute;
+  top: 52rem;
+  left: 57.5vw;
+}
+
+.barcelona-spain2{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  font-weight: 500;
+  position: relative;
+  top: 1rem;
+  left: 57.5vw;
+}
+
+.wifi-sign2{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 59.5rem;
+  left: 58vw;
+}
+
+.wifi-text2{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 59.6rem;
+  left: 59vw;
+}
+
+.parking-sign2{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 59.5rem;
+  left: 64vw; /* Using viewport units for responsiveness */
+}
+
+.parking-text2{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 59.6rem;
+  left: 64.7vw; /* Using viewport units for responsiveness */
+}
+
+.per-night2{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-style: italic;
+  font-weight: 500;
+  position: absolute;
+  top: 52rem;
+  left: 86vw; /* Using viewport units for responsiveness */
+}
+
+.price2{
+  font-weight: 600;
+  color: var(--color-button-price-orange);
+  font-size: var(--font-size-big);
+  text-align: right;
+  position: absolute;
+  top: 54rem;
+  left: 88vw; /* Using viewport units for responsiveness */
+}
+
+/* This is an actual button, it is connected to the next page. */
+.view-bookable-wrapper2{
+  border-radius: var(--br-accommodation-pics); /* It's the same value */
+  background-color: var(--color-button-blue);
+  color: var(--color-white);
+  width: 8.4375rem;
+  height: 3.1875rem;
+  padding: var(--padding-view-bookable-button);
+  box-sizing: border-box;
+  border: none;
+  position: absolute;
+  top: 58rem;
+  left: 85.5vw;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+}
+
+/* Holiday Inn Express (1) */
+.accommodation-pic3{
+  position: relative; 
+  width: 17.8125rem;
+  height: 14.125rem;
+  border-radius: var(--br-accommodation-pics);
+  object-fit: cover;
+  top: 5rem;
+  left: 33vw; /* Using viewport units for responsiveness */
+}
+
+.holiday-inn-express{
+  position: relative;
+  white-space: nowrap;
+  font-size: var(--font-size-hotels);
+  font-weight: 500;
+  top: 7rem;
+  left: 57vw; /* Using viewport units for responsiveness */
+}
+
+.ranking3{
+  position: absolute;
+  top: 66.5rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  background: var(--color-raking-gray);
+  width: 3.1875rem;
+  height: 3.1875rem;
+}
+
+.ranking-text3{
+  position: absolute;
+  top: 66.5rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.excellent3{
+  font-size: var(--font-size-footer);
+  font-weight: 600;
+  color: var(--color-button-blue);
+  position: absolute;
+  top: 68rem;
+  left: 57.5vw;
+}
+
+.reviews3{
+  font-size: var(--font-size-footer);
+  font-style: italic;
+  font-weight: 400;
+  position: absolute;
+  top: 68rem;
+  left: 66vw; /* Using viewport units for responsiveness */
+}
+
+.close-to-the3{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-weight: 500;
+  position: absolute;
+  top: 70rem;
+  left: 57.5vw;
+}
+
+.barcelona-spain3{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  font-weight: 500;
+  position: absolute;
+  top: 75rem;
+  left: 57.5vw;
+}
+
+.wifi-sign3{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 77.5rem;
+  left: 58vw;
+}
+
+.wifi-text3{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 77.7rem;
+  left: 59vw;
+}
+
+.parking-sign3{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 77.5rem;
+  left: 64vw; /* Using viewport units for responsiveness */
+}
+
+.parking-text3{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 77.7rem;
+  left: 64.7vw; /* Using viewport units for responsiveness */
+}
+
+.per-night3{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-style: italic;
+  font-weight: 500;
+  position: absolute;
+  top: 70rem;
+  left: 86vw; /* Using viewport units for responsiveness */
+}
+
+.price3{
+  font-weight: 600;
+  color: var(--color-button-price-orange);
+  font-size: var(--font-size-big);
+  text-align: right;
+  position: absolute;
+  top: 72rem;
+  left: 88vw; /* Using viewport units for responsiveness */
+}
+
+/* This is an actual button, it is connected to the next page. */
+.view-bookable-wrapper3{
+  border-radius: var(--br-accommodation-pics); /* It's the same value */
+  background-color: var(--color-button-blue);
+  color: var(--color-white);
+  width: 8.4375rem;
+  height: 3.1875rem;
+  padding: var(--padding-view-bookable-button);
+  box-sizing: border-box;
+  border: none;
+  position: absolute;
+  top: 76rem;
+  left: 85.5vw;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+}
+
+/* Scandinavian vila */
+.accommodation-pic4{
+  position: relative; 
+  width: 17.8125rem;
+  height: 14.125rem;
+  border-radius: var(--br-accommodation-pics);
+  object-fit: cover;
+  top: 6rem;
+  left: 33vw; /* Using viewport units for responsiveness */
+}
+
+.scandinavian-vila{
+  position: relative;
+  white-space: nowrap;
+  font-size: var(--font-size-hotels);
+  font-weight: 500;
+  top: 8rem;
+  left: 57vw; /* Using viewport units for responsiveness */
+}
+
+.ranking4{
+  position: absolute;
+  top: 84rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  background: var(--color-raking-gray);
+  width: 3.1875rem;
+  height: 3.1875rem;
+}
+
+.ranking-text4{
+  position: absolute;
+  top: 84rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.excellent4{
+  font-size: var(--font-size-footer);
+  font-weight: 600;
+  color: var(--color-button-blue);
+  position: absolute;
+  top: 85.5rem;
+  left: 57.5vw;
+}
+
+.reviews4{
+  font-size: var(--font-size-footer);
+  font-style: italic;
+  font-weight: 400;
+  position: absolute;
+  top: 85.5rem;
+  left: 66vw; /* Using viewport units for responsiveness */
+}
+
+.close-to-the4{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-weight: 500;
+  position: absolute;
+  top: 87.5rem;
+  left: 57.5vw;
+}
+
+.barcelona-spain4{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  font-weight: 500;
+  position: absolute;
+  top: 93rem;
+  left: 57.5vw;
+}
+
+.wifi-sign4{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 95.5rem;
+  left: 58vw;
+}
+
+.wifi-text4{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 95.7rem;
+  left: 59vw;
+}
+
+.parking-sign4{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 95.5rem;
+  left: 64vw; /* Using viewport units for responsiveness */
+}
+
+.parking-text4{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 95.7rem;
+  left: 64.7vw; /* Using viewport units for responsiveness */
+}
+
+.per-night4{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-style: italic;
+  font-weight: 500;
+  position: absolute;
+  top: 87.5rem;
+  left: 86vw; /* Using viewport units for responsiveness */
+}
+
+.price4{
+  font-weight: 600;
+  color: var(--color-button-price-orange);
+  font-size: var(--font-size-big);
+  text-align: right;
+  position: absolute;
+  top: 89.5rem;
+  left: 88vw; /* Using viewport units for responsiveness */
+}
+
+/* This is an actual button, it is connected to the next page. */
+.view-bookable-wrapper4{
+  border-radius: var(--br-accommodation-pics); /* It's the same value */
+  background-color: var(--color-button-blue);
+  color: var(--color-white);
+  width: 8.4375rem;
+  height: 3.1875rem;
+  padding: var(--padding-view-bookable-button);
+  box-sizing: border-box;
+  border: none;
+  position: absolute;
+  top: 94rem;
+  left: 85.5vw;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+}
+
+/* Amsterdam apartments */
+.accommodation-pic5{
+  position: relative; 
+  width: 17.8125rem;
+  height: 14.125rem;
+  border-radius: var(--br-accommodation-pics);
+  object-fit: cover;
+  top: 7rem;
+  left: 33vw; /* Using viewport units for responsiveness */
+}
+
+.amsterdam-apartments{
+  position: relative;
+  white-space: nowrap;
+  font-size: var(--font-size-hotels);
+  font-weight: 500;
+  top: 9rem;
+  left: 57vw; /* Using viewport units for responsiveness */
+}
+
+.ranking5{
+  position: absolute;
+  top: 102rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  background: var(--color-raking-gray);
+  width: 3.1875rem;
+  height: 3.1875rem;
+}
+
+.ranking-text5{
+  position: absolute;
+  top: 102rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.excellent5{
+  font-size: var(--font-size-footer);
+  font-weight: 600;
+  color: var(--color-button-blue);
+  position: absolute;
+  top: 103.5rem;
+  left: 57.5vw;
+}
+
+.reviews5{
+  font-size: var(--font-size-footer);
+  font-style: italic;
+  font-weight: 400;
+  position: absolute;
+  top: 103.5rem;
+  left: 66vw; /* Using viewport units for responsiveness */
+}
+
+.close-to-the5{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-weight: 500;
+  position: absolute;
+  top: 105.5rem;
+  left: 57.5vw;
+}
+
+.barcelona-spain5{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  font-weight: 500;
+  position: absolute;
+  top: 111rem;
+  left: 57.5vw;
+}
+
+.wifi-sign5{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 113rem;
+  left: 58vw;
+}
+
+.wifi-text5{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 113.2rem;
+  left: 59vw;
+}
+
+.parking-sign5{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 113rem;
+  left: 64vw; /* Using viewport units for responsiveness */
+}
+
+.parking-text5{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 113.2rem;
+  left: 64.7vw; /* Using viewport units for responsiveness */
+}
+
+.per-night5{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-style: italic;
+  font-weight: 500;
+  position: absolute;
+  top: 105.5rem;
+  left: 86vw; /* Using viewport units for responsiveness */
+}
+
+.price5{
+  font-weight: 600;
+  color: var(--color-button-price-orange);
+  font-size: var(--font-size-big);
+  text-align: right;
+  position: absolute;
+  top: 107.5rem;
+  left: 88vw; /* Using viewport units for responsiveness */
+}
+
+/* This is an actual button, it is connected to the next page. */
+.view-bookable-wrapper5{
+  border-radius: var(--br-accommodation-pics); /* It's the same value */
+  background-color: var(--color-button-blue);
+  color: var(--color-white);
+  width: 8.4375rem;
+  height: 3.1875rem;
+  padding: var(--padding-view-bookable-button);
+  box-sizing: border-box;
+  border: none;
+  position: absolute;
+  top: 112rem;
+  left: 85.5vw;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+}
+
+/* holiday inn express (2) */
+.accommodation-pic6{
+  position: relative; 
+  width: 17.8125rem;
+  height: 14.125rem;
+  border-radius: var(--br-accommodation-pics);
+  object-fit: cover;
+  top: 8rem;
+  left: 33vw; /* Using viewport units for responsiveness */
+}
+
+.holiday-inn-express2{
+  position: relative;
+  white-space: nowrap;
+  font-size: var(--font-size-hotels);
+  font-weight: 500;
+  top: 10rem;
+  left: 57vw; /* Using viewport units for responsiveness */
+}
+
+.ranking6{
+  position: absolute;
+  top: 120rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  background: var(--color-raking-gray);
+  width: 3.1875rem;
+  height: 3.1875rem;
+}
+
+.ranking-text6{
+  position: absolute;
+  top: 120rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.excellent6{
+  font-size: var(--font-size-footer);
+  font-weight: 600;
+  color: var(--color-button-blue);
+  position: absolute;
+  top: 121.5rem;
+  left: 57.5vw;
+}
+
+.reviews6{
+  font-size: var(--font-size-footer);
+  font-style: italic;
+  font-weight: 400;
+  position: absolute;
+  top: 121.5rem;
+  left: 66vw; /* Using viewport units for responsiveness */
+}
+
+.close-to-the6{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-weight: 500;
+  position: absolute;
+  top: 123.5rem;
+  left: 57.5vw;
+}
+
+.barcelona-spain6{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  font-weight: 500;
+  position: absolute;
+  top: 129rem;
+  left: 57.5vw;
+}
+
+.wifi-sign6{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 131rem;
+  left: 58vw;
+}
+
+.wifi-text6{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 131.2rem;
+  left: 59vw;
+}
+
+.parking-sign6{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 131rem;
+  left: 64vw; /* Using viewport units for responsiveness */
+}
+
+.parking-text6{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 131.2rem;
+  left: 64.7vw; /* Using viewport units for responsiveness */
+}
+
+.per-night6{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-style: italic;
+  font-weight: 500;
+  position: absolute;
+  top: 123.5rem;
+  left: 86vw; /* Using viewport units for responsiveness */
+}
+
+.price6{
+  font-weight: 600;
+  color: var(--color-button-price-orange);
+  font-size: var(--font-size-big);
+  text-align: right;
+  position: absolute;
+  top: 125.5rem;
+  left: 88vw; /* Using viewport units for responsiveness */
+}
+
+/* This is an actual button, it is connected to the next page. */
+.view-bookable-wrapper6{
+  border-radius: var(--br-accommodation-pics); /* It's the same value */
+  background-color: var(--color-button-blue);
+  color: var(--color-white);
+  width: 8.4375rem;
+  height: 3.1875rem;
+  padding: var(--padding-view-bookable-button);
+  box-sizing: border-box;
+  border: none;
+  position: absolute;
+  top: 130rem;
+  left: 85.5vw;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+}
+
+/* beach apartments */
+.accommodation-pic7{
+  position: relative; 
+  width: 17.8125rem;
+  height: 14.125rem;
+  border-radius: var(--br-accommodation-pics);
+  object-fit: cover;
+  top: 9rem;
+  left: 33vw; /* Using viewport units for responsiveness */
+}
+
+.beach-apartments{
+  position: relative;
+  white-space: nowrap;
+  font-size: var(--font-size-hotels);
+  font-weight: 500;
+  top: 11rem;
+  left: 57vw; /* Using viewport units for responsiveness */
+}
+
+.ranking7{
+  position: absolute;
+  top: 138rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  background: var(--color-raking-gray);
+  width: 3.1875rem;
+  height: 3.1875rem;
+}
+
+.ranking-text7{
+  position: absolute;
+  top: 138rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.excellent7{
+  font-size: var(--font-size-footer);
+  font-weight: 600;
+  color: var(--color-button-blue);
+  position: absolute;
+  top: 139rem;
+  left: 57.5vw;
+}
+
+.reviews7{
+  font-size: var(--font-size-footer);
+  font-style: italic;
+  font-weight: 400;
+  position: absolute;
+  top: 139rem;
+  left: 66vw; /* Using viewport units for responsiveness */
+}
+
+.close-to-the7{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-weight: 500;
+  position: absolute;
+  top: 141rem;
+  left: 57.5vw;
+}
+
+.barcelona-spain7{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  font-weight: 500;
+  position: absolute;
+  top: 147rem;
+  left: 57.5vw;
+}
+
+.wifi-sign7{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 149rem;
+  left: 58vw;
+}
+
+.wifi-text7{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 149.2rem;
+  left: 59vw;
+}
+
+.parking-sign7{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 149em;
+  left: 64vw; /* Using viewport units for responsiveness */
+}
+
+.parking-text7{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 149.2rem;
+  left: 64.7vw; /* Using viewport units for responsiveness */
+}
+
+.per-night7{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-style: italic;
+  font-weight: 500;
+  position: absolute;
+  top: 141rem;
+  left: 86vw; /* Using viewport units for responsiveness */
+}
+
+.price7{
+  font-weight: 600;
+  color: var(--color-button-price-orange);
+  font-size: var(--font-size-big);
+  text-align: right;
+  position: absolute;
+  top: 143rem;
+  left: 88vw; /* Using viewport units for responsiveness */
+}
+
+/* This is an actual button, it is connected to the next page. */
+.view-bookable-wrapper7{
+  border-radius: var(--br-accommodation-pics); /* It's the same value */
+  background-color: var(--color-button-blue);
+  color: var(--color-white);
+  width: 8.4375rem;
+  height: 3.1875rem;
+  padding: var(--padding-view-bookable-button);
+  box-sizing: border-box;
+  border: none;
+  position: absolute;
+  top: 147rem;
+  left: 85.5vw;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+}
+
+/* luxury apartments */
+.accommodation-pic8{
+  position: relative; 
+  width: 17.8125rem;
+  height: 14.125rem;
+  border-radius: var(--br-accommodation-pics);
+  object-fit: cover;
+  top: 10rem;
+  left: 33vw; /* Using viewport units for responsiveness */
+}
+
+.luxury-apartments{
+  position: relative;
+  white-space: nowrap;
+  font-size: var(--font-size-hotels);
+  font-weight: 500;
+  top: 12rem;
+  left: 57vw; /* Using viewport units for responsiveness */
+}
+
+.ranking8{
+  position: absolute;
+  top: 156rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  background: var(--color-raking-gray);
+  width: 3.1875rem;
+  height: 3.1875rem;
+}
+
+.ranking-text8{
+  position: absolute;
+  top: 156rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.excellent8{
+  font-size: var(--font-size-footer);
+  font-weight: 600;
+  color: var(--color-button-blue);
+  position: absolute;
+  top: 157rem;
+  left: 57.5vw;
+}
+
+.reviews8{
+  font-size: var(--font-size-footer);
+  font-style: italic;
+  font-weight: 400;
+  position: absolute;
+  top: 157rem;
+  left: 66vw; /* Using viewport units for responsiveness */
+}
+
+.close-to-the8{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-weight: 500;
+  position: absolute;
+  top: 159rem;
+  left: 57.5vw;
+}
+
+.barcelona-spain8{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  font-weight: 500;
+  position: absolute;
+  top: 164rem;
+  left: 57.5vw;
+}
+
+.wifi-sign8{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 166.5rem;
+  left: 58vw;
+}
+
+.wifi-text8{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 166.7rem;
+  left: 59vw;
+}
+
+.parking-sign8{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 166.5em;
+  left: 64vw; /* Using viewport units for responsiveness */
+}
+
+.parking-text8{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 166.7rem;
+  left: 64.7vw; /* Using viewport units for responsiveness */
+}
+
+.per-night8{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-style: italic;
+  font-weight: 500;
+  position: absolute;
+  top: 159rem;
+  left: 86vw; /* Using viewport units for responsiveness */
+}
+
+.price8{
+  font-weight: 600;
+  color: var(--color-button-price-orange);
+  font-size: var(--font-size-big);
+  text-align: right;
+  position: absolute;
+  top: 161rem;
+  left: 88vw; /* Using viewport units for responsiveness */
+}
+
+/* This is an actual button, it is connected to the next page. */
+.view-bookable-wrapper8{
+  border-radius: var(--br-accommodation-pics); /* It's the same value */
+  background-color: var(--color-button-blue);
+  color: var(--color-white);
+  width: 8.4375rem;
+  height: 3.1875rem;
+  padding: var(--padding-view-bookable-button);
+  box-sizing: border-box;
+  border: none;
+  position: absolute;
+  top: 165rem;
+  left: 85.5vw;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+}
+
+/* mambo beach apartments */
+.accommodation-pic9{
+  position: relative; 
+  width: 17.8125rem;
+  height: 14.125rem;
+  border-radius: var(--br-accommodation-pics);
+  object-fit: cover;
+  top: 11rem;
+  left: 33vw; /* Using viewport units for responsiveness */
+}
+
+.mambo-beach-apartments{
+  position: relative;
+  white-space: nowrap;
+  font-size: var(--font-size-hotels);
+  font-weight: 500;
+  top: 13rem;
+  left: 57vw; /* Using viewport units for responsiveness */
+}
+
+.ranking9{
+  position: absolute;
+  top: 173rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  background: var(--color-raking-gray);
+  width: 3.1875rem;
+  height: 3.1875rem;
+}
+
+.ranking-text9{
+  position: absolute;
+  top: 173rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.excellent9{
+  font-size: var(--font-size-footer);
+  font-weight: 600;
+  color: var(--color-button-blue);
+  position: absolute;
+  top: 174.5rem;
+  left: 57.5vw;
+}
+
+.reviews9{
+  font-size: var(--font-size-footer);
+  font-style: italic;
+  font-weight: 400;
+  position: absolute;
+  top: 174.5rem;
+  left: 66vw; /* Using viewport units for responsiveness */
+}
+
+.close-to-the9{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-weight: 500;
+  position: absolute;
+  top: 176.5rem;
+  left: 57.5vw;
+}
+
+.barcelona-spain9{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  font-weight: 500;
+  position: absolute;
+  top: 182rem;
+  left: 57.5vw;
+}
+
+.wifi-sign9{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 184.5rem;
+  left: 58vw;
+}
+
+.wifi-text9{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 184.7rem;
+  left: 59vw;
+}
+
+.parking-sign9{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 184.5rem;
+  left: 64vw; /* Using viewport units for responsiveness */
+}
+
+.parking-text9{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 184.7rem;
+  left: 64.7vw; /* Using viewport units for responsiveness */
+}
+
+.per-night9{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-style: italic;
+  font-weight: 500;
+  position: absolute;
+  top: 176.5rem;
+  left: 86vw; /* Using viewport units for responsiveness */
+}
+
+.price9{
+  font-weight: 600;
+  color: var(--color-button-price-orange);
+  font-size: var(--font-size-big);
+  text-align: right;
+  position: absolute;
+  top: 178.5rem;
+  left: 88vw; /* Using viewport units for responsiveness */
+}
+
+/* This is an actual button, it is connected to the next page. */
+.view-bookable-wrapper9{
+  border-radius: var(--br-accommodation-pics); /* It's the same value */
+  background-color: var(--color-button-blue);
+  color: var(--color-white);
+  width: 8.4375rem;
+  height: 3.1875rem;
+  padding: var(--padding-view-bookable-button);
+  box-sizing: border-box;
+  border: none;
+  position: absolute;
+  top: 183rem;
+  left: 85.5vw;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+}
+
+/* eden garden apartments */
+.accommodation-pic10{
+  position: relative; 
+  width: 17.8125rem;
+  height: 14.125rem;
+  border-radius: var(--br-accommodation-pics);
+  object-fit: cover;
+  top: 12rem;
+  left: 33vw; /* Using viewport units for responsiveness */
+}
+
+.eden-garden-apartments{
+  position: relative;
+  white-space: nowrap;
+  font-size: var(--font-size-hotels);
+  font-weight: 500;
+  top: 14rem;
+  left: 57vw; /* Using viewport units for responsiveness */
+}
+
+.ranking10{
+  position: absolute;
+  top: 191rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  background: var(--color-raking-gray);
+  width: 3.1875rem;
+  height: 3.1875rem;
+}
+
+.ranking-text10{
+  position: absolute;
+  top: 191rem; /* Adjust this value to center vertically */
+  left: 93vw; /* Using viewport units for responsiveness */
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.excellent10{
+  font-size: var(--font-size-footer);
+  font-weight: 600;
+  color: var(--color-button-blue);
+  position: absolute;
+  top: 192.5rem;
+  left: 57.5vw;
+}
+
+.reviews10{
+  font-size: var(--font-size-footer);
+  font-style: italic;
+  font-weight: 400;
+  position: absolute;
+  top: 192.5rem;
+  left: 66vw; /* Using viewport units for responsiveness */
+}
+
+.close-to-the10{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-weight: 500;
+  position: absolute;
+  top: 194.5rem;
+  left: 57.5vw;
+}
+
+.barcelona-spain10{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  font-weight: 500;
+  position: absolute;
+  top: 200rem;
+  left: 57.5vw;
+}
+
+.wifi-sign10{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 202rem;
+  left: 58vw;
+}
+
+.wifi-text10{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 202rem;
+  left: 59vw;
+}
+
+.parking-sign10{
+  border-radius: 0.625rem;
+  background-color: var(--color-white);
+  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  box-sizing: border-box;
+  width: 4.6875rem;
+  height: 1.6875rem;
+  position: absolute;
+  top: 202rem;
+  left: 64vw; /* Using viewport units for responsiveness */
+}
+
+.parking-text10{
+  font-size: var(--font-size-normal);
+  font-weight: 500;
+  position: absolute;
+  /* Position it in middle */
+  top: 202rem;
+  left: 64.7vw; /* Using viewport units for responsiveness */
+}
+
+.per-night10{
+  white-space: nowrap;
+  font-size: var(--font-size-footer);
+  color: var(--color-close-to-font);
+  font-style: italic;
+  font-weight: 500;
+  position: absolute;
+  top: 194.5rem;
+  left: 86vw; /* Using viewport units for responsiveness */
+}
+
+.price10{
+  font-weight: 600;
+  color: var(--color-button-price-orange);
+  font-size: var(--font-size-big);
+  text-align: right;
+  position: absolute;
+  top: 197rem;
+  left: 88vw; /* Using viewport units for responsiveness */
+}
+
+/* This is an actual button, it is connected to the next page. */
+.view-bookable-wrapper10{
+  border-radius: var(--br-accommodation-pics); /* It's the same value */
+  background-color: var(--color-button-blue);
+  color: var(--color-white);
+  width: 8.4375rem;
+  height: 3.1875rem;
+  padding: var(--padding-view-bookable-button);
+  box-sizing: border-box;
+  border: none;
+  position: absolute;
+  top: 201rem;
+  left: 85.5vw;
+  font-size: 0.9375rem;
+  white-space: nowrap;
+}
+
+/* SIDE SECTION */
+/* SIDE SECTION - frame */
+/* Include all elements into the side section frame */
+.side-section-frame{
+  position: absolute;
+  border-radius: var(--br-accommodation-pics);
+  top: 29rem;
+  left: 3.1rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-button-blue);
+  box-sizing: border-box;
+  width: 22.25rem; /* Made it a bit bigger because of text */ 
+  height: 99rem;
+}
+
+/* SIDE SECTION - popular-filters TEXT*/
+.popular-filters{
+  position: absolute;
+  top: 19.38rem;
+  left: 1.94rem;
+  color: var(--color-font);
+  font-weight: var(--font-filters);
+}
+
+/* SIDE SECTION - rating-filters TEXT*/
+.rating-filters{
+  position: absolute;
+  top: 19.38rem;
+  left: 1.94rem;
+  color: var(--color-font);
+  margin-top: 16rem;
+  font-weight: var(--font-filters);
+}
+
+/* SIDE SECTION - activities-filters TEXT*/
+.activities-filters{
+  position: absolute;
+  top: 19.38rem;
+  left: 1.94rem;
+  color: var(--color-font);
+  margin-top: 32rem;
+  font-weight: var(--font-filters);
+}
+
+/* SIDE SECTION - amenities-filters TEXT*/
+.amenities-filters{
+  position: absolute;
+  top: 19.38rem;
+  left: 1.94rem;
+  color: var(--color-font);
+  margin-top: 49rem;
+  font-weight: var(--font-filters);
+}
+
+/* SIDE SECTION - accessibility-filters TEXT*/
+.accessibility-filters{
+  position: absolute;
+  top: 19.38rem;
+  left: 1.94rem;
+  color: var(--color-font);
+  margin-top: 66rem;
+  font-weight: var(--font-filters);
+}
+
+/* SHOW ON MAP */
+.map-section{
+  position: relative;
+  bottom: 98rem;
+}
+
+.map-pic, .frame-show-on-map{
+  position: absolute;
+  left: 2rem; /* Center it in side frame */
+  width: 18.25rem;
+}
+
+.map-pic{
+  top: 4.19rem; /* Refer to Figma*/
+  border-radius: var(--br-accommodation-pics);
+  height: 9.31rem;
+  object-fit: cover;
+}
+
+.frame-show-on-map{
+  top: 13rem;
+  border-radius: 0 0 var(--br-accommodation-pics) var(--br-accommodation-pics);
+  background-color: #ececec; /* This color is used only once */
+  height: 3.69rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.show-on-map{
+  top: 10.81rem; /* Refer to Figma*/
+  font-weight: 600;
+  color: var(--color-font);
+}
+
+/* Pet friendly */
+.filters-group1{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+/* Square check box */
+.check-box-frame1{
+  border-radius: var(--br-check-box);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.check-box-frame1, .popular-filters-text1{
+  position: relative;
+}
+
+/* Wheelchair accessible */
+.filters-group2{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+.check-box-frame2{
+  border-radius: var(--br-check-box);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.check-box-frame2, .popular-filters-text2{
+  position: relative;
+  margin-top: 5rem; /* Position 'wheelchair accessible' text */
+}
+
+/* Ocean view */
+.filters-group3{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+.check-box-frame3{
+  border-radius: var(--br-check-box);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.check-box-frame3, .popular-filters-text3{
+  position: relative;
+  margin-top: 10rem; /* Position 'wheelchair accessible' text */
+}
+
+/* Breakfast included */
+.filters-group4{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+.check-box-frame4{
+  border-radius: var(--br-check-box);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.check-box-frame4, .popular-filters-text4{
+  position: relative;
+  margin-top: 15rem; /* Position 'wheelchair accessible' text */
+}
+
+/* LEFT SIDE SECTION - Rating */
+/* Any */
+.filters-group5{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+/* Round radio button */
+.radio-button-frame5{
+  border-radius: var(--br-round); /* Make it round */
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.radio-button-frame5, .popular-filters-text5{
+  position: relative;
+  margin-top: 32rem;
+}
+
+/* Excellent */
+/* Deleted width. If not, the text will be shown two seperate sentences. */
+.filters-group6{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+/* Round radio button */
+.radio-button-frame6{
+  border-radius: var(--br-round); /* Make it round */
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.radio-button-frame6, .popular-filters-text6{
+  position: relative;
+  margin-top: 37rem;
+}
+
+/* Outstanding */
+/* Deleted width. If not, the text will be shown two seperate sentences. */
+.filters-group7{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+/* Round radio button */
+.radio-button-frame7{
+  border-radius: var(--br-round); /* Make it round */
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.radio-button-frame7, .popular-filters-text7{
+  position: relative;
+  margin-top: 42rem;
+}
+
+/* Good */
+.filters-group8{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+/* Round radio button */
+.radio-button-frame8{
+  border-radius: var(--br-round); /* Make it round */
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.radio-button-frame8, .popular-filters-text8{
+  position: relative;
+  margin-top: 47rem;
+}
+
+/* Average */
+.filters-group9{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+/* Round radio button */
+.radio-button-frame9{
+  border-radius: var(--br-round); /* Make it round */
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.radio-button-frame9, .popular-filters-text9{
+  position: relative;
+  margin-top: 52rem;
+}
+
+/* LEFT SIDE SECTION - Activities */
+/* Skiing */
+.filters-group10{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+.check-box-frame10{
+  border-radius: var(--br-check-box);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.check-box-frame10, .popular-filters-text10{
+  position: relative;
+  margin-top: 64rem;
+}
+
+/* LEFT SIDE SECTION - Activities */
+/* Horse riding */
+.filters-group11{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+.check-box-frame11{
+  border-radius: var(--br-check-box);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.check-box-frame11, .popular-filters-text11{
+  position: relative;
+  margin-top: 69rem;
+}
+
+/* Yoga */
+.filters-group12{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+.check-box-frame12{
+  border-radius: var(--br-check-box);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.check-box-frame12, .popular-filters-text12{
+  position: relative;
+  margin-top: 74rem;
+}
+
+/* Cycling */
+.filters-group13{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+.check-box-frame13{
+  border-radius: var(--br-check-box);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.check-box-frame13, .popular-filters-text13{
+  position: relative;
+  margin-top: 79rem;
+}
+
+/* LEFT SIDE SECTION - Amenities */
+/* Pool */
+.filters-group14{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+.check-box-frame14{
+  border-radius: var(--br-check-box);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.check-box-frame14, .popular-filters-text14{
+  position: relative;
+  margin-top: 98rem;
+}
+
+/* Refrigerator */
+.filters-group15{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+.check-box-frame15{
+  border-radius: var(--br-check-box);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.check-box-frame15, .popular-filters-text15{
+  position: relative;
+  margin-top: 103rem;
+}
+
+/* Air conditioner */
+.filters-group16{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+.check-box-frame16{
+  border-radius: var(--br-check-box);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.check-box-frame16, .popular-filters-text16{
+  position: relative;
+  margin-top: 108rem;
+}
+
+/* Air conditioner */
+.filters-group17{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+.check-box-frame17{
+  border-radius: var(--br-check-box);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.check-box-frame17, .popular-filters-text17{
+  position: relative;
+  margin-top: 113rem;
+}
+
+/* LEFT SIDE SECTION - Accessibility */
+/* Elevator */
+.filters-group18{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+.check-box-frame18{
+  border-radius: var(--br-check-box);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.check-box-frame18, .popular-filters-text18{
+  position: relative;
+  margin-top: 132rem;
+}
+
+/* Wheelchair accessibility parking */
+.filters-group19{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+.check-box-frame19{
+  border-radius: var(--br-check-box);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.check-box-frame19, .popular-filters-text19{
+  position: relative;
+  margin-top: 137rem;
+}
+
+/* Wheelchair accessibility parking */
+.filters-group20{
+  position: absolute;
+  top: 21.69rem;
+  left: 2.31rem;
+  height: 1.69rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-filter-text);
+  text-align: left;
+  font-size: var(--font-size-normal);
+  color: var(--color-font);
+}
+
+.check-box-frame20{
+  border-radius: var(--br-check-box);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-font);
+  box-sizing: border-box;
+  width: 1.69rem;
+  height: 1.69rem;
+}
+
+.check-box-frame20, .popular-filters-text20{
+  position: relative;
+  margin-top: 142rem;
+}
+
+/* Show all TEXTS */
+/* Popular filter */
+.show-all1{
+  text-decoration: underline; /* Apply underline style */
+  cursor: pointer; /* Change it to point cursor - clickable */
+  margin-top: 32em; /* Positioning */
+  margin-left: 1.84rem; /* It's the same position as Popular filters */
+}
+
+/* Activities */
+.show-all2{
+  text-decoration: underline; /* Apply underline style */
+  cursor: pointer; /* Change it to point cursor - clickable */
+  margin-top: 31rem; /* Positioning */
+  margin-left: 1.84rem; /* It's the same position as Popular filters */
+}
+
+/* Amenities */
+.show-all3{
+  text-decoration: underline; /* Apply underline style */
+  cursor: pointer; /* Change it to point cursor - clickable */
+  margin-top: 16rem; /* Positioning */
+  margin-left: 1.84rem; /* It's the same position as Popular filters */
+}
+
+/* Accessibility */
+.show-all4{
+  text-decoration: underline; /* Apply underline style */
+  cursor: pointer; /* Change it to point cursor - clickable */
+  margin-top: 13rem; /* Positioning */
+  margin-left: 1.84rem; /* It's the same position as Popular filters */
+}
+
+/* FOOTER */
+footer{
+  width: 100%;
+  height: 18rem;
+  background: var(--color-footer);
+}
+
+.media-icon-container{
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.facebook-icon{
+  width: 2.75rem;
+  height: 3rem;
+  flex-shrink: 0;
+  margin-right: 2.56rem;
+}
+
+.twitter-icon{
+  width: 2.6875rem;
+  height: 2.6875rem;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.youtube-icon{
+  width: 2.875rem;
+  height: 2.875rem;
+  flex-shrink: 0;
+  margin-left: 2.56rem;
+  margin-top: 5px;
+}
+
+.txt-footer-menu{
+  color: var(--color-white);
+  font-size: 1.5625rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+}
+
+.txt-footer-email{
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.txt-footer{
+  color: var(--color-white);
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .trapple-logo{
+    margin: 0;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav-menu{
+    font-size: 1.4vw;
+  }
+
+  .sign-up,
+  .sign-up-wrapper,
+  .log-in,
+  .log-in-wrapper{
+    width: auto;
+    height: auto;
+    font-size: 0.9rem;
+  }
+
+  .frame-search-boxes{
+    top: 19.31rem;
+    left: 9vw;
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .search-wrapper{
+    font-size: 1rem;
+    display: flex;
+    padding: 2.5rem; /* center Search text */
+  }
+
+  .accommodation-pic1,
+  .accommodation-pic2,
+  .accommodation-pic3,
+  .accommodation-pic4,
+  .accommodation-pic5,
+  .accommodation-pic6,
+  .accommodation-pic7,
+  .accommodation-pic8,
+  .accommodation-pic9,
+  .accommodation-pic10{
+    width: 14rem;
+    height: 11rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
+
+  .side-section-frame{
+    width: 30vw;
+  }
+
+  .map-pic, .frame-show-on-map{
+    width: 24vw;
+  }
+
+  .show-on-map{
+    font-size: 0.9rem;
+  }
+
+  .filters-group1,
+  .filters-group2,
+  .filters-group3,
+  .filters-group4,
+  .filters-group5,
+  .filters-group6,
+  .filters-group7,
+  .filters-group8,
+  .filters-group9,
+  .filters-group10,
+  .filters-group11,
+  .filters-group12,
+  .filters-group13,
+  .filters-group14,
+  .filters-group15,
+  .filters-group16,
+  .filters-group17,
+  .filters-group18,
+  .filters-group19,
+  .filters-group20{
+    font-size: 0.9rem;
+  }
+
+  .bangkok-city-hotel,
+  .apartment-city,
+  .holiday-inn-express,
+  .scandinavian-vila,
+  .amsterdam-apartments,
+  .holiday-inn-express2,
+  .beach-apartments,
+  .luxury-apartments,
+  .mambo-beach-apartments,
+  .eden-garden-apartments{
+    font-size: 1.8vw;
+    margin-left: 2rem;
+  }
+
+  .barcelona-spain1,
+  .barcelona-spain2,
+  .barcelona-spain3,
+  .barcelona-spain4,
+  .barcelona-spain5,
+  .barcelona-spain6,
+  .barcelona-spain7,
+  .barcelona-spain8,
+  .barcelona-spain9,
+  .barcelona-spain10{
+    font-size: 1.4vw;
+    margin-left: 2rem;
+  }
+
+  .barcelona-spain1{
+    margin-top: -1.5vw;
+  }
+
+  .barcelona-spain2{
+    margin-top: 2.5vw;
+  }
+
+  .barcelona-spain3{
+    margin-top: -8.5vw;
+  }
+
+  .barcelona-spain4{
+    margin-top: -12.5vw;
+  }
+
+  .barcelona-spain5{
+    margin-top: -17.5vw;
+  }
+
+  .barcelona-spain6{
+    margin-top: -20.5vw;
+  }
+
+  .barcelona-spain7{
+    margin-top: -25.5vw;
+  }
+
+  .barcelona-spain8{
+    margin-top: -27.5vw;
+  }
+
+  .barcelona-spain9{
+    margin-top: -32.5vw;
+  }
+
+  .barcelona-spain10{
+    margin-top: -36.5vw;
+  }
+
+  .close-to-the1,
+  .close-to-the2,
+  .close-to-the3,
+  .close-to-the4,
+  .close-to-the5,
+  .close-to-the6,
+  .close-to-the7,
+  .close-to-the8,
+  .close-to-the9,
+  .close-to-the10{
+    font-size: 1.2vw;
+    margin-left: 2rem;
+  }
+
+  .close-to-the2{
+    margin-top: -3rem; 
+  }
+
+  .close-to-the3{
+    margin-top: -5rem; 
+  }
+
+  .close-to-the4{
+    margin-top: -7rem; 
+  }
+
+  .close-to-the5{
+    margin-top: -11rem; 
+  }
+
+  .close-to-the6{
+    margin-top: -13rem; 
+  }
+
+  .close-to-the7{
+    margin-top: -16rem; 
+  }
+
+  .close-to-the8{
+    margin-top: -19rem; 
+  }
+
+  .close-to-the9{
+    margin-top: -22rem; 
+  }
+
+  .close-to-the10{
+    margin-top: -25rem; 
+  }
+
+  .per-night1,
+  .per-night2,
+  .per-night3,
+  .per-night4,
+  .per-night5,
+  .per-night6,
+  .per-night7,
+  .per-night8,
+  .per-night9,
+  .per-night10{
+    font-size: 1.2vw;
+    margin-left: 2rem;
+  }
+
+  .per-night2{
+    margin-top: -3rem;
+  }
+
+  .per-night3{
+    margin-top: -5rem;
+  }
+
+  .per-night4{
+    margin-top: -7rem;
+  }
+
+  .per-night5{
+    margin-top: -11rem;
+  }
+
+  .per-night6{
+    margin-top: -13rem;
+  }
+
+  .per-night7{
+    margin-top: -16rem;
+  }
+
+  .per-night8{
+    margin-top: -19rem;
+  }
+
+  .per-night9{
+    margin-top: -22rem;
+  }
+
+  .per-night10{
+    margin-top: -25rem;
+  }
+
+  .price1,
+  .price2,
+  .price3,
+  .price4,
+  .price5,
+  .price6,
+  .price7,
+  .price8,
+  .price9,
+  .price10{
+    font-size: 1.4vw;
+    margin-left: 1rem;
+  }
+
+  .price2{
+    margin-top: -3rem;
+  }
+
+  .price3{
+    margin-top: -5rem;
+  }
+
+  .price4{
+    margin-top: -7rem;
+  }
+
+  .price5{
+    margin-top: -11rem;
+  }
+
+  .price6{
+    margin-top: -13rem;
+  }
+
+  .price7{
+    margin-top: -16rem;
+  }
+
+  .price8{
+    margin-top: -19rem;
+  }
+
+  .price9{
+    margin-top: -22rem;
+  }
+
+  .price10{
+    margin-top: -25.5rem;
+  }
+
+  .wifi-sign1,
+  .wifi-sign2,
+  .wifi-sign3,
+  .wifi-sign4,
+  .wifi-sign5,
+  .wifi-sign6,
+  .wifi-sign7,
+  .wifi-sign8,
+  .wifi-sign9,
+  .wifi-sign10{
+    display: none;
+  }
+
+  .wifi-text1,
+  .wifi-text2,
+  .wifi-text3,
+  .wifi-text4,
+  .wifi-text5,
+  .wifi-text6,
+  .wifi-text7,
+  .wifi-text8,
+  .wifi-text9,
+  .wifi-text10{
+    display: none;
+  }
+
+  .parking-sign1,
+  .parking-sign2,
+  .parking-sign3,
+  .parking-sign4,
+  .parking-sign5,
+  .parking-sign6,
+  .parking-sign7,
+  .parking-sign8,
+  .parking-sign9,
+  .parking-sign10{
+    display: none;
+  }
+
+  .parking-text1,
+  .parking-text2,
+  .parking-text3,
+  .parking-text4,
+  .parking-text5,
+  .parking-text6,
+  .parking-text7,
+  .parking-text8,
+  .parking-text9,
+  .parking-text10{
+    display: none;
+  }
+
+  .excellent1{
+    font-size: 1.4vw;
+    margin-top: -1rem;
+    margin-left: 2rem;
+  }
+
+  .excellent2{
+    font-size: 16px;
+    margin-top: -4rem;
+    margin-left: 2rem;
+  }
+
+  .excellent3{
+    font-size: 16px;
+    margin-top: -6rem;
+    margin-left: 2rem;
+  }
+
+  .excellent4{
+    font-size: 16px;
+    margin-top: -8.5rem;
+    margin-left: 2rem;
+  }
+
+  .excellent5{
+    font-size: 16px;
+    margin-top: -12rem;
+    margin-left: 2rem;
+  }
+
+  .excellent6{
+    font-size: 16px;
+    margin-top: -15rem;
+    margin-left: 2rem;
+  }
+
+  .excellent7{
+    font-size: 16px;
+    margin-top: -18rem;
+    margin-left: 2rem;
+  }
+
+  .excellent8{
+    font-size: 16px;
+    margin-top: -21rem;
+    margin-left: 2rem;
+  }
+
+  .excellent9{
+    font-size: 16px;
+    margin-top: -24rem;
+    margin-left: 2rem;
+  }
+
+  .excellent10{
+    font-size: 16px;
+    margin-top: -27rem;
+    margin-left: 2rem;
+  }
+
+  .reviews1,
+  .reviews2,
+  .reviews3,
+  .reviews4,
+  .reviews5,
+  .reviews6,
+  .reviews7,
+  .reviews8,
+  .reviews9,
+  .reviews10{
+    font-size: 1.2vw;
+    margin-left: 3rem;
+  }
+
+  .reviews1{
+    margin-top: -1rem;
+  }
+  
+  .reviews2{
+    margin-top: -4rem;
+  }
+
+  .reviews3{
+    margin-top: -6rem;
+  }
+
+  .reviews4{
+    margin-top: -8.5rem;
+  }
+
+  .reviews5{
+    margin-top: -12rem;
+  }
+
+  .reviews6{
+    margin-top: -15rem;
+  }
+
+  .reviews7{
+    margin-top: -18rem;
+  }
+
+  .reviews8{
+    margin-top: -21rem;
+  }
+
+  .reviews9{
+    margin-top: -24rem;
+  }
+
+  .reviews10{
+    margin-top: -27rem;
+  }
+
+  .ranking1,
+  .ranking2,
+  .ranking3,
+  .ranking4,
+  .ranking5,
+  .ranking6,
+  .ranking7,
+  .ranking8,
+  .ranking9,
+  .ranking10{
+    display: none;
+  }
+
+  .ranking-text1,
+  .ranking-text2,
+  .ranking-text3,
+  .ranking-text4,
+  .ranking-text5,
+  .ranking-text6,
+  .ranking-text7,
+  .ranking-text8,
+  .ranking-text9,
+  .ranking-text10{
+    display: none;
+  }
+
+  .view-bookable-wrapper1,
+  .view-bookable-wrapper2,
+  .view-bookable-wrapper3,
+  .view-bookable-wrapper4,
+  .view-bookable-wrapper5,
+  .view-bookable-wrapper6,
+  .view-bookable-wrapper7,
+  .view-bookable-wrapper8,
+  .view-bookable-wrapper9,
+  .view-bookable-wrapper10{
+    width: auto;
+    height: 2rem;
+    font-size: 1vw;
+    padding-top: 0.5rem;
+  }
+
+  .view-bookable-wrapper1{
+    margin-top: -2rem;
+  }
+  
+  .view-bookable-wrapper2{
+    margin-top: -5rem;
+  }
+
+  .view-bookable-wrapper3{
+    margin-top: -7rem;
+  }
+
+  .view-bookable-wrapper4{
+    margin-top: -9.5rem;
+  }
+
+  .view-bookable-wrapper5{
+    margin-top: -13.5rem;
+  }
+
+  .view-bookable-wrapper6{
+    margin-top: -15.5rem;
+  }
+
+  .view-bookable-wrapper7{
+    margin-top: -18rem;
+  }
+
+  .view-bookable-wrapper8{
+    margin-top: -21rem;
+  }
+
+  .view-bookable-wrapper9{
+    margin-top: -24.5rem;
+  }
+
+  .view-bookable-wrapper10{
+    margin-top: -27.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .trapple-logo{
+    transform: scale(0.9); /* Adjust the size of logo */
+    margin-left: 0; 
+    margin-top: 0.5rem;
+}
+
+  .nav-menu{
+    font-size: 1.4vw;
+  }
+
+  .sign-up,
+  .sign-up-wrapper,
+  .log-in,
+  .log-in-wrapper{
+    width: auto;
+    height: auto;
+    font-size: 0.9rem;
+  }
+
+  .frame-search-boxes{
+    top: 19.31rem;
+    left: 9.5vw;
+    width: 80%;
+    font-size: 0.9rem;
+  }
+
+  .search-wrapper{
+    font-size: 1rem;
+    display: flex;
+    padding: 2.5rem; /* center Search text */
+  }
+
+  .accommodation-pic1,
+  .accommodation-pic2,
+  .accommodation-pic3,
+  .accommodation-pic4,
+  .accommodation-pic5,
+  .accommodation-pic6,
+  .accommodation-pic7,
+  .accommodation-pic8,
+  .accommodation-pic9,
+  .accommodation-pic10{
+    width: 14rem;
+    height: 11rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
+
+  .side-section-frame{
+    width: 30vw;
+  }
+
+  .map-pic, .frame-show-on-map{
+    width: 24vw;
+  }
+
+  .show-on-map{
+    font-size: 0.9rem;
+  }
+
+  .filters-group1,
+  .filters-group2,
+  .filters-group3,
+  .filters-group4,
+  .filters-group5,
+  .filters-group6,
+  .filters-group7,
+  .filters-group8,
+  .filters-group9,
+  .filters-group10,
+  .filters-group11,
+  .filters-group12,
+  .filters-group13,
+  .filters-group14,
+  .filters-group15,
+  .filters-group16,
+  .filters-group17,
+  .filters-group18,
+  .filters-group19,
+  .filters-group20{
+    font-size: 0.9rem;
+  }
+
+  .bangkok-city-hotel,
+  .apartment-city,
+  .holiday-inn-express,
+  .scandinavian-vila,
+  .amsterdam-apartments,
+  .holiday-inn-express2,
+  .beach-apartments,
+  .luxury-apartments,
+  .mambo-beach-apartments,
+  .eden-garden-apartments{
+    font-size: 1.1rem;
+    margin-left: 4rem;
+  }
+
+  .barcelona-spain1,
+  .barcelona-spain2,
+  .barcelona-spain3,
+  .barcelona-spain4,
+  .barcelona-spain5,
+  .barcelona-spain6,
+  .barcelona-spain7,
+  .barcelona-spain8,
+  .barcelona-spain9,
+  .barcelona-spain10{
+    font-size: 1.4vw;
+    margin-left: 4rem;
+  }
+
+  .barcelona-spain1{
+    margin-top: -1.5vw;
+  }
+
+  .barcelona-spain2{
+    margin-top: 2.5vw;
+  }
+
+  .barcelona-spain3{
+    margin-top: -6rem;
+  }
+
+  .barcelona-spain4{
+    margin-top: -9rem;
+  }
+
+  .barcelona-spain5{
+    margin-top: -13rem;
+  }
+
+  .barcelona-spain6{
+    margin-top: -16rem;
+  }
+
+  .barcelona-spain7{
+    margin-top: -19.5rem;
+  }
+
+  .barcelona-spain8{
+    margin-top: -22rem;
+  }
+
+  .barcelona-spain9{
+    margin-top: -25.5rem;
+  }
+
+  .barcelona-spain10{
+    margin-top: -29rem;
+  }
+
+  .close-to-the1,
+  .close-to-the2,
+  .close-to-the3,
+  .close-to-the4,
+  .close-to-the5,
+  .close-to-the6,
+  .close-to-the7,
+  .close-to-the8,
+  .close-to-the9,
+  .close-to-the10{
+    font-size: 1.2vw;
+    margin-left: 4rem;
+  }
+
+  .close-to-the2{
+    margin-top: -3rem; 
+  }
+
+  .close-to-the3{
+    margin-top: -5rem; 
+  }
+
+  .close-to-the4{
+    margin-top: -7rem; 
+  }
+
+  .close-to-the5{
+    margin-top: -11rem; 
+  }
+
+  .close-to-the6{
+    margin-top: -14rem; 
+  }
+
+  .close-to-the7{
+    margin-top: -17rem; 
+  }
+
+  .close-to-the8{
+    margin-top: -21rem; 
+  }
+
+  .close-to-the9{
+    margin-top: -24rem; 
+  }
+
+  .close-to-the10{
+    margin-top: -27rem; 
+  }
+
+  .per-night1,
+  .per-night2,
+  .per-night3,
+  .per-night4,
+  .per-night5,
+  .per-night6,
+  .per-night7,
+  .per-night8,
+  .per-night9,
+  .per-night10{
+    font-size: 1.2vw;
+    margin-left: 2rem;
+  }
+
+  .per-night2{
+    margin-top: -3rem;
+  }
+
+  .per-night3{
+    margin-top: -5rem;
+  }
+
+  .per-night4{
+    margin-top: -7rem;
+  }
+
+  .per-night5{
+    margin-top: -11rem;
+  }
+
+  .per-night6{
+    margin-top: -14rem;
+  }
+
+  .per-night7{
+    margin-top: -17rem;
+  }
+
+  .per-night8{
+    margin-top: -21rem;
+  }
+
+  .per-night9{
+    margin-top: -24rem;
+  }
+
+  .per-night10{
+    margin-top: -27rem;
+  }
+
+  .price1,
+  .price2,
+  .price3,
+  .price4,
+  .price5,
+  .price6,
+  .price7,
+  .price8,
+  .price9,
+  .price10{
+    font-size: 1.4vw;
+    margin-left: 1rem;
+  }
+
+  .price1{
+    margin-top: -1rem;
+  }
+
+  .price2{
+    margin-top: -4rem;
+  }
+
+  .price3{
+    margin-top: -6rem;
+  }
+
+  .price4{
+    margin-top: -8rem;
+  }
+
+  .price5{
+    margin-top: -12rem;
+  }
+
+  .price6{
+    margin-top: -15rem;
+  }
+
+  .price7{
+    margin-top: -18rem;
+  }
+
+  .price8{
+    margin-top: -22rem;
+  }
+
+  .price9{
+    margin-top: -25rem;
+  }
+
+  .price10{
+    margin-top: -28.5rem;
+  }
+
+  .wifi-sign1,
+  .wifi-sign2,
+  .wifi-sign3,
+  .wifi-sign4,
+  .wifi-sign5,
+  .wifi-sign6,
+  .wifi-sign7,
+  .wifi-sign8,
+  .wifi-sign9,
+  .wifi-sign10{
+    display: none;
+  }
+
+  .wifi-text1,
+  .wifi-text2,
+  .wifi-text3,
+  .wifi-text4,
+  .wifi-text5,
+  .wifi-text6,
+  .wifi-text7,
+  .wifi-text8,
+  .wifi-text9,
+  .wifi-text10{
+    display: none;
+  }
+
+  .parking-sign1,
+  .parking-sign2,
+  .parking-sign3,
+  .parking-sign4,
+  .parking-sign5,
+  .parking-sign6,
+  .parking-sign7,
+  .parking-sign8,
+  .parking-sign9,
+  .parking-sign10{
+    display: none;
+  }
+
+  .parking-text1,
+  .parking-text2,
+  .parking-text3,
+  .parking-text4,
+  .parking-text5,
+  .parking-text6,
+  .parking-text7,
+  .parking-text8,
+  .parking-text9,
+  .parking-text10{
+    display: none;
+  }
+
+  .excellent1{
+    font-size: 0.8rem;
+    margin-top: -1rem;
+    margin-left: 4rem;
+  }
+
+  .excellent2{
+    font-size: 0.8rem;
+    margin-top: -4.5rem;
+    margin-left: 4rem;
+  }
+
+  .excellent3{
+    font-size: 0.8rem;
+    margin-top: -6.5rem;
+    margin-left: 4rem;
+  }
+
+  .excellent4{
+    font-size: 0.8rem;
+    margin-top: -9.5rem;
+    margin-left: 4rem;
+  }
+
+  .excellent5{
+    font-size: 0.8rem;
+    margin-top: -13rem;
+    margin-left: 4rem;
+  }
+
+  .excellent6{
+    font-size: 0.8rem;
+    margin-top: -16rem;
+    margin-left: 4rem;
+  }
+
+  .excellent7{
+    font-size: 0.8rem;
+    margin-top: -19rem;
+    margin-left: 4rem;
+  }
+
+  .excellent8{
+    font-size: 0.8rem;
+    margin-top: -22.5rem;
+    margin-left: 4rem;
+  }
+
+  .excellent9{
+    font-size: 0.8rem;
+    margin-top: -25.5rem;
+    margin-left: 4rem;
+  }
+
+  .excellent10{
+    font-size: 0.8rem;
+    margin-top: -29rem;
+    margin-left: 4rem;
+  }
+
+  .reviews1,
+  .reviews2,
+  .reviews3,
+  .reviews4,
+  .reviews5,
+  .reviews6,
+  .reviews7,
+  .reviews8,
+  .reviews9,
+  .reviews10{
+    font-size: 0.8rem;
+    margin-left: 4rem;
+  }
+
+  .reviews1{
+    margin-top: -1rem;
+  }
+  
+  .reviews2{
+    margin-top: -4.5rem;
+  }
+
+  .reviews3{
+    margin-top: -6.5rem;
+  }
+
+  .reviews4{
+    margin-top: -9.5rem;
+  }
+
+  .reviews5{
+    margin-top: -13rem;
+  }
+
+  .reviews6{
+    margin-top: -16rem;
+  }
+
+  .reviews7{
+    margin-top: -19rem;
+  }
+
+  .reviews8{
+    margin-top: -22.5rem;
+  }
+
+  .reviews9{
+    margin-top: -25.5rem;
+  }
+
+  .reviews10{
+    margin-top: -29rem;
+  }
+
+  .ranking1,
+  .ranking2,
+  .ranking3,
+  .ranking4,
+  .ranking5,
+  .ranking6,
+  .ranking7,
+  .ranking8,
+  .ranking9,
+  .ranking10{
+    display: none;
+  }
+
+  .ranking-text1,
+  .ranking-text2,
+  .ranking-text3,
+  .ranking-text4,
+  .ranking-text5,
+  .ranking-text6,
+  .ranking-text7,
+  .ranking-text8,
+  .ranking-text9,
+  .ranking-text10{
+    display: none;
+  }
+
+  .view-bookable-wrapper1,
+  .view-bookable-wrapper2,
+  .view-bookable-wrapper3,
+  .view-bookable-wrapper4,
+  .view-bookable-wrapper5,
+  .view-bookable-wrapper6,
+  .view-bookable-wrapper7,
+  .view-bookable-wrapper8,
+  .view-bookable-wrapper9,
+  .view-bookable-wrapper10{
+    width: auto;
+    height: 2rem;
+    font-size: 1vw;
+    padding-top: 0.5rem;
+  }
+
+  .view-bookable-wrapper1{
+    margin-top: -2rem;
+  }
+  
+  .view-bookable-wrapper2{
+    margin-top: -6rem;
+  }
+
+  .view-bookable-wrapper3{
+    margin-top: -7.5rem;
+  }
+
+  .view-bookable-wrapper4{
+    margin-top: -10.5rem;
+  }
+
+  .view-bookable-wrapper5{
+    margin-top: -14.5rem;
+  }
+
+  .view-bookable-wrapper6{
+    margin-top: -17.5rem;
+  }
+
+  .view-bookable-wrapper7{
+    margin-top: -20rem;
+  }
+
+  .view-bookable-wrapper8{
+    margin-top: -23.5rem;
+  }
+
+  .view-bookable-wrapper9{
+    margin-top: -27rem;
+  }
+
+  .view-bookable-wrapper10{
+    margin-top: -30.5rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+  .trapple-logo{
+    transform: scale(0.7); /* Adjust the size of logo */
+    margin-left: 0; 
+    margin-top: 0.5rem;
+}
+
+ .sign-up,
+ .sign-up-wrapper,
+ .log-in,
+ .log-in-wrapper{
+    width: auto;
+    height: auto;
+    font-size: 0.5rem;
+}
+
+  .nav-menu{
+    font-size: 1.4vw;
+  }
+
+  .frame-search-boxes{
+    top: 19.31rem;
+    left: 9.5vw;
+    width: 80%;
+    font-size: 0.9rem;
+  }
+
+  .search-wrapper{
+    font-size: 0.8rem;
+    display: flex;
+    padding: 2.5rem; /* center Search text */
+  }
+
+  .accommodation-pic1,
+  .accommodation-pic2,
+  .accommodation-pic3,
+  .accommodation-pic4,
+  .accommodation-pic5,
+  .accommodation-pic6,
+  .accommodation-pic7,
+  .accommodation-pic8,
+  .accommodation-pic9,
+  .accommodation-pic10{
+    width: 11rem;
+    height: 10rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
+
+  .side-section-frame{
+    width: 15rem;
+    height: 99rem;
+  }
+
+  .map-pic, .frame-show-on-map{
+    width: 11rem;
+    margin-top: 0;
+  }
+
+  .show-on-map{
+    font-size: 0.8rem;
+  }
+
+  .filters-group1,
+  .filters-group2,
+  .filters-group3,
+  .filters-group4,
+  .filters-group5,
+  .filters-group6,
+  .filters-group7,
+  .filters-group8,
+  .filters-group9{
+    font-size: 0.7rem;
+    margin-top: -3rem;
+  }
+
+  .filters-group10,
+  .filters-group11,
+  .filters-group12,
+  .filters-group13,
+  .filters-group14,
+  .filters-group15,
+  .filters-group16,
+  .filters-group17,
+  .filters-group18,
+  .filters-group19,
+  .filters-group20{
+    font-size: 0.7rem;
+    margin-top: 0;
+  }
+
+  .popular-filters,
+  .rating-filters,
+  .activities-filters,
+  .amenities-filters,
+  .accessibility-filters{
+    font-size: 0.7rem;
+  }
+
+  .popular-filters{
+    margin-top: -3rem;
+  }
+
+  .rating-filters{
+    margin-top: 13rem;
+  }
+
+  .activities-filters{
+    margin-top: 32rem;
+  }
+
+  .show-all1,
+  .show-all2,
+  .show-all3,
+  .show-all4{
+    font-size: 0.7rem;
+  }
+
+  .show-all1{
+    margin-top: 29rem;
+  }
+
+  .show-all2{
+    margin-top: 34rem;
+  }
+
+  .show-all3{
+    margin-top: 16rem;;
+  }
+
+  .show-all4{
+    margin-top: 14rem;
+  }
+
+  .bangkok-city-hotel,
+  .apartment-city,
+  .holiday-inn-express,
+  .scandinavian-vila,
+  .amsterdam-apartments,
+  .holiday-inn-express2,
+  .beach-apartments,
+  .luxury-apartments,
+  .mambo-beach-apartments,
+  .eden-garden-apartments{
+    font-size: 1rem;
+    margin-left: 4rem;
+  }
+
+  .barcelona-spain1,
+  .barcelona-spain2,
+  .barcelona-spain3,
+  .barcelona-spain4,
+  .barcelona-spain5,
+  .barcelona-spain6,
+  .barcelona-spain7,
+  .barcelona-spain8,
+  .barcelona-spain9,
+  .barcelona-spain10{
+    font-size: 1.4vw;
+    margin-left: 4rem;
+  }
+
+  .barcelona-spain1{
+    margin-top: -2.5rem;
+  }
+
+  .barcelona-spain2{
+    margin-top: 1.5rem;
+  }
+
+  .barcelona-spain3{
+    margin-top: -10rem;
+  }
+
+  .barcelona-spain4{
+    margin-top: -15rem;
+  }
+
+  .barcelona-spain5{
+    margin-top: -19rem;
+  }
+
+  .barcelona-spain6{
+    margin-top: -23rem;
+  }
+
+  .barcelona-spain7{
+    margin-top: -27rem;
+  }
+
+  .barcelona-spain8{
+    margin-top: -31rem;
+  }
+
+  .barcelona-spain9{
+    margin-top: -35rem;
+  }
+
+  .barcelona-spain10{
+    margin-top: -40rem;
+  }
+
+  .close-to-the1,
+  .close-to-the2,
+  .close-to-the3,
+  .close-to-the4,
+  .close-to-the5,
+  .close-to-the6,
+  .close-to-the7,
+  .close-to-the8,
+  .close-to-the9,
+  .close-to-the10{
+    font-size: 1.2vw;
+    margin-left: 4rem;
+  }
+
+  .close-to-the2{
+    margin-top: -5rem; 
+  }
+
+  .close-to-the3{
+    margin-top: -8rem; 
+  }
+
+  .close-to-the4{
+    margin-top: -12rem; 
+  }
+
+  .close-to-the5{
+    margin-top: -16rem; 
+  }
+
+  .close-to-the6{
+    margin-top: -20rem; 
+  }
+
+  .close-to-the7{
+    margin-top: -24rem; 
+  }
+
+  .close-to-the8{
+    margin-top: -29rem; 
+  }
+
+  .close-to-the9{
+    margin-top: -32rem; 
+  }
+
+  .close-to-the10{
+    margin-top: -37rem; 
+  }
+
+  .per-night1,
+  .per-night2,
+  .per-night3,
+  .per-night4,
+  .per-night5,
+  .per-night6,
+  .per-night7,
+  .per-night8,
+  .per-night9,
+  .per-night10{
+    font-size: 1.2vw;
+    margin-left: 2rem;
+  }
+
+  .per-night2{
+    margin-top: -5rem;
+  }
+
+  .per-night3{
+    margin-top: -8rem;
+  }
+
+  .per-night4{
+    margin-top: -12rem;
+  }
+
+  .per-night5{
+    margin-top: -16rem;
+  }
+
+  .per-night6{
+    margin-top: -20rem;
+  }
+
+  .per-night7{
+    margin-top: -24rem;
+  }
+
+  .per-night8{
+    margin-top: -29rem;
+  }
+
+  .per-night9{
+    margin-top: -32rem;
+  }
+
+  .per-night10{
+    margin-top: -37rem;
+  }
+
+  .price1,
+  .price2,
+  .price3,
+  .price4,
+  .price5,
+  .price6,
+  .price7,
+  .price8,
+  .price9,
+  .price10{
+    font-size: 1.4vw;
+    margin-left: 1rem;
+  }
+
+  .price1{
+    margin-top: -1rem;
+  }
+
+  .price2{
+    margin-top: -6rem;
+  }
+
+  .price3{
+    margin-top: -9rem;
+  }
+
+  .price4{
+    margin-top: -13rem;
+  }
+
+  .price5{
+    margin-top: -17rem;
+  }
+
+  .price6{
+    margin-top: -21rem;
+  }
+
+  .price7{
+    margin-top: -25rem;
+  }
+
+  .price8{
+    margin-top: -30rem;
+  }
+
+  .price9{
+    margin-top: -33rem;
+  }
+
+  .price10{
+    margin-top: -38.5rem;
+  }
+
+  .wifi-sign1,
+  .wifi-sign2,
+  .wifi-sign3,
+  .wifi-sign4,
+  .wifi-sign5,
+  .wifi-sign6,
+  .wifi-sign7,
+  .wifi-sign8,
+  .wifi-sign9,
+  .wifi-sign10{
+    display: none;
+  }
+
+  .wifi-text1,
+  .wifi-text2,
+  .wifi-text3,
+  .wifi-text4,
+  .wifi-text5,
+  .wifi-text6,
+  .wifi-text7,
+  .wifi-text8,
+  .wifi-text9,
+  .wifi-text10{
+    display: none;
+  }
+
+  .parking-sign1,
+  .parking-sign2,
+  .parking-sign3,
+  .parking-sign4,
+  .parking-sign5,
+  .parking-sign6,
+  .parking-sign7,
+  .parking-sign8,
+  .parking-sign9,
+  .parking-sign10{
+    display: none;
+  }
+
+  .parking-text1,
+  .parking-text2,
+  .parking-text3,
+  .parking-text4,
+  .parking-text5,
+  .parking-text6,
+  .parking-text7,
+  .parking-text8,
+  .parking-text9,
+  .parking-text10{
+    display: none;
+  }
+
+  .excellent1{
+    font-size: 0.8rem;
+    margin-top: -1.5rem;
+    margin-left: 4rem;
+  }
+
+  .excellent2{
+    font-size: 0.8rem;
+    margin-top: -6rem;
+    margin-left: 4rem;
+  }
+
+  .excellent3{
+    font-size: 0.8rem;
+    margin-top: -8.5rem;
+    margin-left: 4rem;
+  }
+
+  .excellent4{
+    font-size: 0.8rem;
+    margin-top: -12.5rem;
+    margin-left: 4rem;
+  }
+
+  .excellent5{
+    font-size: 0.8rem;
+    margin-top: -17rem;
+    margin-left: 4rem;
+  }
+
+  .excellent6{
+    font-size: 0.8rem;
+    margin-top: -21.5rem;
+    margin-left: 4rem;
+  }
+
+  .excellent7{
+    font-size: 0.8rem;
+    margin-top: -26rem;
+    margin-left: 4rem;
+  }
+
+  .excellent8{
+    font-size: 0.8rem;
+    margin-top: -30rem;
+    margin-left: 4rem;
+  }
+
+  .excellent9{
+    font-size: 0.8rem;
+    margin-top: -34rem;
+    margin-left: 4rem;
+  }
+
+  .excellent10{
+    font-size: 0.8rem;
+    margin-top: -38.5rem;
+    margin-left: 4rem;
+  }
+
+  .reviews1,
+  .reviews2,
+  .reviews3,
+  .reviews4,
+  .reviews5,
+  .reviews6,
+  .reviews7,
+  .reviews8,
+  .reviews9,
+  .reviews10{
+    font-size: 0.8rem;
+    margin-left: 4rem;
+  }
+
+  .reviews1{
+    margin-top: -1.5rem;
+  }
+  
+  .reviews2{
+    margin-top: -6rem;
+  }
+
+  .reviews3{
+    margin-top: -8.5rem;
+  }
+
+  .reviews4{
+    margin-top: -12.5rem;
+  }
+
+  .reviews5{
+    margin-top: -17rem;
+  }
+
+  .reviews6{
+    margin-top: -21.5rem;
+  }
+
+  .reviews7{
+    margin-top: -26rem;
+  }
+
+  .reviews8{
+    margin-top: -30rem;
+  }
+
+  .reviews9{
+    margin-top: -34rem;
+  }
+
+  .reviews10{
+    margin-top: -38.5rem;
+  }
+
+  .ranking1,
+  .ranking2,
+  .ranking3,
+  .ranking4,
+  .ranking5,
+  .ranking6,
+  .ranking7,
+  .ranking8,
+  .ranking9,
+  .ranking10{
+    display: none;
+  }
+
+  .ranking-text1,
+  .ranking-text2,
+  .ranking-text3,
+  .ranking-text4,
+  .ranking-text5,
+  .ranking-text6,
+  .ranking-text7,
+  .ranking-text8,
+  .ranking-text9,
+  .ranking-text10{
+    display: none;
+  }
+
+  .view-bookable-wrapper1,
+  .view-bookable-wrapper2,
+  .view-bookable-wrapper3,
+  .view-bookable-wrapper4,
+  .view-bookable-wrapper5,
+  .view-bookable-wrapper6,
+  .view-bookable-wrapper7,
+  .view-bookable-wrapper8,
+  .view-bookable-wrapper9,
+  .view-bookable-wrapper10{
+    width: auto;
+    height: 1rem;
+    font-size: 1vw;
+    padding-top: 0.5rem;
+  }
+
+  .view-bookable-wrapper1{
+    margin-top: -3rem;
+  }
+  
+  .view-bookable-wrapper2{
+    margin-top: -8rem;
+  }
+
+  .view-bookable-wrapper3{
+    margin-top: -11rem;
+  }
+
+  .view-bookable-wrapper4{
+    margin-top: -16rem;
+  }
+
+  .view-bookable-wrapper5{
+    margin-top: -20rem;
+  }
+
+  .view-bookable-wrapper6{
+    margin-top: -24rem;
+  }
+
+  .view-bookable-wrapper7{
+    margin-top: -27.5rem;
+  }
+
+  .view-bookable-wrapper8{
+    margin-top: -32.5rem;
+  }
+
+  .view-bookable-wrapper9{
+    margin-top: -36rem;
+  }
+
+  .view-bookable-wrapper10{
+    margin-top: -41rem;
+  }
+
+  .txt-footer,
+  .txt-footer-email,
+  .txt-footer-menu{
+    font-size: 1rem;
+  }
+
+  .media-icon-container{
+    transform: scale(0.7); /* Adjust the size of logo */
+  }
+}
+
+@media (max-width: 575px){
+  .side-section-frame{
+    display: none;
+  }
+
+  .trapple-logo{
+    transform: scale(0.5); /* Adjust the size of logo */
+    margin-left: 0; 
+    margin-top: 0.5rem;
+ }
+
+ .home{
+    margin-left: 3rem;
+ }
+
+  .nav-menu{
+    font-size: 1.8vw;
+  }
+
+  .sign-up,
+  .sign-up-wrapper,
+  .log-in,
+  .log-in-wrapper{
+    display: none;
+  }
+
+  .frame-search-boxes{
+    top: 19.31rem;
+    left: 9.5vw;
+    width: 80%;
+    height: 20%;
+    font-size: 0.5rem;
+  }
+
+  .guest-wrapper,
+  .guest{
+    display: none;
+  }
+
+  .check-out-date-wrapper,
+  .check-out-date{
+    display: none;
+  }
+
+  .search-wrapper{
+    font-size: 0.8rem;
+    display: flex;
+    padding: 2.5rem; /* center Search text */
+  }
+
+  .accommodation-pic1,
+  .accommodation-pic2,
+  .accommodation-pic3,
+  .accommodation-pic4,
+  .accommodation-pic5,
+  .accommodation-pic6,
+  .accommodation-pic7,
+  .accommodation-pic8,
+  .accommodation-pic9,
+  .accommodation-pic10{
+    width: 11rem;
+    height: 10rem;
+    margin-left: -8rem;
+    margin-top: 1rem;
+  }
+
+  .side-section-frame{
+    display: none;
+  }
+
+  .bangkok-city-hotel,
+  .apartment-city,
+  .holiday-inn-express,
+  .scandinavian-vila,
+  .amsterdam-apartments,
+  .holiday-inn-express2,
+  .beach-apartments,
+  .luxury-apartments,
+  .mambo-beach-apartments,
+  .eden-garden-apartments{
+    font-size: 1rem;
+    margin-left: -3.5rem;
+  }
+
+  .barcelona-spain1,
+  .barcelona-spain2,
+  .barcelona-spain3,
+  .barcelona-spain4,
+  .barcelona-spain5,
+  .barcelona-spain6,
+  .barcelona-spain7,
+  .barcelona-spain8,
+  .barcelona-spain9,
+  .barcelona-spain10{
+    font-size: 1.4vw;
+    margin-left: -3rem;
+  }
+
+  .barcelona-spain1{
+    margin-top: -2.5rem;
+  }
+
+  .barcelona-spain2{
+    margin-top: 1.5rem;
+  }
+
+  .barcelona-spain3{
+    margin-top: -10rem;
+  }
+
+  .barcelona-spain4{
+    margin-top: -15rem;
+  }
+
+  .barcelona-spain5{
+    margin-top: -19rem;
+  }
+
+  .barcelona-spain6{
+    margin-top: -23rem;
+  }
+
+  .barcelona-spain7{
+    margin-top: -27rem;
+  }
+
+  .barcelona-spain8{
+    margin-top: -31rem;
+  }
+
+  .barcelona-spain9{
+    margin-top: -35rem;
+  }
+
+  .barcelona-spain10{
+    margin-top: -40rem;
+  }
+
+  .close-to-the1,
+  .close-to-the2,
+  .close-to-the3,
+  .close-to-the4,
+  .close-to-the5,
+  .close-to-the6,
+  .close-to-the7,
+  .close-to-the8,
+  .close-to-the9,
+  .close-to-the10{
+    font-size: 1.2vw;
+    margin-left: -3rem;
+  }
+
+  .close-to-the2{
+    margin-top: -5rem; 
+  }
+
+  .close-to-the3{
+    margin-top: -8rem; 
+  }
+
+  .close-to-the4{
+    margin-top: -12rem; 
+  }
+
+  .close-to-the5{
+    margin-top: -16rem; 
+  }
+
+  .close-to-the6{
+    margin-top: -20rem; 
+  }
+
+  .close-to-the7{
+    margin-top: -24rem; 
+  }
+
+  .close-to-the8{
+    margin-top: -29rem; 
+  }
+
+  .close-to-the9{
+    margin-top: -32rem; 
+  }
+
+  .close-to-the10{
+    margin-top: -37rem; 
+  }
+
+  .per-night1,
+  .per-night2,
+  .per-night3,
+  .per-night4,
+  .per-night5,
+  .per-night6,
+  .per-night7,
+  .per-night8,
+  .per-night9,
+  .per-night10{
+    font-size: 1.2vw;
+    margin-left: -1rem;
+  }
+
+  .per-night2{
+    margin-top: -5rem;
+  }
+
+  .per-night3{
+    margin-top: -8rem;
+  }
+
+  .per-night4{
+    margin-top: -12rem;
+  }
+
+  .per-night5{
+    margin-top: -16rem;
+  }
+
+  .per-night6{
+    margin-top: -20rem;
+  }
+
+  .per-night7{
+    margin-top: -24rem;
+  }
+
+  .per-night8{
+    margin-top: -29rem;
+  }
+
+  .per-night9{
+    margin-top: -32rem;
+  }
+
+  .per-night10{
+    margin-top: -37rem;
+  }
+
+  .price1,
+  .price2,
+  .price3,
+  .price4,
+  .price5,
+  .price6,
+  .price7,
+  .price8,
+  .price9,
+  .price10{
+    font-size: 1.4vw;
+    margin-left: -1rem;
+  }
+
+  .price1{
+    margin-top: -1rem;
+  }
+
+  .price2{
+    margin-top: -6rem;
+  }
+
+  .price3{
+    margin-top: -9rem;
+  }
+
+  .price4{
+    margin-top: -13rem;
+  }
+
+  .price5{
+    margin-top: -17rem;
+  }
+
+  .price6{
+    margin-top: -21rem;
+  }
+
+  .price7{
+    margin-top: -25rem;
+  }
+
+  .price8{
+    margin-top: -30rem;
+  }
+
+  .price9{
+    margin-top: -33rem;
+  }
+
+  .price10{
+    margin-top: -38.5rem;
+  }
+
+  .wifi-sign1,
+  .wifi-sign2,
+  .wifi-sign3,
+  .wifi-sign4,
+  .wifi-sign5,
+  .wifi-sign6,
+  .wifi-sign7,
+  .wifi-sign8,
+  .wifi-sign9,
+  .wifi-sign10{
+    display: none;
+  }
+
+  .wifi-text1,
+  .wifi-text2,
+  .wifi-text3,
+  .wifi-text4,
+  .wifi-text5,
+  .wifi-text6,
+  .wifi-text7,
+  .wifi-text8,
+  .wifi-text9,
+  .wifi-text10{
+    display: none;
+  }
+
+  .parking-sign1,
+  .parking-sign2,
+  .parking-sign3,
+  .parking-sign4,
+  .parking-sign5,
+  .parking-sign6,
+  .parking-sign7,
+  .parking-sign8,
+  .parking-sign9,
+  .parking-sign10{
+    display: none;
+  }
+
+  .parking-text1,
+  .parking-text2,
+  .parking-text3,
+  .parking-text4,
+  .parking-text5,
+  .parking-text6,
+  .parking-text7,
+  .parking-text8,
+  .parking-text9,
+  .parking-text10{
+    display: none;
+  }
+
+  .excellent1{
+    font-size: 0.8rem;
+    margin-top: -1.5rem;
+    margin-left: -3rem;
+  }
+
+  .excellent2{
+    font-size: 0.8rem;
+    margin-top: -6rem;
+    margin-left: -3rem;
+  }
+
+  .excellent3{
+    font-size: 0.8rem;
+    margin-top: -8.5rem;
+    margin-left: -3rem;
+  }
+
+  .excellent4{
+    font-size: 0.8rem;
+    margin-top: -12.5rem;
+    margin-left: -3rem;
+  }
+
+  .excellent5{
+    font-size: 0.8rem;
+    margin-top: -17rem;
+    margin-left: -3rem;
+  }
+
+  .excellent6{
+    font-size: 0.8rem;
+    margin-top: -21.5rem;
+    margin-left: -3rem;
+  }
+
+  .excellent7{
+    font-size: 0.8rem;
+    margin-top: -26rem;
+    margin-left: -3rem;
+  }
+
+  .excellent8{
+    font-size: 0.8rem;
+    margin-top: -30rem;
+    margin-left: -3rem;
+  }
+
+  .excellent9{
+    font-size: 0.8rem;
+    margin-top: -34rem;
+    margin-left: -3rem;
+  }
+
+  .excellent10{
+    font-size: 0.8rem;
+    margin-top: -38.5rem;
+    margin-left: -3rem;
+  }
+
+  .reviews1,
+  .reviews2,
+  .reviews3,
+  .reviews4,
+  .reviews5,
+  .reviews6,
+  .reviews7,
+  .reviews8,
+  .reviews9,
+  .reviews10{
+    font-size: 0.8rem;
+    margin-left: -1rem;
+  }
+
+  .reviews1{
+    margin-top: -1.5rem;
+  }
+  
+  .reviews2{
+    margin-top: -6rem;
+  }
+
+  .reviews3{
+    margin-top: -8.5rem;
+  }
+
+  .reviews4{
+    margin-top: -12.5rem;
+  }
+
+  .reviews5{
+    margin-top: -17rem;
+  }
+
+  .reviews6{
+    margin-top: -21.5rem;
+  }
+
+  .reviews7{
+    margin-top: -26rem;
+  }
+
+  .reviews8{
+    margin-top: -30rem;
+  }
+
+  .reviews9{
+    margin-top: -34rem;
+  }
+
+  .reviews10{
+    margin-top: -38.5rem;
+  }
+
+  .ranking1,
+  .ranking2,
+  .ranking3,
+  .ranking4,
+  .ranking5,
+  .ranking6,
+  .ranking7,
+  .ranking8,
+  .ranking9,
+  .ranking10{
+    display: none;
+  }
+
+  .ranking-text1,
+  .ranking-text2,
+  .ranking-text3,
+  .ranking-text4,
+  .ranking-text5,
+  .ranking-text6,
+  .ranking-text7,
+  .ranking-text8,
+  .ranking-text9,
+  .ranking-text10{
+    display: none;
+  }
+
+  .view-bookable-wrapper1,
+  .view-bookable-wrapper2,
+  .view-bookable-wrapper3,
+  .view-bookable-wrapper4,
+  .view-bookable-wrapper5,
+  .view-bookable-wrapper6,
+  .view-bookable-wrapper7,
+  .view-bookable-wrapper8,
+  .view-bookable-wrapper9,
+  .view-bookable-wrapper10{
+    width: auto;
+    height: 1rem;
+    font-size: 1vw;
+    padding-top: 0.5rem;
+    margin-left: -2rem;
+  }
+
+  .view-bookable-wrapper1{
+    margin-top: -3rem;
+  }
+  
+  .view-bookable-wrapper2{
+    margin-top: -8rem;
+  }
+
+  .view-bookable-wrapper3{
+    margin-top: -11rem;
+  }
+
+  .view-bookable-wrapper4{
+    margin-top: -16rem;
+  }
+
+  .view-bookable-wrapper5{
+    margin-top: -20rem;
+  }
+
+  .view-bookable-wrapper6{
+    margin-top: -24rem;
+  }
+
+  .view-bookable-wrapper7{
+    margin-top: -27.5rem;
+  }
+
+  .view-bookable-wrapper8{
+    margin-top: -32.5rem;
+  }
+
+  .view-bookable-wrapper9{
+    margin-top: -36rem;
+  }
+
+  .view-bookable-wrapper10{
+    margin-top: -41rem;
+  }
+
+  .txt-footer,
+  .txt-footer-email,
+  .txt-footer-menu{
+    font-size: 0.9rem;
+  }
+
+  .media-icon-container{
+    transform: scale(0.6); /* Adjust the size of logo */
+  }
+}
+
+@media (max-width: 376px){
+  .side-section-frame{
+    display: none;
+  }
+
+  .trapple-logo{
+    display: none;
+ }
+    
+.nav-menu{
+    font-size: 0.7rem;
+    left: 10rem;
+ }
+
+  .sign-up,
+  .sign-up-wrapper,
+  .log-in,
+  .log-in-wrapper{
+    display: none;
+  }
+
+  .frame-search-boxes{
+    display: none;
+  }
+
+  .guest-wrapper,
+  .guest{
+    display: none;
+  }
+
+  .check-out-date-wrapper,
+  .check-out-date{
+    display: none;
+  }
+
+  .accommodation-pic1,
+  .accommodation-pic2,
+  .accommodation-pic3,
+  .accommodation-pic4,
+  .accommodation-pic5,
+  .accommodation-pic6,
+  .accommodation-pic7,
+  .accommodation-pic8,
+  .accommodation-pic9,
+  .accommodation-pic10{
+    width: 9rem;
+    height: 9rem;
+    margin-left: -7.5rem;
+    margin-top: 1rem;
+  }
+
+  .side-section-frame{
+    display: none;
+  }
+
+  .bangkok-city-hotel,
+  .apartment-city,
+  .holiday-inn-express,
+  .scandinavian-vila,
+  .amsterdam-apartments,
+  .holiday-inn-express2,
+  .beach-apartments,
+  .luxury-apartments,
+  .mambo-beach-apartments,
+  .eden-garden-apartments{
+    font-size: 1rem;
+    margin-left: -3.5rem;
+  }
+
+  .barcelona-spain1,
+  .barcelona-spain2,
+  .barcelona-spain3,
+  .barcelona-spain4,
+  .barcelona-spain5,
+  .barcelona-spain6,
+  .barcelona-spain7,
+  .barcelona-spain8,
+  .barcelona-spain9,
+  .barcelona-spain10{
+    font-size: 3vw;
+    margin-left: -3rem;
+  }
+
+  .barcelona-spain1{
+    margin-top: -3rem;
+  }
+
+  .barcelona-spain2{
+    margin-top: 2rem;
+  }
+
+  .barcelona-spain3{
+    margin-top: -12rem;
+  }
+
+  .barcelona-spain4{
+    margin-top: -17rem;
+  }
+
+  .barcelona-spain5{
+    margin-top: -23rem;
+  }
+
+  .barcelona-spain6{
+    margin-top: -28rem;
+  }
+
+  .barcelona-spain7{
+    margin-top: -34rem;
+  }
+
+  .barcelona-spain8{
+    margin-top: -38rem;
+  }
+
+  .barcelona-spain9{
+    margin-top: -44rem;
+  }
+
+  .barcelona-spain10{
+    margin-top: -49rem;
+  }
+
+  .close-to-the1,
+  .close-to-the2,
+  .close-to-the3,
+  .close-to-the4,
+  .close-to-the5,
+  .close-to-the6,
+  .close-to-the7,
+  .close-to-the8,
+  .close-to-the9,
+  .close-to-the10{
+    display: none;
+  }
+
+  .per-night1,
+  .per-night2,
+  .per-night3,
+  .per-night4,
+  .per-night5,
+  .per-night6,
+  .per-night7,
+  .per-night8,
+  .per-night9,
+  .per-night10{
+    font-size: 3vw;
+    margin-left: -1rem; 
+  }
+
+  .per-night2{
+    margin-top: -5rem;
+  }
+
+  .per-night3{
+    margin-top: -8rem;
+  }
+
+  .per-night4{
+    margin-top: -14rem;
+  }
+
+  .per-night5{
+    margin-top: -19rem;
+  }
+
+  .per-night6{
+    margin-top: -25rem;
+  }
+
+  .per-night7{
+    margin-top: -30rem;
+  }
+
+  .per-night8{
+    margin-top: -35rem;
+  }
+
+  .per-night9{
+    margin-top: -40rem;
+  }
+
+  .per-night10{
+    margin-top: -46rem;
+  }
+
+  .price1,
+  .price2,
+  .price3,
+  .price4,
+  .price5,
+  .price6,
+  .price7,
+  .price8,
+  .price9,
+  .price10{
+    font-size: 3vw;
+    margin-left: -1rem;
+  }
+
+  .price1{
+    margin-top: -1rem;
+  }
+
+  .price2{
+    margin-top: -6rem;
+  }
+
+  .price3{
+    margin-top: -9rem;
+  }
+
+  .price4{
+    margin-top: -15rem;
+  }
+
+  .price5{
+    margin-top: -20rem;
+  }
+
+  .price6{
+    margin-top: -26rem;
+  }
+
+  .price7{
+    margin-top: -31rem;
+  }
+
+  .price8{
+    margin-top: -36rem;
+  }
+
+  .price9{
+    margin-top: -41rem;
+  }
+
+  .price10{
+    margin-top: -47.5rem;
+  }
+
+  .wifi-sign1,
+  .wifi-sign2,
+  .wifi-sign3,
+  .wifi-sign4,
+  .wifi-sign5,
+  .wifi-sign6,
+  .wifi-sign7,
+  .wifi-sign8,
+  .wifi-sign9,
+  .wifi-sign10{
+    display: none;
+  }
+
+  .wifi-text1,
+  .wifi-text2,
+  .wifi-text3,
+  .wifi-text4,
+  .wifi-text5,
+  .wifi-text6,
+  .wifi-text7,
+  .wifi-text8,
+  .wifi-text9,
+  .wifi-text10{
+    display: none;
+  }
+
+  .parking-sign1,
+  .parking-sign2,
+  .parking-sign3,
+  .parking-sign4,
+  .parking-sign5,
+  .parking-sign6,
+  .parking-sign7,
+  .parking-sign8,
+  .parking-sign9,
+  .parking-sign10{
+    display: none;
+  }
+
+  .parking-text1,
+  .parking-text2,
+  .parking-text3,
+  .parking-text4,
+  .parking-text5,
+  .parking-text6,
+  .parking-text7,
+  .parking-text8,
+  .parking-text9,
+  .parking-text10{
+    display: none;
+  }
+
+  .excellent1{
+    font-size: 0.8rem;
+    margin-top: -1.5rem;
+    margin-left: -3rem;
+  }
+
+  .excellent2{
+    font-size: 0.8rem;
+    margin-top: -7rem;
+    margin-left: -3rem;
+  }
+
+  .excellent3{
+    font-size: 0.8rem;
+    margin-top: -10.5rem;
+    margin-left: -3rem;
+  }
+
+  .excellent4{
+    font-size: 0.8rem;
+    margin-top: -16rem;
+    margin-left: -3rem;
+  }
+
+  .excellent5{
+    font-size: 0.8rem;
+    margin-top: -21rem;
+    margin-left: -3rem;
+  }
+
+  .excellent6{
+    font-size: 0.8rem;
+    margin-top: -26.5rem;
+    margin-left: -3rem;
+  }
+
+  .excellent7{
+    font-size: 0.8rem;
+    margin-top: -32rem;
+    margin-left: -3rem;
+  }
+
+  .excellent8{
+    font-size: 0.8rem;
+    margin-top: -37.5rem;
+    margin-left: -3rem;
+  }
+
+  .excellent9{
+    font-size: 0.8rem;
+    margin-top: -42.5rem;
+    margin-left: -3rem;
+  }
+
+  .excellent10{
+    font-size: 0.8rem;
+    margin-top: -48rem;
+    margin-left: -3rem;
+  }
+
+  .reviews1,
+  .reviews2,
+  .reviews3,
+  .reviews4,
+  .reviews5,
+  .reviews6,
+  .reviews7,
+  .reviews8,
+  .reviews9,
+  .reviews10{
+    font-size: 0.8rem;
+    margin-left: -1rem;
+  }
+
+  .reviews1{
+    margin-top: -1.5rem;
+  }
+  
+  .reviews2{
+    margin-top: -7rem;
+  }
+
+  .reviews3{
+    margin-top: -10.5rem;
+  }
+
+  .reviews4{
+    margin-top: -16rem;
+  }
+
+  .reviews5{
+    margin-top: -21rem;
+  }
+
+  .reviews6{
+    margin-top: -26.5rem;
+  }
+
+  .reviews7{
+    margin-top: -32rem;
+  }
+
+  .reviews8{
+    margin-top: -37.5rem;
+  }
+
+  .reviews9{
+    margin-top: -42.5rem;
+  }
+
+  .reviews10{
+    margin-top: -48rem;
+  }
+
+  .ranking1,
+  .ranking2,
+  .ranking3,
+  .ranking4,
+  .ranking5,
+  .ranking6,
+  .ranking7,
+  .ranking8,
+  .ranking9,
+  .ranking10{
+    display: none;
+  }
+
+  .ranking-text1,
+  .ranking-text2,
+  .ranking-text3,
+  .ranking-text4,
+  .ranking-text5,
+  .ranking-text6,
+  .ranking-text7,
+  .ranking-text8,
+  .ranking-text9,
+  .ranking-text10{
+    display: none;
+  }
+
+  .view-bookable-wrapper1,
+  .view-bookable-wrapper2,
+  .view-bookable-wrapper3,
+  .view-bookable-wrapper4,
+  .view-bookable-wrapper5,
+  .view-bookable-wrapper6,
+  .view-bookable-wrapper7,
+  .view-bookable-wrapper8,
+  .view-bookable-wrapper9,
+  .view-bookable-wrapper10{
+    width: auto;
+    height: 1rem;
+    font-size: 2vw;
+    padding-top: 0.5rem;
+    margin-left: -2.5rem;
+  }
+
+  .view-bookable-wrapper1{
+    margin-top: -4rem;
+  }
+  
+  .view-bookable-wrapper2{
+    margin-top: -9rem;
+  }
+
+  .view-bookable-wrapper3{
+    margin-top: -12rem;
+  }
+
+  .view-bookable-wrapper4{
+    margin-top: -18.5rem;
+  }
+
+  .view-bookable-wrapper5{
+    margin-top: -23.5rem;
+  }
+
+  .view-bookable-wrapper6{
+    margin-top: -29.5rem;
+  }
+
+  .view-bookable-wrapper7{
+    margin-top: -34rem;
+  }
+
+  .view-bookable-wrapper8{
+    margin-top: -39rem;
+  }
+
+  .view-bookable-wrapper9{
+    margin-top: -44.5rem;
+  }
+
+  .view-bookable-wrapper10{
+    margin-top: -50.5rem;
+  }
+
+  .txt-footer,
+  .txt-footer-email,
+  .txt-footer-menu{
+    font-size: 0.9rem;
+  }
+
+  .media-icon-container{
+    transform: scale(0.6); /* Adjust the size of logo */
+  }
+}
