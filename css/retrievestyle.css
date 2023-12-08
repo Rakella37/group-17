@@ -1,0 +1,169 @@
+.component-2,
+.component-2 * {
+  box-sizing: border-box;
+}
+.component-2 {
+  width: 1247px;
+  height: 1024px;
+  position: relative;
+}
+.retrieve-password {
+  color: #121212;
+  text-align: left;
+  font: 700 32px "Inter-Bold", sans-serif;
+  position: absolute;
+  right: 5.21%;
+  left: 66.32%;
+  width: 28.47%;
+  bottom: 71.48%;
+  top: 24.71%;
+  height: 3.81%;
+}
+.group-94 {
+  position: absolute;
+  inset: 0;
+}
+.group-64 {
+  width: 440px;
+  height: 64px;
+  position: static;
+}
+.rectangle-16 {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #0d374f;
+  border-width: 3px;
+  position: absolute;
+  right: 2.09%;
+  left: 62.63%;
+  width: 35.28%;
+  bottom: 30.18%;
+  top: 63.57%;
+  height: 6.25%;
+}
+.you-are-sending-a-request-to-get-a-code-in-order-to-change-password {
+  color: #7d7d7d;
+  text-align: left;
+  font: 400 italic 20px "Inter-Italic", sans-serif;
+  position: absolute;
+  right: 0%;
+  left: 62.63%;
+  width: 37.37%;
+  bottom: 22.46%;
+  top: 72.85%;
+  height: 4.69%;
+}
+.group-51 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-60 {
+  position: absolute;
+  right: 54.05%;
+  left: 0%;
+  width: 45.95%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+.group-3456 {
+  position: absolute;
+  inset: 0;
+}
+.group-57 {
+  width: 186.04px;
+  height: 34.24px;
+  position: static;
+}
+.name {
+  color: #121212;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  right: 21.49%;
+  left: 63.59%;
+  width: 14.92%;
+  bottom: 60.43%;
+  top: 36.23%;
+  height: 3.34%;
+}
+.group-14 {
+  width: 140.27px;
+  height: 34.24px;
+  position: static;
+}
+.e-mail {
+  color: #121212;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  right: 25.16%;
+  left: 63.59%;
+  width: 11.25%;
+  bottom: 50.95%;
+  top: 45.7%;
+  height: 3.34%;
+}
+.line-4 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  position: absolute;
+  right: 3.02%;
+  left: 63.83%;
+  width: 33.15%;
+  bottom: 57.5%;
+  top: 42.5%;
+  height: 0%;
+}
+.line-5 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  position: absolute;
+  right: 3.02%;
+  left: 63.83%;
+  width: 33.15%;
+  bottom: 47.89%;
+  top: 52.11%;
+  height: 0%;
+}
+.get-the-verification-code {
+  color: #000000;
+  text-align: center;
+  font: 500 20px "Inter-Medium", sans-serif;
+  position: absolute;
+  right: 8.74%;
+  left: 69.21%;
+  width: 22.05%;
+  bottom: 32.03%;
+  top: 65.33%;
+  height: 2.64%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mine {
+  position: absolute;
+  right: 33.76%;
+  left: 64.64%;
+  width: 1.6%;
+  bottom: 58.4%;
+  top: 39.65%;
+  height: 1.95%;
+}
+.message {
+  position: absolute;
+  right: 33.76%;
+  left: 64.64%;
+  width: 1.6%;
+  bottom: 49.02%;
+  top: 49.02%;
+  height: 1.95%;
+}
+
+.img-landscape {
+  width: 35.8125rem;
+  height: 64rem;
+  flex-shrink: 0;
+}
