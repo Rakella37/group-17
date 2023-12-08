@@ -3174,9 +3174,10 @@ footer{
 
 @media (min-width: 768px) and (max-width: 991px){
   .trapple-logo{
-    margin-left: 2rem;
+    transform: scale(0.9); /* Adjust the size of logo */
+    margin-left: 0; 
     margin-top: 0.5rem;
-  }
+}
 
   .nav-menu{
     font-size: 1.4vw;
@@ -3728,22 +3729,22 @@ footer{
 
 @media (min-width: 576px) and (max-width: 767px){
   .trapple-logo{
-    transform: scale(0.8); /* Adjust the size of logo */
-    margin-left: 2rem;
+    transform: scale(0.7); /* Adjust the size of logo */
+    margin-left: 0; 
     margin-top: 0.5rem;
-  }
+}
+
+ .sign-up,
+ .sign-up-wrapper,
+ .log-in,
+ .log-in-wrapper{
+    width: auto;
+    height: auto;
+    font-size: 0.5rem;
+}
 
   .nav-menu{
     font-size: 1.4vw;
-  }
-
-  .sign-up,
-  .sign-up-wrapper,
-  .log-in,
-  .log-in-wrapper{
-    width: auto;
-    height: auto;
-    font-size: 0.7rem;
   }
 
   .frame-search-boxes{
@@ -4347,10 +4348,14 @@ footer{
   }
 
   .trapple-logo{
-    transform: scale(0.6); /* Adjust the size of logo */
-    margin-left: 0;
+    transform: scale(0.5); /* Adjust the size of logo */
+    margin-left: 0; 
     margin-top: 0.5rem;
-  }
+ }
+
+ .home{
+    margin-left: 3rem;
+ }
 
   .nav-menu{
     font-size: 1.8vw;
@@ -4895,14 +4900,13 @@ footer{
   }
 
   .trapple-logo{
-    transform: scale(0.4); /* Adjust the size of logo */
-    margin-left: -1rem;
-    margin-top: 0;
-  }
-
-  .nav-menu{
-    font-size: 1.8vw;
-  }
+    display: none;
+ }
+    
+.nav-menu{
+    font-size: 0.7rem;
+    left: 10rem;
+ }
 
   .sign-up,
   .sign-up-wrapper,
