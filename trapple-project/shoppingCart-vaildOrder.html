@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="css/shoppingCart-vaildOrder.css" />
+    <title>YOUR CART</title>
+    <link rel="stylesheet" href="css/shoppingCart.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap"
       rel="stylesheet"
     />
+    <script src="js/shoppingCart.js" defer></script>
+    <script src="js/vaildShopping.js" defer></script>
+
   </head>
 
   <body>
@@ -23,17 +26,17 @@
       />
 
       <nav>
-        <ul>
-          <a href="landingPage.html">
-            <li>HOME</li>
+        <ul class="header-ul">
+          <a class="menu" href="landingPage.html">
+            <li class="header-li">HOME</li>
           </a>
 
-          <a href="#">
-            <li>ACCOMMODATION</li>
+          <a class="menu" href="#">
+            <li class="header-li">ACCOMMODATION</li>
           </a>
 
-          <a href="shoppingCart-vaildOrder.html">
-            <li>CART</li>
+          <a class="menu" href="shoppingCart-vaildOrder.html">
+            <li class="header-li">CART</li>
           </a>
         </ul>
       </nav>
@@ -50,10 +53,10 @@
         <a href="shoppingCart-vaildOrder.html">
           <li class="txt-subheadline1">Valid orders</li>
         </a>
-        <a href="#">
+        <a href="shoppingCart_history.html">
           <li class="txt-subheadline2">History</li>
         </a>
-        <a href="#">
+        <a href="shoppingCart_canceled.html">
           <li class="txt-subheadline3">Canceled</li>
         </a>
       </div>
@@ -61,7 +64,7 @@
       <!-- cart box -->
       <section class="cart-container">
         <div class="circular1"></div>
-        <section class="cart-box-container">
+        <section class="cart-box-container1">
           <!-- ordered hotel image -->
           <div class="image-container">
             <img
@@ -81,7 +84,7 @@
                 src="assets/images/star-icon-img.png"
                 alt="star icon image"
               />
-              <p class="txt-rating">8.7 (567 Reviews)</p>
+              <p class="txt-rating">8.6 (1627 Reviews)</p>
             </div>
             <p class="txt-price">SEK 420/ night</p>
           </div>
@@ -90,7 +93,7 @@
 
       <section class="cart-container">
         <div class="circular2"></div>
-        <section class="cart-box-container">
+        <section class="cart-box-container2">
           <!-- ordered hotel image -->
           <div class="image-container">
             <img
@@ -110,15 +113,54 @@
                 src="assets/images/star-icon-img.png"
                 alt="star icon image"
               />
-              <p class="txt-rating">8.6 (653 Reviews)</p>
+              <p class="txt-rating">9.0 (1027 Reviews)</p>
             </div>
-            <p class="txt-price">SEK 460/ night</p>
+            <p class="txt-price">SEK 420/ night</p>
           </div>
         </section>
       </section>
 
       <!-- payment section -->
       <h2 class="txt-payment-headline">Choose a Payment</h2>
+      <div class="payment-container1">
+        <img
+          class="payment-icon"
+          src="assets/images/payment-icon-img.png"
+          alt="payment icon"
+        />
+        <p class="card-number">***** 9867</p>
+        <p class="txt-verified">Verified</p>
+      </div>
+
+      <div class="payment-container2">
+        <img
+          class="payment-icon2"
+          src="assets/images/payment-icon2-img.png"
+          alt="payment icon"
+        />
+        <p class="card-number">***** 8894</p>
+        <p class="txt-verified">Verified</p>
+      </div>
+
+      <div class="add-payment-container">
+        <img
+          class="add-payment-button"
+          src="assets/images/add-button-img.png"
+          alt="ad button"
+        />
+        <p class="txt-add-payment">Add another payments</p>
+      </div>
+
+      <!-- CHRACK OUT BAR -->
+      <section class="Check-out-bar-container">
+        <div class="price container">
+          <p class="txt-Check-out-price">Price</p>
+          <p class="txt-change-payment">Change payment method</p>
+        </div>
+        <div class="Check-out-button-container">
+          <button class="Check-out-button">Check out</button>
+        </div>
+      </section>
     </main>
   </body>
 
