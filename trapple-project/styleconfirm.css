@@ -1,0 +1,1379 @@
+.desktop-confirm-order,
+.desktop-confirm-order * {
+  box-sizing: border-box;
+}
+.desktop-confirm-order {
+  background: #ffffff;
+  width: 1440px;
+  height: 2600px;
+  position: relative;
+  overflow-y: auto;
+}
+.text {
+  color: #ffffff;
+  text-align: left;
+  font: 700 48px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 666px;
+  top: 806px;
+  width: 130px;
+  height: 62px;
+}
+.group-all-selection {
+  position: absolute;
+  inset: 0;
+}
+.payment-methods {
+  color: #7d7d7d;
+  text-align: center;
+  font: 500 32px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 851px;
+  top: 193px;
+}
+.logo-up {
+  width: 228px;
+  height: 42px;
+  position: static;
+}
+.confirm-order {
+  color: #ffa149;
+  text-align: center;
+  font: 500 32px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 369px;
+  top: 193px;
+}
+.confirm-scroll {
+  width: 228px;
+  height: 0px;
+  position: absolute;
+  left: 361px;
+  top: 235px;
+  overflow: visible;
+}
+._11-november-2023-after-14-00 {
+  color: #121212;
+  text-align: left;
+  font: 400 24px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 620px;
+  top: 765px;
+  width: 550px;
+  height: 46px;
+}
+.trip-information {
+  color: #121212;
+  text-align: left;
+  font: 700 36px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 279px;
+  top: 656px;
+  width: 337px;
+  height: 52px;
+}
+.check-in {
+  color: #000000;
+  text-align: left;
+  font: 700 30px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 345px;
+  top: 761px;
+  width: 208px;
+  height: 37px;
+}
+._11-december-2023-by-12-00 {
+  color: #121212;
+  text-align: left;
+  font: 400 24px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 616px;
+  top: 876px;
+  width: 508px;
+  height: 46px;
+}
+.confirm-overflow {
+  width: 911.83px;
+  height: 0px;
+  position: absolute;
+  left: 279px;
+  top: 965.04px;
+  transform: translate(0px, -0.5px);
+  overflow: visible;
+}
+.confirm-size {
+  width: 911.83px;
+  height: 0px;
+  position: absolute;
+  left: 279px;
+  top: 1490px;
+  transform: translate(0px, -0.5px);
+  overflow: visible;
+}
+.type-of-room-booked {
+  color: #000000;
+  text-align: left;
+  font: 600 36px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 325px;
+  top: 1002px;
+  width: 377px;
+  height: 46px;
+}
+.add-breakfast {
+  color: #000000;
+  text-align: left;
+  font: 600 36px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 334px;
+  top: 1266px;
+  width: 251px;
+  height: 46px;
+}
+.rectangle-queensize-29floor {
+  background: #ececec;
+  border-radius: 10px;
+  width: 912px;
+  height: 130px;
+  position: absolute;
+  left: 281px;
+  top: 1075px;
+}
+.rectangle-1069 {
+  background: #ececec;
+  border-radius: 10px;
+  width: 912px;
+  height: 98px;
+  position: absolute;
+  left: 281px;
+  top: 1332px;
+}
+.rectangle-1067 {
+  background: #ececec;
+  border-radius: 10px;
+  width: 912px;
+  height: 98px;
+  position: absolute;
+  left: 281px;
+  top: 1332px;
+}
+.size-bed-29floor {
+  color: #000000;
+  text-align: left;
+  font: 400 24px/40px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 333px;
+  top: 1097px;
+  width: 814px;
+  height: 85px;
+}
+.breakfast-not-included {
+  color: #000000;
+  text-align: left;
+  font: 400 24px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 336px;
+  top: 1366px;
+  width: 731px;
+  height: 46px;
+}
+.booker-information {
+  color: #000000;
+  text-align: left;
+  font: 700 36px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 285px;
+  top: 1544px;
+  width: 404px;
+  height: 52px;
+}
+.page-confirm {
+  position: absolute;
+  inset: 0;
+}
+.confirm-information {
+  width: 110.15px;
+  height: 45.9px;
+  position: static;
+}
+.e-mail {
+  color: #121212;
+  text-align: left;
+  font: 400 24px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 279px;
+  top: 1818.4px;
+  width: 110.15px;
+  height: 45.9px;
+}
+.group-layout {
+  position: absolute;
+  inset: 0;
+}
+.group-telephone {
+  width: 330.46px;
+  height: 45.9px;
+  position: static;
+}
+.telephone-number {
+  color: #121212;
+  text-align: left;
+  font: 400 24px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 279px;
+  top: 1996px;
+  width: 330.46px;
+  height: 45.9px;
+}
+.group-name {
+  position: absolute;
+  inset: 0;
+}
+.name {
+  color: #121212;
+  text-align: left;
+  font: 400 24px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 283.75px;
+  top: 1606px;
+  width: 143.28px;
+  height: 45.9px;
+}
+.rectangle-name {
+  background: #ffffff;
+  border-radius: 7px;
+  border-style: solid;
+  border-color: #16507a;
+  border-width: 1px;
+  width: 841.49px;
+  height: 68px;
+  position: absolute;
+  left: 281px;
+  top: 1652px;
+}
+.rectangle-e-mail {
+  background: #ffffff;
+  border-radius: 7px;
+  border-style: solid;
+  border-color: #16507a;
+  border-width: 1px;
+  width: 841.49px;
+  height: 68px;
+  position: absolute;
+  left: 281px;
+  top: 1848px;
+}
+.rectangle-telephone {
+  background: #ffffff;
+  border-radius: 7px;
+  border-style: solid;
+  border-color: #16507a;
+  border-width: 1px;
+  width: 841.49px;
+  height: 68px;
+  position: absolute;
+  left: 286.51px;
+  top: 2030px;
+}
+.circle-with-label {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 277px;
+  top: 1008px;
+}
+.circle {
+  background: #ffffff;
+  border-radius: 100px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  box-shadow: 0px 3px 5px 0px rgba(46, 46, 66, 0.08);
+}
+.circle-with-label2 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 277px;
+  top: 1269px;
+}
+.check-out {
+  color: #000000;
+  text-align: left;
+  font: 700 30px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 334px;
+  top: 868px;
+  width: 208px;
+  height: 49px;
+}
+.rectangle-confirm-order {
+  background: #ffffff;
+  border-radius: 18px;
+  border-style: solid;
+  border-color: #16507a;
+  border-width: 1px;
+  width: 921px;
+  height: 300px;
+  position: absolute;
+  left: 259px;
+  top: 306px;
+}
+._490-sek-night {
+  color: #000000;
+  text-align: center;
+  font: 600 14px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 675px;
+  top: 458px;
+}
+.review {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 675px;
+  top: 419px;
+}
+.group-reviews {
+  flex-shrink: 0;
+  width: 122px;
+  height: 17px;
+  position: static;
+}
+.star {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+._7-7-1323-reviews {
+  color: #606060;
+  text-align: left;
+  font: 400 12px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 16px;
+  top: 2px;
+}
+.bangkok-thailand {
+  color: #000000;
+  text-align: left;
+  font: 400 12px "Inter-Regular", sans-serif;
+  position: absolute;
+  right: 45.83%;
+  left: 46.67%;
+  width: 7.5%;
+  bottom: 84.74%;
+  top: 14.73%;
+  height: 0.53%;
+}
+.bangkok-city-hotel {
+  color: #000000;
+  text-align: center;
+  font: 700 20px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 671px;
+  top: 342px;
+}
+
+.group-trapple-selection {
+  position: absolute;
+  inset: 0;
+}
+.home {
+  color: #000000;
+  text-align: center;
+  font: 800 20px "Inter-ExtraBold", sans-serif;
+  position: absolute;
+  left: 490px;
+  top: 71px;
+}
+.group-cart {
+  width: 58px;
+  height: 24px;
+  position: static;
+}
+.cart {
+  color: #000000;
+  text-align: center;
+  font: 800 20px "Inter-ExtraBold", sans-serif;
+  position: absolute;
+  left: 891px;
+  top: 71px;
+}
+.group-accommodation {
+  width: 191px;
+  height: 24px;
+  position: static;
+}
+.accommodation {
+  color: #000000;
+  text-align: center;
+  font: 800 20px "Inter-ExtraBold", sans-serif;
+  position: absolute;
+  left: 629px;
+  top: 71px;
+}
+.layout-logo {
+  width: 265px;
+  height: 191px;
+  position: static;
+}
+.trapple-img {
+  width: 265px;
+  height: 191px;
+  position: absolute;
+  left: 51px;
+  top: 0px;
+}
+.group-signup {
+  width: 109px;
+  height: 38px;
+  position: static;
+}
+.button-signup {
+  background: #16507a;
+  border-radius: 10px;
+  width: 109px;
+  height: 38px;
+  position: absolute;
+  left: 1158px;
+  top: 64px;
+}
+.sign-up {
+  color: #ffffff;
+  text-align: center;
+  font: 400 14px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 1184px;
+  top: 74px;
+  width: 56px;
+  text-decoration: none;
+}
+.group-login {
+  width: 109px;
+  height: 38px;
+  position: static;
+}
+.button-login {
+  background: #16507a;
+  border-radius: 10px;
+  width: 109px;
+  height: 38px;
+  position: absolute;
+  left: 1279px;
+  top: 64px;
+}
+.log-in {
+  color: #ffffff;
+  text-align: center;
+  font: 400 14px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 1305px;
+  top: 74px;
+  width: 56px;
+  text-decoration: none;
+}
+.group-wholepage {
+  position: absolute;
+  inset: 0;
+}
+.group-header-menu {
+  width: 1440px;
+  height: 288px;
+  position: static;
+}
+.footer {
+  background: #0d374f;
+  width: 1440px;
+  height: 288px;
+  position: absolute;
+  left: 0px;
+  top: 2312px;
+}
+.travel-trapple {
+  color: #ffffff;
+  text-align: left;
+  font: 500 16px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 603px;
+  top: 2522px;
+  width: 238px;
+}
+.copyright-trapple {
+  color: #ffffff;
+  text-align: center;
+  font: 700 20px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 585px;
+  top: 2560px;
+  width: 274px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group-icons {
+  width: 215px;
+  height: 50px;
+  position: static;
+}
+.facebook {
+  width: 44px;
+  height: 48px;
+  position: absolute;
+  left: 615px;
+  top: 2360px;
+}
+.twitter {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  left: 700px;
+  top: 2365px;
+}
+.youtube {
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  left: 784px;
+  top: 2364px;
+}
+.group-line1 {
+  width: 532px;
+  height: 30px;
+  position: static;
+}
+.group-line2 {
+  width: 532px;
+  height: 30px;
+  position: static;
+}
+.contact-us {
+  color: #ffffff;
+  text-align: left;
+  font: 700 25px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 641px;
+  top: 2447px;
+  width: 137px;
+}
+.privacy-policy {
+  color: #ffffff;
+  text-align: left;
+  font: 700 25px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 816px;
+  top: 2447px;
+  width: 172px;
+}
+.term-of-use {
+  color: #ffffff;
+  text-align: left;
+  font: 700 25px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 456px;
+  top: 2447px;
+  width: 147px;
+}
+.line-terms-of-use {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px 0 0 0;
+  width: 30px;
+  height: 0px;
+  position: absolute;
+  left: 621px;
+  top: 2447px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.line-privacy-policy {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px 0 0 0;
+  width: 30px;
+  height: 0px;
+  position: absolute;
+  left: 796px;
+  top: 2447px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.group-trapple-space {
+  width: 614.59px;
+  height: 95.51px;
+  position: static;
+}
+.button-process {
+  background: #ffa149;
+  border-radius: 15px;
+  width: 252.81px;
+  height: 95.51px;
+  position: absolute;
+  left: 774.78px;
+  top: 2157px;
+}
+.process {
+  color: #000000;
+  text-align: center;
+  font: 700 24px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 833.62px;
+  top: 2187.51px;
+  width: 135.12px;
+  height: 32.69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cancel-line {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 119.87px;
+  height: 0px;
+  position: absolute;
+  left: 421.72px;
+  top: 2231.1px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.cancel {
+  color: #000000;
+  text-align: center;
+  font: 500 24px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 413px;
+  top: 2191.87px;
+  width: 135.12px;
+  height: 30.51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apartments,
+.apartments * {
+  box-sizing: border-box;
+}
+.apartments {
+  border-radius: 10px;
+  width: 300px;
+  height: 228px;
+  position: relative;
+}
+
+.trapple {
+  margin-top: -60px;
+}
+
+.apartment {
+  border-radius: 10px;
+  position: absolute;
+  right: 64.17%;
+  left: 20%;
+  width: 25%;
+  bottom: 11.33%;
+  top: 13.3%;
+  height: auto;
+}
+
+.desktop-confirm-order,
+.desktop-confirm-order * {
+  box-sizing: border-box;
+}
+.desktop-confirm-order {
+  background: #ffffff;
+  width: 1440px;
+  height: 2600px;
+  position: relative;
+  overflow-y: auto;
+}
+.text {
+  color: #ffffff;
+  text-align: left;
+  font: 700 48px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 666px;
+  top: 806px;
+  width: 130px;
+  height: 62px;
+}
+.group-all-selection {
+  position: absolute;
+  inset: 0;
+}
+.payment-methods {
+  color: #7d7d7d;
+  text-align: center;
+  font: 500 32px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 851px;
+  top: 193px;
+}
+.logo-up {
+  width: 228px;
+  height: 42px;
+  position: static;
+}
+.confirm-order {
+  color: #ffa149;
+  text-align: center;
+  font: 500 32px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 369px;
+  top: 193px;
+}
+.confirm-position {
+  width: 228px;
+  height: 0px;
+  position: absolute;
+  left: 361px;
+  top: 235px;
+  overflow: visible;
+}
+._11-november-2023-after-14-00 {
+  color: #121212;
+  text-align: left;
+  font: 400 24px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 620px;
+  top: 765px;
+  width: 550px;
+  height: 46px;
+}
+.trip-information {
+  color: #121212;
+  text-align: left;
+  font: 700 36px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 279px;
+  top: 656px;
+  width: 337px;
+  height: 52px;
+}
+.check-in {
+  color: #000000;
+  text-align: left;
+  font: 700 30px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 345px;
+  top: 761px;
+  width: 208px;
+  height: 37px;
+}
+._11-december-2023-by-12-00 {
+  color: #121212;
+  text-align: left;
+  font: 400 24px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 616px;
+  top: 876px;
+  width: 508px;
+  height: 46px;
+}
+.confirm-width-height {
+  width: 911.83px;
+  height: 0px;
+  position: absolute;
+  left: 279px;
+  top: 965.04px;
+  transform: translate(0px, -0.5px);
+  overflow: visible;
+}
+.confirm-tranform-translate {
+  width: 911.83px;
+  height: 0px;
+  position: absolute;
+  left: 279px;
+  top: 1490px;
+  transform: translate(0px, -0.5px);
+  overflow: visible;
+}
+.type-of-room-booked {
+  color: #000000;
+  text-align: left;
+  font: 600 36px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 325px;
+  top: 1002px;
+  width: 377px;
+  height: 46px;
+}
+.add-breakfast {
+  color: #000000;
+  text-align: left;
+  font: 600 36px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 334px;
+  top: 1266px;
+  width: 251px;
+  height: 46px;
+}
+.rectangle-1- {
+  background: #ececec;
+  border-radius: 10px;
+  width: 912px;
+  height: 130px;
+  position: absolute;
+  left: 281px;
+  top: 1075px;
+}
+.rectangle-2- {
+  background: #ececec;
+  border-radius: 10px;
+  width: 912px;
+  height: 98px;
+  position: absolute;
+  left: 281px;
+  top: 1332px;
+}
+.size-bed-29floor {
+  color: #000000;
+  text-align: left;
+  font: 400 24px/40px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 333px;
+  top: 1097px;
+  width: 814px;
+  height: 85px;
+}
+.breakfast-not-included {
+  color: #000000;
+  text-align: left;
+  font: 400 24px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 336px;
+  top: 1366px;
+  width: 731px;
+  height: 46px;
+}
+.booker-information {
+  color: #000000;
+  text-align: left;
+  font: 700 36px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 285px;
+  top: 1544px;
+  width: 404px;
+  height: 52px;
+}
+.page-confirm {
+  position: absolute;
+  inset: 0;
+}
+.confirm-information {
+  width: 110.15px;
+  height: 45.9px;
+  position: static;
+}
+.e-mail {
+  color: #121212;
+  text-align: left;
+  font: 400 24px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 279px;
+  top: 1818.4px;
+  width: 110.15px;
+  height: 45.9px;
+}
+.group-layout {
+  position: absolute;
+  inset: 0;
+}
+.group-telephone {
+  width: 330.46px;
+  height: 45.9px;
+  position: static;
+}
+.telephone-number {
+  color: #121212;
+  text-align: left;
+  font: 400 24px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 279px;
+  top: 1996px;
+  width: 330.46px;
+  height: 45.9px;
+}
+.group-name {
+  position: absolute;
+  inset: 0;
+}
+.name {
+  color: #121212;
+  text-align: left;
+  font: 400 24px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 283.75px;
+  top: 1606px;
+  width: 143.28px;
+  height: 45.9px;
+}
+.rectangle-name {
+  background: #ffffff;
+  border-radius: 7px;
+  border-style: solid;
+  border-color: #16507a;
+  border-width: 1px;
+  width: 841.49px;
+  height: 68px;
+  position: absolute;
+  left: 281px;
+  top: 1652px;
+}
+.rectangle-e-mail {
+  background: #ffffff;
+  border-radius: 7px;
+  border-style: solid;
+  border-color: #16507a;
+  border-width: 1px;
+  width: 841.49px;
+  height: 68px;
+  position: absolute;
+  left: 281px;
+  top: 1848px;
+}
+.rectangle-telephone {
+  background: #ffffff;
+  border-radius: 7px;
+  border-style: solid;
+  border-color: #16507a;
+  border-width: 1px;
+  width: 841.49px;
+  height: 68px;
+  position: absolute;
+  left: 286.51px;
+  top: 2030px;
+}
+.circle-with-label {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 277px;
+  top: 1008px;
+}
+.circle {
+  background: #ffffff;
+  border-radius: 100px;
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  box-shadow: 0px 3px 5px 0px rgba(46, 46, 66, 0.08);
+}
+.circle-with-label2 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 277px;
+  top: 1269px;
+}
+.check-out {
+  color: #000000;
+  text-align: left;
+  font: 700 30px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 334px;
+  top: 868px;
+  width: 208px;
+  height: 49px;
+}
+.rectangle-87 {
+  background: #ffffff;
+  border-radius: 18px;
+  border-style: solid;
+  border-color: #16507a;
+  border-width: 1px;
+  width: 921px;
+  height: 300px;
+  position: absolute;
+  left: 259px;
+  top: 306px;
+}
+._490-sek-night {
+  color: #000000;
+  text-align: center;
+  font: 600 14px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  left: 675px;
+  top: 458px;
+}
+.review {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 675px;
+  top: 419px;
+}
+.group-reviews {
+  flex-shrink: 0;
+  width: 122px;
+  height: 17px;
+  position: static;
+}
+.trapple-overflow {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+._7-7-1323-reviews {
+  color: #606060;
+  text-align: left;
+  font: 400 12px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 16px;
+  top: 2px;
+}
+.bangkok-thailand {
+  color: #000000;
+  text-align: left;
+  font: 400 12px "Inter-Regular", sans-serif;
+  position: absolute;
+  right: 45.83%;
+  left: 46.67%;
+  width: 7.5%;
+  bottom: 84.74%;
+  top: 14.73%;
+  height: 0.53%;
+}
+.bangkok-city-hotel {
+  color: #000000;
+  text-align: center;
+  font: 700 20px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 671px;
+  top: 342px;
+}
+
+.group-trapple-selection {
+  position: absolute;
+  inset: 0;
+}
+.home {
+  color: #000000;
+  text-align: center;
+  font: 800 20px "Inter-ExtraBold", sans-serif;
+  position: absolute;
+  left: 490px;
+  top: 71px;
+}
+.group-cart {
+  width: 58px;
+  height: 24px;
+  position: static;
+}
+.cart {
+  color: #000000;
+  text-align: center;
+  font: 800 20px "Inter-ExtraBold", sans-serif;
+  position: absolute;
+  left: 891px;
+  top: 71px;
+}
+.group-accommodation {
+  width: 191px;
+  height: 24px;
+  position: static;
+}
+.accommodation {
+  color: #000000;
+  text-align: center;
+  font: 800 20px "Inter-ExtraBold", sans-serif;
+  position: absolute;
+  left: 629px;
+  top: 71px;
+}
+.layout-logo {
+  width: 265px;
+  height: 191px;
+  position: static;
+}
+._3-5 {
+  width: 265px;
+  height: 191px;
+  position: absolute;
+  left: 51px;
+  top: 0px;
+}
+.group-signup {
+  width: 109px;
+  height: 38px;
+  position: static;
+}
+.button-signup {
+  background: #16507a;
+  border-radius: 10px;
+  width: 109px;
+  height: 38px;
+  position: absolute;
+  left: 1158px;
+  top: 64px;
+}
+.sign-up {
+  color: #ffffff;
+  text-align: center;
+  font: 400 14px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 1184px;
+  top: 74px;
+  width: 56px;
+}
+.group-login {
+  width: 109px;
+  height: 38px;
+  position: static;
+}
+.button-login {
+  background: #16507a;
+  border-radius: 10px;
+  width: 109px;
+  height: 38px;
+  position: absolute;
+  left: 1279px;
+  top: 64px;
+}
+.log-in {
+  color: #ffffff;
+  text-align: center;
+  font: 400 14px "Inter-Regular", sans-serif;
+  position: absolute;
+  left: 1305px;
+  top: 74px;
+  width: 56px;
+}
+.group-wholepage {
+  position: absolute;
+  inset: 0;
+}
+.group-header-menu {
+  width: 1440px;
+  height: 288px;
+  position: static;
+}
+.footer {
+  background: #0d374f;
+  width: 1440px;
+  height: 288px;
+  position: absolute;
+  left: 0px;
+  top: 2312px;
+}
+.travelwithtrapple-trapple-com {
+  color: #ffffff;
+  text-align: left;
+  font: 500 16px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 603px;
+  top: 2522px;
+  width: 238px;
+}
+.copyright-2023-trapple {
+  color: #ffffff;
+  text-align: center;
+  font: 700 20px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 585px;
+  top: 2560px;
+  width: 274px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group-icons {
+  width: 215px;
+  height: 50px;
+  position: static;
+}
+.facebook-1 {
+  width: 44px;
+  height: 48px;
+  position: absolute;
+  left: 615px;
+  top: 2360px;
+}
+.icon-twitter-1 {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  left: 700px;
+  top: 2365px;
+}
+.youtube-1 {
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  left: 784px;
+  top: 2364px;
+}
+.group-line1 {
+  width: 532px;
+  height: 30px;
+  position: static;
+}
+.group-line2 {
+  width: 532px;
+  height: 30px;
+  position: static;
+}
+.contact-us {
+  color: #ffffff;
+  text-align: left;
+  font: 700 25px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 641px;
+  top: 2447px;
+  width: 137px;
+}
+.privacy-policy {
+  color: #ffffff;
+  text-align: left;
+  font: 700 25px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 816px;
+  top: 2447px;
+  width: 172px;
+}
+.term-of-use {
+  color: #ffffff;
+  text-align: left;
+  font: 700 25px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 456px;
+  top: 2447px;
+  width: 147px;
+}
+.line-terms-of-use {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px 0 0 0;
+  width: 30px;
+  height: 0px;
+  position: absolute;
+  left: 621px;
+  top: 2447px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.line-privacy-policy {
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 3px 0 0 0;
+  width: 30px;
+  height: 0px;
+  position: absolute;
+  left: 796px;
+  top: 2447px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.group-trapple-space {
+  width: 614.59px;
+  height: 95.51px;
+  position: static;
+}
+.button-process {
+  background: #ffa149;
+  border-radius: 15px;
+  width: 252.81px;
+  height: 95.51px;
+  position: absolute;
+  left: 774.78px;
+  top: 2157px;
+}
+.process {
+  color: #000000;
+  text-align: center;
+  font: 700 24px "Inter-Bold", sans-serif;
+  position: absolute;
+  left: 833.62px;
+  top: 2187.51px;
+  width: 135.12px;
+  height: 32.69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.canel-line {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 119.87px;
+  height: 0px;
+  position: absolute;
+  left: 421.72px;
+  top: 2231.1px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.cancel {
+  color: #000000;
+  text-align: center;
+  font: 500 24px "Inter-Medium", sans-serif;
+  position: absolute;
+  left: 413px;
+  top: 2191.87px;
+  width: 135.12px;
+  height: 30.51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Media Quaries*/
+@media screen and (max-width: 600px) {
+  .desktop-confirm-order {
+    background: #ffffff;
+    width: 1440px;
+    height: 2600px;
+    position: relative;
+    overflow-y: auto;
+  }
+  .text {
+    color: #ffffff;
+    text-align: left;
+    font: 700 48px "Inter-Bold", sans-serif;
+    position: absolute;
+    left: 666px;
+    top: 806px;
+    width: 130px;
+    height: 62px;
+  }
+}
