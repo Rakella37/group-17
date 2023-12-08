@@ -50,6 +50,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: auto; /* Make sure pointer events are not disabled */
+  cursor: pointer;
+  z-index: 2;
 }
 .welcome-page-inset2 {
   position: absolute;
