@@ -97,6 +97,7 @@
   width: 74px;
   height: 28px;
   z-index: 2;
+  text-decoration: none;
 }
 .group-inset {
   position: absolute;

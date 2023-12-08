@@ -63,7 +63,10 @@
   top: 0;
   height: 11.94rem;
 }
-
+.menu-link{
+  color: #fff;
+  text-decoration: none;
+}
 /* Logo position setting */
 .nav-menu{
   display: flex;
@@ -109,6 +112,7 @@
   border-radius: 0.625rem;
   width: 6.8125rem;
   height: 2.375rem;
+  text-align: center;
 }
 
 .sign-up-wrapper{

@@ -46,6 +46,7 @@ a {
   border-radius: 0.625rem;
   background: #16507a;
   border-color: #16507a;
+  border: none;
 }
 
 .sign-up-button {
@@ -916,6 +917,7 @@ a {
   margin-top: 4.19rem;
   margin-right: 5.4rem;
   margin-left: 6.5rem;
+  border: none;
 }
 
 .Check-out-button-link{
@@ -1070,6 +1072,7 @@ a {
   font-weight: 700;
   margin-left: 14.17rem;
   margin-top: 5.81rem;
+  border: none;
 }
 
 @media screen and (max-width: 500px) {

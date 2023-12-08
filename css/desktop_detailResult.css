@@ -15,6 +15,7 @@ header {
   margin-right: 4rem;
 }
 
+
 ul {
   list-style: none;
   display: flex;
@@ -201,6 +202,7 @@ h4 {
   margin-left: 67rem;
   margin-top: -60px;
 }
+
 .price-book-container{
   display: flex;
 }
@@ -209,6 +211,7 @@ h4 {
   width: 19rem;
   height: 5.775rem;
   border-radius: 0.625rem;
+  background: #d9d9d9;
 }
 .highlight {
   background: #d9d9d9;
@@ -235,8 +238,10 @@ h4 {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-left: 0.7rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
+
 .box-2 {
   width: 19rem;
   height: 8.975rem;
@@ -250,7 +255,7 @@ h4 {
   font-weight: 700;
   line-height: normal;
   margin-left: 0.5rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   margin-bottom: 2.5rem;
 }
 .trapple-info {
@@ -275,7 +280,7 @@ h4 {
   background: #ffa149;
   width: 3.8125rem;
   height: 2rem;
-  margin-left: 9.5rem;
+  margin-left: 8rem;
   margin-top: 1rem;
   border: none;
 }

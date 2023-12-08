@@ -53,6 +53,7 @@
   pointer-events: auto; /* Make sure pointer events are not disabled */
   cursor: pointer;
   z-index: 2;
+  text-decoration: none;
 }
 .welcome-page-inset2 {
   position: absolute;
