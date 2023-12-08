@@ -1,33 +1,3 @@
-//subheadline change font-weight
-const textElement1 = document.querySelector(".txt-subheadline1");
-const textElement2 = document.querySelector(".txt-subheadline2");
-const textElement3 = document.querySelector(".txt-subheadline3");
-
-textElement1.addEventListener("click", function (changeWeight) {
-  console.log(textElement1);
-  if (textElement1.style.fontWeight != "700") {
-    textElement1.style.fontWeight == "700";
-    textElement2.style.fontWeight === "500";
-    textElement3.style.fontWeight === "500";
-  }
-});
-
-textElement2.addEventListener("click", function (changeWeight) {
-  if (textElement2.style.fontWeight != "700") {
-    textElement2.style.fontWeight === "700";
-    textElement1.style.fontWeight === "500";
-    textElement3.style.fontWeight === "500";
-  }
-});
-
-textElement3.addEventListener("click", function (changeWeight) {
-  if (textElement3.style.fontWeight != "700") {
-    textElement3.style.fontWeight === "700";
-    textElement1.style.fontWeight === "500";
-    textElement2.style.fontWeight === "500";
-  }
-});
-
 //Change colour when selecting an order
 const cartBox1 = document.querySelector(".cart-box-container1");
 const cartBox2 = document.querySelector(".cart-box-container2");
