@@ -1,0 +1,331 @@
+.desktop-sign-up,
+.desktop-sign-up * {
+  box-sizing: border-box;
+}
+.desktop-sign-up {
+  background: #ffffff;
+  width: 1440px;
+  height: 1024px;
+  position: relative;
+  overflow-y: auto;
+}
+.component-selection {
+  width: 1232px;
+  height: 1024px;
+  position: absolute;
+  left: -46px;
+  top: 0px;
+}
+.group-16 {
+  position: absolute;
+  inset: 0;
+}
+.structure {
+  width: 440px;
+  height: 64px;
+  position: static;
+}
+.rectangle-socialmedia {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #0d374f;
+  border-width: 3px;
+  position: absolute;
+  right: 0%;
+  left: 64.29%;
+  width: 35.71%;
+  bottom: 24%;
+  top: 68.85%;
+  height: 6.25%;
+}
+.bottom-selection {
+  position: absolute;
+  inset: 0;
+}
+.upper-selection {
+  width: 440px;
+  height: 64px;
+  position: static;
+}
+.rectangle-signup {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #0d374f;
+  border-width: 3px;
+  position: absolute;
+  right: 0%;
+  left: 64.29%;
+  width: 35.71%;
+  bottom: 16%;
+  top: 76%;
+  height: 6.25%;
+}
+.signup-socialmedia {
+  color: #000000;
+  text-align: center;
+  font: 500 20px "Inter-Medium", sans-serif;
+  position: absolute;
+  right: 6.54%;
+  left: 69.56%;
+  width: 23%;
+  bottom: 26.57%;
+  top: 70.61%;
+  height: 2.83%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up {
+  color: #121212;
+  text-align: left;
+  font: 700 32px "Inter-Bold", sans-serif;
+  position: absolute;
+  right: 12.58%;
+  left: 76.87%;
+  width: 15%;
+  bottom: 76.27%;
+  top: 19.92%;
+  height: 3.81%;
+}
+.signup-group {
+  position: absolute;
+  inset: 0;
+}
+.name {
+  color: #121212;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+}
+
+.desktop-sign-up,
+.desktop-sign-up * {
+  box-sizing: border-box;
+}
+.desktop-sign-up {
+  background: #ffffff;
+  width: 1440px;
+  height: 1024px;
+  position: relative;
+  overflow-y: auto;
+}
+.picture-component {
+  width: 1232px;
+  height: 1024px;
+  position: absolute;
+  left: -46px;
+  top: 0px;
+}
+.background {
+  position: absolute;
+  inset: 0;
+}
+.structure {
+  width: 440px;
+  height: 64px;
+  position: static;
+}
+.rectangle-socialmedia {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #0d374f;
+  border-width: 3px;
+  position: absolute;
+  right: 0%;
+  left: 64.29%;
+  width: 35.71%;
+  bottom: 24.9%;
+  top: 68.85%;
+  height: 6.25%;
+}
+.group-margin {
+  position: absolute;
+  inset: 0;
+}
+.upper-selection {
+  width: 440px;
+  height: 64px;
+  position: static;
+}
+.rectangle-signup {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #0d374f;
+  border-width: 3px;
+  position: absolute;
+  right: 0%;
+  left: 64.29%;
+  width: 35.71%;
+  bottom: 16.8%;
+  top: 76.95%;
+  height: 6.25%;
+}
+.signup-socialmedia {
+  color: #000000;
+  text-align: center;
+  font: 500 20px "Inter-Medium", sans-serif;
+  position: absolute;
+  right: 6.54%;
+  left: 69.56%;
+  width: 23.9%;
+  bottom: 26.57%;
+  top: 70.61%;
+  height: 2.83%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up {
+  color: #121212;
+  text-align: left;
+  font: 700 32px "Inter-Bold", sans-serif;
+  position: absolute;
+  right: 12.58%;
+  left: 76.87%;
+  width: 15%;
+  bottom: 76.27%;
+  top: 19.92%;
+  height: 3.81%;
+}
+.signup-group {
+  position: absolute;
+  inset: 0;
+}
+.name {
+  color: #121212;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  right: 19.8%;
+  left: 65.1%;
+  width: 15.1%;
+  bottom: 69.61%;
+  top: 27.05%;
+  height: 3.34%;
+}
+.group-selection {
+  position: absolute;
+  inset: 0;
+}
+.email {
+  color: #121212;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  right: 23.52%;
+  left: 65.1%;
+  width: 11.39%;
+  bottom: 60.13%;
+  top: 36.52%;
+  height: 3.34%;
+}
+.line-name {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  position: absolute;
+  right: 1.11%;
+  left: 65.34%;
+  width: 33.56%;
+  bottom: 66.68%;
+  top: 33.32%;
+  height: 0%;
+}
+.line-email {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  position: absolute;
+  right: 1.11%;
+  left: 65.34%;
+  width: 33.56%;
+  bottom: 57.07%;
+  top: 42.93%;
+  height: 0%;
+}
+.password {
+  color: #121212;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  right: 19.56%;
+  left: 65.34%;
+  width: 15.1%;
+  bottom: 50.27%;
+  top: 46.39%;
+  height: 3.34%;
+}
+.confirm-password {
+  color: #121212;
+  text-align: left;
+  font: 600 20px "Inter-SemiBold", sans-serif;
+  position: absolute;
+  right: 12.74%;
+  left: 65.34%;
+  width: 21.92%;
+  bottom: 40.82%;
+  top: 55.86%;
+  height: 3.32%;
+}
+.line-password {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  position: absolute;
+  right: 0.86%;
+  left: 65.58%;
+  width: 33.56%;
+  bottom: 47.34%;
+  top: 52.66%;
+  height: 0%;
+}
+.line-confirm {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  position: absolute;
+  right: 0.86%;
+  left: 65.58%;
+  width: 33.56%;
+  bottom: 37.73%;
+  top: 62.27%;
+  height: 0%;
+}
+.sign-up2 {
+  color: #000000;
+  text-align: center;
+  font: 500 20px "Inter-Medium", sans-serif;
+  position: absolute;
+  right: 6.54%;
+  left: 69.56%;
+  width: 23.9%;
+  bottom: 18.46%;
+  top: 78.71%;
+  height: 2.83%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangle-social {
+  position: absolute;
+  right: 53.49%;
+  left: 0%;
+  width: 46.51%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+}
+.img-beach {
+  width: 35.8125rem;
+  height: 64rem;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .component-selection,
+  .picture-component {
+    width: 100%;
+    max-width: none; /* Remove max-width for smaller screens */
+  }
+}
