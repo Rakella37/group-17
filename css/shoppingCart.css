@@ -58,11 +58,11 @@ a {
   margin-right: 4.38rem;
 }
 
-.sign-up-button-link{
+.sign-up-button-link {
   margin-left: 0;
 }
 
-.log-in-button-link{
+.log-in-button-link {
   margin-left: 0;
 }
 
@@ -578,7 +578,8 @@ a {
 
 /* PAYMENT SETTING */
 /* payment box layout and icons setting */
-.payment-container1,.payment-container2 {
+.payment-container1,
+.payment-container2 {
   display: flex;
   border-radius: 0.625rem;
   background: #ececec;
@@ -587,7 +588,7 @@ a {
   margin-left: 14rem;
   margin-bottom: 3rem;
   margin-top: 0;
-  border: 2px solid #ececec ;
+  border: 2px solid #ececec;
 }
 
 .payment-icon {
@@ -650,7 +651,6 @@ a {
   margin-left: 2rem;
   margin-top: 0.25rem;
 }
-
 
 @media screen and (max-width: 500px) {
   .txt-payment-headline {
@@ -901,8 +901,8 @@ a {
   margin-left: 4.19rem;
 }
 
-.txt-change-payment-link{
-  margin-top: 0 ;
+.txt-change-payment-link {
+  margin-top: 0;
 }
 
 .Check-out-button {
@@ -920,7 +920,7 @@ a {
   border: none;
 }
 
-.Check-out-button-link{
+.Check-out-button-link {
   margin-left: 0;
 }
 

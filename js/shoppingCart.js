@@ -56,6 +56,3 @@ cartBox2.addEventListener("click", function (updatePrice) {
 //   const priceValue = txtPrice.innerText;
 //   txtCheckOutPrice.innerText =priceValue;
 // });
-
-
-

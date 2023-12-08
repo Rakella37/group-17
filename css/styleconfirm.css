@@ -9,7 +9,7 @@
   position: relative;
   overflow-y: auto;
 }
-.confirm-order{
+.confirm-order {
   text-decoration: underline;
 }
 .text {
@@ -381,7 +381,7 @@
   top: 2px;
 }
 
-p{
+p {
   margin-top: 0px;
 }
 
@@ -410,7 +410,9 @@ p{
   position: absolute;
   inset: 0;
 }
-.home, .accommodation, .cart{
+.home,
+.accommodation,
+.cart {
   text-decoration: none;
 }
 .home {

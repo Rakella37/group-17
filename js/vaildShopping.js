@@ -7,5 +7,5 @@ paymentContainer.addEventListener("click", function (changeColour) {
 });
 
 paymentContainer2.addEventListener("click", function (changeColour) {
-    paymentContainer2.style.borderColor = "#ffa149";
-  });
+  paymentContainer2.style.borderColor = "#ffa149";
+});

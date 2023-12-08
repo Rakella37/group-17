@@ -15,7 +15,6 @@ header {
   margin-right: 4rem;
 }
 
-
 ul {
   list-style: none;
   display: flex;
@@ -31,9 +30,8 @@ a {
   text-decoration: none;
 }
 
-
 /* button */
-.a-button{
+.a-button {
   margin-left: 0rem;
 }
 .sign-up-button,
@@ -65,8 +63,6 @@ a {
   border: none;
 }
 
-
-
 /* hotel detail */
 
 /* hotel image */
@@ -86,7 +82,6 @@ a {
     "main-image small-image small-image";
   gap: 0.8rem;
 }
-
 
 .main-image {
   grid-area: main-image;
@@ -203,7 +198,7 @@ h4 {
   margin-top: -60px;
 }
 
-.price-book-container{
+.price-book-container {
   display: flex;
 }
 
@@ -403,8 +398,6 @@ footer {
   line-height: normal;
 }
 
-
-
 /* media queries */
 
 @media screen and (max-width: 700px) {
@@ -453,91 +446,92 @@ footer {
     margin-left: 2rem;
   }
 
-h1 {
-  width: 90%;
-  max-width: 100%;
-  margin-left: 2rem;
-  margin-right: auto;
-}
-.hotel-intro-container {
-  margin-top: -180px;
-  max-width: 90%;
-  margin-left: 2rem;
-  margin-right: auto;
-  margin-bottom: 12rem;
-  margin-top: -20rem;
-}
-.grade img {
-  width: 1.5rem;
-  height: 1.5rem;
-}
+  h1 {
+    width: 90%;
+    max-width: 100%;
+    margin-left: 2rem;
+    margin-right: auto;
+  }
+  .hotel-intro-container {
+    margin-top: -180px;
+    max-width: 90%;
+    margin-left: 2rem;
+    margin-right: auto;
+    margin-bottom: 12rem;
+    margin-top: -20rem;
+  }
+  .grade img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 
-h3 {
-  max-width: auto;
-  margin-right: auto;
-}
-h4{
-max-width: 60%;
-}
-.rule-container {
-  grid-template-columns: repeat(1, 1fr);
-  max-width: 100%;
-  margin-left: 5rem;
-  margin-right: auto;
-}
-.box-container {
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-h5, h6{
-margin-left: 5rem;
-}
-.icon-container {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0px;
-  max-width: 90%;
-  margin-left: 8rem;
-  margin-right: auto;
-}
-.box-1,
-.box-2 {
-  width: 20%;
-margin-left: auto;
-margin-right: 0rem;
-}
-.box-1{
-  height: 8rem;
-}
-.box-2{
-  height: 14rem;
-}
-.loc{
-  margin-left: 6rem;
-  margin-bottom: -18rem;
-}
-.loc img{
-  max-width: 40%;
-}
-.activity-wrapper{
-margin-left: 2rem;
-}
-.act-ballon{
-  margin-top:1.7rem;
-}
-.act-yoga{
-  margin-top: -1.9rem;
-}
-.activity-container img{
- margin-right: -3.5rem;
- width: 7rem;
- height: 6rem;
-}
+  h3 {
+    max-width: auto;
+    margin-right: auto;
+  }
+  h4 {
+    max-width: 60%;
+  }
+  .rule-container {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+    margin-left: 5rem;
+    margin-right: auto;
+  }
+  .box-container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h5,
+  h6 {
+    margin-left: 5rem;
+  }
+  .icon-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    max-width: 90%;
+    margin-left: 8rem;
+    margin-right: auto;
+  }
+  .box-1,
+  .box-2 {
+    width: 20%;
+    margin-left: auto;
+    margin-right: 0rem;
+  }
+  .box-1 {
+    height: 8rem;
+  }
+  .box-2 {
+    height: 14rem;
+  }
+  .loc {
+    margin-left: 6rem;
+    margin-bottom: -18rem;
+  }
+  .loc img {
+    max-width: 40%;
+  }
+  .activity-wrapper {
+    margin-left: 2rem;
+  }
+  .act-ballon {
+    margin-top: 1.7rem;
+  }
+  .act-yoga {
+    margin-top: -1.9rem;
+  }
+  .activity-container img {
+    margin-right: -3.5rem;
+    width: 7rem;
+    height: 6rem;
+  }
 
-/* footer */
-footer{
-  width: auto;
-}
+  /* footer */
+  footer {
+    width: auto;
+  }
 }
 
 @media screen and (min-width: 701px) and (max-width: 950px) {
@@ -565,87 +559,88 @@ footer{
     margin-left: 6rem;
   }
 
-h1 {
-  width: 90%;
-  max-width: 100%;
-  margin-left: 6rem;
-  margin-right: auto;
-}
-.hotel-intro-container {
-  margin-top: -180px;
-  max-width: 90%;
-  margin-left: 6rem;
-  margin-right: auto;
-  margin-bottom: 7rem;
-}
-.grade img {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-h3 {
-  max-width: auto;
-  margin-right: auto;
-}
-h4{
-max-width: 60%;
-}
-.rule-container {
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 100%;
-  margin-left: 12rem;
-  margin-right: auto;
-}
-.box-container {
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-h5, h6{
-margin-left: 12rem;
-}
-.icon-container {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  max-width: 90%;
-  margin-left: 12rem;
-  margin-right: auto;
-}
-.book{
-  margin-left: 1.2rem;
-}
-.price-info{
-  margin-top: 1rem;
-}
-.trapple-info{
-  margin-top: -1.8rem;
-}
-.box-1,
-.box-2 {
-  width: 20%;
-margin-left: auto;
-margin-right: 2.5rem;
-}
-.loc{
-  margin-left: 12rem;
-  margin-bottom: -16rem;
-}
-.loc img{
-  max-width: 50%;
-}
-.activity-wrapper{
-margin-left: 8rem;
-}
-.act-yoga{
-  margin-top: -1.8rem;
-}
-.activity-container img{
- margin-right: -3.5rem;
- width: 14rem;
- height: 12rem;
-}
-footer{
-  width: auto;
-}
+  h1 {
+    width: 90%;
+    max-width: 100%;
+    margin-left: 6rem;
+    margin-right: auto;
+  }
+  .hotel-intro-container {
+    margin-top: -180px;
+    max-width: 90%;
+    margin-left: 6rem;
+    margin-right: auto;
+    margin-bottom: 7rem;
+  }
+  .grade img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  h3 {
+    max-width: auto;
+    margin-right: auto;
+  }
+  h4 {
+    max-width: 60%;
+  }
+  .rule-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    margin-left: 12rem;
+    margin-right: auto;
+  }
+  .box-container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h5,
+  h6 {
+    margin-left: 12rem;
+  }
+  .icon-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 90%;
+    margin-left: 12rem;
+    margin-right: auto;
+  }
+  .book {
+    margin-left: 1.2rem;
+  }
+  .price-info {
+    margin-top: 1rem;
+  }
+  .trapple-info {
+    margin-top: -1.8rem;
+  }
+  .box-1,
+  .box-2 {
+    width: 20%;
+    margin-left: auto;
+    margin-right: 2.5rem;
+  }
+  .loc {
+    margin-left: 12rem;
+    margin-bottom: -16rem;
+  }
+  .loc img {
+    max-width: 50%;
+  }
+  .activity-wrapper {
+    margin-left: 8rem;
+  }
+  .act-yoga {
+    margin-top: -1.8rem;
+  }
+  .activity-container img {
+    margin-right: -3.5rem;
+    width: 14rem;
+    height: 12rem;
+  }
+  footer {
+    width: auto;
+  }
 }
 
 @media screen and (min-width: 951px) and (max-width: 1100px) {
@@ -673,86 +668,85 @@ footer{
     margin-left: 8rem;
   }
 
-h1 {
-  width: 90%;
-  max-width: 100%;
-  margin-left: 8rem;
-  margin-right: auto;
-}
-.hotel-intro-container {
-  margin-top: -180px;
-  max-width: 90%;
-  margin-left: 8rem;
-  margin-right: auto;
-  margin-bottom: 7rem;
-}
-.grade img {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-h3 {
-  max-width: auto;
-  margin-right: auto;
-}
-h4{
-max-width: 60%;
-}
-.rule-container {
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 100%;
-  margin-left: 12rem;
-  margin-right: auto;
-}
-.box-container {
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-h5, h6{
-margin-left: 12rem;
-}
-.icon-container {
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  max-width: 90%;
-  margin-left: 12rem;
-  margin-right: auto;
-}
-.book{
-  margin-left: 1.5rem;
-}
-.price-info{
-  margin-top: 1rem;
-}
-.box-1,
-.box-2 {
-  width: 20%;
-margin-left: auto;
-margin-right: 1rem;
-}
-.loc{
-  margin-left: 12rem;
-  margin-bottom: -12rem;
-  
-}
-.loc img{
-  max-width: 60%;
-}
-.activity-wrapper{
-margin-left: 10rem;
-}
-.act-yoga{
-  margin-top: -2rem;
-}
-.activity-container img{
- margin-right: -3.5rem;
- width: 14rem;
- height: 12rem;
-}
-footer {
-  width: auto;
-
-}
+  h1 {
+    width: 90%;
+    max-width: 100%;
+    margin-left: 8rem;
+    margin-right: auto;
+  }
+  .hotel-intro-container {
+    margin-top: -180px;
+    max-width: 90%;
+    margin-left: 8rem;
+    margin-right: auto;
+    margin-bottom: 7rem;
+  }
+  .grade img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  h3 {
+    max-width: auto;
+    margin-right: auto;
+  }
+  h4 {
+    max-width: 60%;
+  }
+  .rule-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    margin-left: 12rem;
+    margin-right: auto;
+  }
+  .box-container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h5,
+  h6 {
+    margin-left: 12rem;
+  }
+  .icon-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 90%;
+    margin-left: 12rem;
+    margin-right: auto;
+  }
+  .book {
+    margin-left: 1.5rem;
+  }
+  .price-info {
+    margin-top: 1rem;
+  }
+  .box-1,
+  .box-2 {
+    width: 20%;
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+  .loc {
+    margin-left: 12rem;
+    margin-bottom: -12rem;
+  }
+  .loc img {
+    max-width: 60%;
+  }
+  .activity-wrapper {
+    margin-left: 10rem;
+  }
+  .act-yoga {
+    margin-top: -2rem;
+  }
+  .activity-container img {
+    margin-right: -3.5rem;
+    width: 14rem;
+    height: 12rem;
+  }
+  footer {
+    width: auto;
+  }
 }
 
 @media screen and (min-width: 1101px) and (max-width: 1370px) {
@@ -780,82 +774,83 @@ footer {
     margin-left: 11rem;
   }
 
-h1 {
-  width: 90%;
-  max-width: 100%;
-  margin-left: 12rem;
-  margin-right: auto;
-}
-.hotel-intro-container {
-  margin-top: -180px;
-  max-width: 90%;
-  margin-left: 12rem;
-  margin-right: auto;
-  margin-bottom: 7rem;
-}
-.grade img {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-h3 {
-  max-width: auto;
-  margin-right: auto;
-}
-h4{
-max-width: 60%;
-}
-.rule-container {
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 100%;
-  margin-left: 18rem;
-  margin-right: auto;
-}
-.box-container {
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-h5, h6{
-margin-left: 16rem;
-}
-.icon-container {
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  max-width: 90%;
-  margin-left: 18rem;
-  margin-right: auto;
-}
-.price-info{
-  margin-top: 10px;
-}
-.book{
-  margin-left: 3.3rem;
-  margin-top: 10px;
-}
-.small-title{
-  margin-bottom: 20px;
-}
-.box-1,
-.box-2 {
-  width: 20%;
-margin-left: auto;
-margin-right: 0rem;
-}
-.loc{
-  margin-left: 16rem;
-  margin-bottom: -10rem;
-}
-.loc img{
-  max-width: 70%;
-}
-.activity-wrapper{
-margin-left: 14rem;
-}
-.activity-container img{
- margin-right: -3.5rem;
-}
+  h1 {
+    width: 90%;
+    max-width: 100%;
+    margin-left: 12rem;
+    margin-right: auto;
+  }
+  .hotel-intro-container {
+    margin-top: -180px;
+    max-width: 90%;
+    margin-left: 12rem;
+    margin-right: auto;
+    margin-bottom: 7rem;
+  }
+  .grade img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  h3 {
+    max-width: auto;
+    margin-right: auto;
+  }
+  h4 {
+    max-width: 60%;
+  }
+  .rule-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    margin-left: 18rem;
+    margin-right: auto;
+  }
+  .box-container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h5,
+  h6 {
+    margin-left: 16rem;
+  }
+  .icon-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 90%;
+    margin-left: 18rem;
+    margin-right: auto;
+  }
+  .price-info {
+    margin-top: 10px;
+  }
+  .book {
+    margin-left: 3.3rem;
+    margin-top: 10px;
+  }
+  .small-title {
+    margin-bottom: 20px;
+  }
+  .box-1,
+  .box-2 {
+    width: 20%;
+    margin-left: auto;
+    margin-right: 0rem;
+  }
+  .loc {
+    margin-left: 16rem;
+    margin-bottom: -10rem;
+  }
+  .loc img {
+    max-width: 70%;
+  }
+  .activity-wrapper {
+    margin-left: 14rem;
+  }
+  .activity-container img {
+    margin-right: -3.5rem;
+  }
 
-footer {
-  width: auto;
-}
+  footer {
+    width: auto;
+  }
 }

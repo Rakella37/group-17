@@ -30,9 +30,8 @@ a {
   text-decoration: none;
 }
 
-
 /* button */
-.a-button{
+.a-button {
   margin-left: 0rem;
 }
 .sign-up-button,
@@ -63,7 +62,6 @@ a {
   margin-right: 4.38rem;
   border: none;
 }
-
 
 .order-container {
   display: flex;
@@ -222,7 +220,7 @@ a {
   margin-bottom: 3rem;
   margin-top: 0;
 }
-.form-container{
+.form-container {
   display: flex;
   width: 78%;
 }
@@ -317,6 +315,7 @@ a {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin-top: 2rem;
 }
 .confirm-btn {
   color: #000;
@@ -395,7 +394,6 @@ footer {
   line-height: normal;
 }
 
-
 /* media queries */
 
 @media screen and (max-width: 700px) {
@@ -430,7 +428,7 @@ footer {
     text-align: left;
     margin-bottom: 0.8rem;
   }
-/* button */
+  /* button */
   .sign-up-button,
   .log-in-button {
     margin-left: 2.5rem;
@@ -438,77 +436,78 @@ footer {
   }
 
   /* confirm and payment*/
-  .order-container{
+  .order-container {
     margin-left: 4rem;
     gap: 3rem;
   }
-  .method-container{
+  .method-container {
     margin-left: 2rem;
     gap: 0rem;
   }
-  .method-img-container{
+  .method-img-container {
     margin-left: 4rem;
     gap: 0rem;
   }
- .txt-payment-headline{
-  margin-left: 3rem;
- }
- .payment-container{
-  margin-left: 3rem;
-  max-width: 80%;
- }
- .card-number{
-  font-size: 25px;
-  margin-right: -12rem;
-  margin-left: 1.2rem;
- }
- .txt-verified{
-  font-size: 28px;
-  margin-left: 13rem;
- }
-.visa-icon, .mc-icon{
-  margin-left: 0.5rem;
-}
+  .txt-payment-headline {
+    margin-left: 3rem;
+  }
+  .payment-container {
+    margin-left: 3rem;
+    max-width: 80%;
+  }
+  .card-number {
+    font-size: 25px;
+    margin-right: -12rem;
+    margin-left: 1.2rem;
+  }
+  .txt-verified {
+    font-size: 28px;
+    margin-left: 13rem;
+  }
+  .visa-icon,
+  .mc-icon {
+    margin-left: 0.5rem;
+  }
 
- /* register and promo*/
- .txt-input::placeholder{
-  font-size: 18px;
- }
- .cvv-container{
-  margin-right: -4rem;
-  height: 90px;
- }
- .register-container{
-  margin-left: 3rem;
-  max-width: 80%;
-  height: 90px;
- }
- .save-container{
-  margin-left: 3rem;
-  font-size: 15px;
- }
- .promo-container{
-  margin-left: 3rem;
-  max-width: 80%;
-  height: 90px;
- }
- .total-price{
-  margin-left: 3rem;
- }
- .price{
-  margin-left: -35rem;
- }
- .cancel-confirm-btn{
-  margin-left: 6rem;
- }
- .confirm-btn{
-  margin-left: -16rem;
-  width: 8.80056rem;
-  height: 3.96913rem;
- }
+  /* register and promo*/
+  .txt-input::placeholder {
+    font-size: 18px;
+  }
+  .cvv-container {
+    margin-right: -4rem;
+    height: 90px;
+  }
+  .register-container {
+    margin-left: 3rem;
+    max-width: 80%;
+    height: 90px;
+  }
+  .save-container {
+    margin-left: 3rem;
+    font-size: 15px;
+  }
+  .promo-container {
+    margin-left: 3rem;
+    max-width: 80%;
+    height: 90px;
+  }
+  .total-price {
+    margin-left: 3rem;
+  }
+  .price {
+    margin-left: -35rem;
+  }
+  .cancel-confirm-btn {
+    margin-left: 6rem;
+  }
+  .confirm-btn {
+    margin-left: -16rem;
+    width: 8.80056rem;
+    height: 3.96913rem;
+  }
 
   /* footer */
-  footer{
+  footer {
     width: auto;
   }
 }
@@ -533,69 +532,69 @@ footer {
     margin-left: 0rem;
   }
 
-   /* confirm and payment*/
-   .order-container{
+  /* confirm and payment*/
+  .order-container {
     margin-left: 4rem;
     gap: 4rem;
   }
-  .method-container{
+  .method-container {
     margin-left: 10rem;
     gap: 1rem;
   }
-  .method-img-container{
+  .method-img-container {
     margin-left: 9rem;
   }
- .txt-payment-headline{
-  margin-left: 6rem;
- }
- .payment-container{
-  margin-left: 6rem;
-  max-width: 80%;
- }
- .card-number{
-  font-size: 30px;
-  margin-right: -11rem;
-  margin-left: 4rem;
- }
- .txt-verified{
-  font-size: 30px;
- }
-.visa-icon, .mc-icon{
-  margin-left: 3rem;
-}
- /* register and promo*/
- .cvv-container{
-  margin-right: -7rem;
- }
- .register-container{
-  margin-left: 6rem;
-  max-width: 80%;
- }
- .save-container{
-  margin-left: 6rem;
- }
- .promo-container{
-  margin-left: 6rem;
-  max-width: 80%;
- }
- .total-price{
-  margin-left: 6rem;
- }
- .price{
-  margin-left: -25rem;
- }
- .cancel-confirm-btn{
-  margin-left: 10rem;
- }
- .confirm-btn{
-  margin-left: -12rem;
- }
-/* footer */
-  footer{
+  .txt-payment-headline {
+    margin-left: 6rem;
+  }
+  .payment-container {
+    margin-left: 6rem;
+    max-width: 80%;
+  }
+  .card-number {
+    font-size: 30px;
+    margin-right: -11rem;
+    margin-left: 4rem;
+  }
+  .txt-verified {
+    font-size: 30px;
+  }
+  .visa-icon,
+  .mc-icon {
+    margin-left: 3rem;
+  }
+  /* register and promo*/
+  .cvv-container {
+    margin-right: -7rem;
+  }
+  .register-container {
+    margin-left: 6rem;
+    max-width: 80%;
+  }
+  .save-container {
+    margin-left: 6rem;
+  }
+  .promo-container {
+    margin-left: 6rem;
+    max-width: 80%;
+  }
+  .total-price {
+    margin-left: 6rem;
+  }
+  .price {
+    margin-left: -25rem;
+  }
+  .cancel-confirm-btn {
+    margin-left: 10rem;
+  }
+  .confirm-btn {
+    margin-left: -12rem;
+  }
+  /* footer */
+  footer {
     width: auto;
   }
 }
-
 
 @media screen and (min-width: 951px) and (max-width: 1100px) {
   .logo-icon {
@@ -618,60 +617,61 @@ footer {
   }
 
   /* confirm and payment*/
-  .order-container{
+  .order-container {
     margin-left: 8rem;
     gap: 6rem;
   }
-  .method-container{
+  .method-container {
     margin-left: 14rem;
     gap: 1rem;
   }
-  .method-img-container{
+  .method-img-container {
     margin-left: 13rem;
   }
- .txt-payment-headline{
-  margin-left: 8rem;
- }
- .payment-container{
-  margin-left: 8rem;
-  max-width: 80%;
- }
- .card-number{
-  font-size: 30px;
-  margin-right: -10rem;
- }
-.visa-icon, .mc-icon{
-  margin-left: 4rem;
-}
- /* register and promo*/
- .cvv-container{
-  margin-right: -9rem;
- }
- .register-container{
-  margin-left: 8rem;
-  max-width: 80%;
- }
- .save-container{
-  margin-left: 8rem;
- }
- .promo-container{
-  margin-left: 8rem;
-  max-width: 80%;
- }
- .total-price{
-  margin-left: 8rem;
- }
- .price{
-  margin-left: -15rem;
- }
- .cancel-confirm-btn{
-  margin-left: 15rem;
- }
- .confirm-btn{
-  margin-left: -10rem;
- }
-/* footer */
-  footer{
+  .txt-payment-headline {
+    margin-left: 8rem;
+  }
+  .payment-container {
+    margin-left: 8rem;
+    max-width: 80%;
+  }
+  .card-number {
+    font-size: 30px;
+    margin-right: -10rem;
+  }
+  .visa-icon,
+  .mc-icon {
+    margin-left: 4rem;
+  }
+  /* register and promo*/
+  .cvv-container {
+    margin-right: -9rem;
+  }
+  .register-container {
+    margin-left: 8rem;
+    max-width: 80%;
+  }
+  .save-container {
+    margin-left: 8rem;
+  }
+  .promo-container {
+    margin-left: 8rem;
+    max-width: 80%;
+  }
+  .total-price {
+    margin-left: 8rem;
+  }
+  .price {
+    margin-left: -15rem;
+  }
+  .cancel-confirm-btn {
+    margin-left: 15rem;
+  }
+  .confirm-btn {
+    margin-left: -10rem;
+  }
+  /* footer */
+  footer {
     width: auto;
   }
 }
@@ -697,46 +697,45 @@ footer {
   }
 
   /* confirm and payment*/
-  .order-container{
+  .order-container {
     margin-left: 14rem;
     gap: 5rem;
   }
-  .method-container{
+  .method-container {
     margin-left: 16rem;
   }
-  .method-img-container{
+  .method-img-container {
     margin-left: 21rem;
   }
- .txt-payment-headline{
-  margin-left: 10rem;
- }
- .payment-container{
-  margin-left: 10rem;
- }
+  .txt-payment-headline {
+    margin-left: 10rem;
+  }
+  .payment-container {
+    margin-left: 10rem;
+  }
 
- /* register and promo*/
- .cvv-container{
-  margin-right: -8rem;
- }
- .register-container{
-  margin-left: 10rem;
- }
- .save-container{
-  margin-left: 10rem;
- }
- .promo-container{
-  margin-left: 10rem;
- }
- .total-price{
-  margin-left: 10rem;
- }
- .cancel-confirm-btn{
-  margin-left: 17rem;
- }
+  /* register and promo*/
+  .cvv-container {
+    margin-right: -8rem;
+  }
+  .register-container {
+    margin-left: 10rem;
+  }
+  .save-container {
+    margin-left: 10rem;
+  }
+  .promo-container {
+    margin-left: 10rem;
+  }
+  .total-price {
+    margin-left: 10rem;
+  }
+  .cancel-confirm-btn {
+    margin-left: 17rem;
+  }
 
- /* footer */
-  footer{
+  /* footer */
+  footer {
     width: auto;
   }
 }
-

@@ -1,4 +1,4 @@
-:root{
+:root {
   /* fonts */
   --font-inter: Inter;
   --font-filters: 700; /* Side section filter group. 700 is normally bold value. 600~700 */
@@ -7,7 +7,7 @@
   --font-size-normal: 1rem;
   --font-size-footer: 1.25rem;
   --font-size-hotels: 2rem;
-  --font-size-registration: 0.90rem; /* Log in & Sign up buttons */
+  --font-size-registration: 0.9rem; /* Log in & Sign up buttons */
   --font-size-big: 1.5rem;
 
   /* Colors */
@@ -15,20 +15,20 @@
   --color-close-to-font: #7d7d7d;
   --color-font: #121212;
   --color-button-price-orange: #ffa268; /* Search button and price color */
-  --color-button-blue: #16507A;
+  --color-button-blue: #16507a;
   --color-raking-gray: #d9d9d9; /* This is rating mark color*/
-  --color-footer: #0D374F; 
+  --color-footer: #0d374f;
 
   /* Gaps */
   --gap-small: 0.75rem;
   --gap-middle: 0.44rem;
-  --gap-filter-text: 0.50rem; /* Gap between check box (or radio button) and text */
+  --gap-filter-text: 0.5rem; /* Gap between check box (or radio button) and text */
   /* e.g: (checkbox) (Pet friendly)*/
 
   /* Paddings */
   --padding-view-bookable-button: 1rem; /* Keep it just 1rem. Original size is 1.06 0.88 1 0.88 */
   /* Give the same padding for wrapped text in menu-items, sign-up-wrapper, log-in-wrapper */
-  --padding-search-boxes: 0.65rem; 
+  --padding-search-boxes: 0.65rem;
 
   /* Border radiuses */
   --br-accommodation-pics: 0.625rem;
@@ -41,34 +41,35 @@
 }
 
 /* Apply the same font */
-*{
+* {
   font-family: var(--font-inter);
 }
 
 /* HEADER */
-.product-frame{
+.product-frame {
   margin-bottom: 18rem;
 }
 
 /* FRAME IMAGE*/
-.frame-image{
+.frame-image {
   width: 100%;
   height: 22.125rem;
   object-fit: cover; /* As cover */
 }
 
 /* nav-menu items: the top menu bar */
-.nav-menu, .menu-items{
+.nav-menu,
+.menu-items {
   position: absolute;
   top: 0;
   height: 11.94rem;
 }
-.menu-link{
+.menu-link {
   color: #fff;
   text-decoration: none;
 }
 /* Logo position setting */
-.nav-menu{
+.nav-menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,18 +81,18 @@
   z-index: 1000; /* Ensure it's above other elements if needed */
 }
 
-.menu-items{
+.menu-items {
   top: 0;
-  left: 0;  
+  left: 0;
 }
 
-.accommodation{
+.accommodation {
   margin-right: 3rem; /* Add a right margin of 1rem */
-  margin-left: 3rem; 
+  margin-left: 3rem;
 }
 
 /* LOGO */
-.trapple-logo{
+.trapple-logo {
   display: flex;
   width: 100%;
   height: 11.9375rem;
@@ -100,14 +101,15 @@
   margin-top: 0.5rem;
 }
 
-.sign-up-wrapper, .log-in-wrapper{
+.sign-up-wrapper,
+.log-in-wrapper {
   font-size: var(--font-size-registration);
   display: flex;
   flex-direction: column;
   /* Place text in the middle of button */
   padding: var(--padding-search-boxes); /* Position text in the middle */
   padding: 0.5rem;
-  box-sizing: border-box; /* Fix box side, so it doesn't calculate it as content-box */ 
+  box-sizing: border-box; /* Fix box side, so it doesn't calculate it as content-box */
   background: var(--color-button-blue);
   border-radius: 0.625rem;
   width: 6.8125rem;
@@ -115,22 +117,22 @@
   text-align: center;
 }
 
-.sign-up-wrapper{
+.sign-up-wrapper {
   position: fixed;
-  top: 40%; 
+  top: 40%;
   left: 80%;
   transform: translateX(-50%);
 }
 
-.log-in-wrapper{
+.log-in-wrapper {
   position: fixed;
-  top: 40%; 
+  top: 40%;
   left: 90%;
   transform: translateX(-50%);
-
 }
 
-.sign-up, .log-in{
+.sign-up,
+.log-in {
   border: none;
   background: none;
   color: var(--color-white);
@@ -139,7 +141,7 @@
 }
 
 /* Search boxes */
-.frame-search-boxes{
+.frame-search-boxes {
   position: absolute;
   top: 19.31rem;
   left: 10.5rem;
@@ -150,28 +152,29 @@
 
 /* This is orange search button, it doesn't interact any. 
 Because search result page is productDetail page. */
-.search-box-positioning, .search-wrapper{
+.search-box-positioning,
+.search-wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
 }
 
-.search-box-positioning{
+.search-box-positioning {
   gap: 0.62rem; /* Between boxes */
 }
 
-.destination-wrapper{
+.destination-wrapper {
   flex: 1;
   position: relative;
   background-color: var(--color-white);
   border-radius: var(--br-search);
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
   height: 5.25rem;
 }
 
 /* Text inside of destination search box */
-.destination{
+.destination {
   position: absolute;
   top: 0.69rem;
   left: 0.81rem;
@@ -180,11 +183,11 @@ Because search result page is productDetail page. */
   height: 1.44rem;
 }
 
-.check-in-date-wrapper{
+.check-in-date-wrapper {
   flex: 1;
   border-radius: var(--br-search);
   background-color: var(--color-white);
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
   height: 5.25rem;
   display: flex;
   flex-direction: column;
@@ -195,7 +198,7 @@ Because search result page is productDetail page. */
 }
 
 /* Text inside of check in date search box */
-.check-in-date{
+.check-in-date {
   position: relative;
   display: inline-block;
   width: 7.56rem;
@@ -203,11 +206,11 @@ Because search result page is productDetail page. */
   flex-shrink: 0;
 }
 
-.check-out-date-wrapper{
+.check-out-date-wrapper {
   flex: 1;
   border-radius: var(--br-search);
   background-color: var(--color-white);
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
   height: 5.25rem;
   display: flex;
   flex-direction: column;
@@ -218,7 +221,7 @@ Because search result page is productDetail page. */
 }
 
 /* Text inside of check out date search box */
-.check-out-date{
+.check-out-date {
   position: relative;
   display: inline-block;
   width: 7.88rem;
@@ -226,11 +229,11 @@ Because search result page is productDetail page. */
   flex-shrink: 0;
 }
 
-.guest-wrapper{
+.guest-wrapper {
   flex: 1;
   border-radius: var(--br-search);
   background-color: var(--color-white);
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
   height: 5.13rem;
   display: flex;
   flex-direction: column;
@@ -241,7 +244,7 @@ Because search result page is productDetail page. */
 }
 
 /* Text inside of guest box */
-.guest{
+.guest {
   position: relative;
   display: inline-block;
   width: 4.19rem;
@@ -250,7 +253,7 @@ Because search result page is productDetail page. */
 }
 
 /* Search button */
-.search-wrapper{
+.search-wrapper {
   border: none;
   background-color: #ffa149;
   padding: 1.5rem 1.5rem;
@@ -263,8 +266,8 @@ Because search result page is productDetail page. */
 }
 
 /* MAIN */
-.accommodation-pic1{
-  position: relative; 
+.accommodation-pic1 {
+  position: relative;
   width: 17.8125rem;
   height: 14.125rem;
   border-radius: var(--br-accommodation-pics);
@@ -273,7 +276,7 @@ Because search result page is productDetail page. */
   left: 33vw; /* Using viewport units for responsiveness */
 }
 
-.bangkok-city-hotel{
+.bangkok-city-hotel {
   position: relative;
   white-space: nowrap;
   font-size: var(--font-size-hotels);
@@ -282,18 +285,19 @@ Because search result page is productDetail page. */
   left: 57vw; /* Using viewport units for responsiveness */
 }
 
-.ranking1{
+.ranking1 {
   position: absolute;
   top: 31rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
   transform: translate(-50%, -50%);
-  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking)
+    var(--br-ranking-bottom);
   background: var(--color-raking-gray);
   width: 3.1875rem;
   height: 3.1875rem;
 }
 
-.ranking-text1{
+.ranking-text1 {
   position: absolute;
   top: 31rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
@@ -301,7 +305,7 @@ Because search result page is productDetail page. */
   white-space: nowrap;
 }
 
-.excellent1{
+.excellent1 {
   font-size: var(--font-size-footer);
   font-weight: 600;
   color: var(--color-button-blue);
@@ -310,7 +314,7 @@ Because search result page is productDetail page. */
   left: 57.5vw; /* Using viewport units for responsiveness */
 }
 
-.reviews1{
+.reviews1 {
   font-size: var(--font-size-footer);
   font-style: italic;
   font-weight: 400;
@@ -319,7 +323,7 @@ Because search result page is productDetail page. */
   left: 66vw; /* Using viewport units for responsiveness */
 }
 
-.close-to-the1{
+.close-to-the1 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -329,7 +333,7 @@ Because search result page is productDetail page. */
   left: 57.5vw; /* Using viewport units for responsiveness */
 }
 
-.barcelona-spain1{
+.barcelona-spain1 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   font-weight: 500;
@@ -338,10 +342,10 @@ Because search result page is productDetail page. */
   left: 57.5vw; /* Using viewport units for responsiveness */
 }
 
-.wifi-sign1{
+.wifi-sign1 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -350,7 +354,7 @@ Because search result page is productDetail page. */
   left: 58vw;
 }
 
-.wifi-text1{
+.wifi-text1 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -359,10 +363,10 @@ Because search result page is productDetail page. */
   left: 59vw;
 }
 
-.parking-sign1{
+.parking-sign1 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -371,7 +375,7 @@ Because search result page is productDetail page. */
   left: 64vw; /* Using viewport units for responsiveness */
 }
 
-.parking-text1{
+.parking-text1 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -380,7 +384,7 @@ Because search result page is productDetail page. */
   left: 64.7vw; /* Using viewport units for responsiveness */
 }
 
-.per-night1{
+.per-night1 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -391,7 +395,7 @@ Because search result page is productDetail page. */
   left: 86vw; /* Using viewport units for responsiveness */
 }
 
-.price1{
+.price1 {
   font-weight: 600;
   color: var(--color-button-price-orange);
   font-size: var(--font-size-big);
@@ -402,7 +406,7 @@ Because search result page is productDetail page. */
 }
 
 /* This is an actual button, it is connected to the next page. */
-.view-bookable-wrapper1{
+.view-bookable-wrapper1 {
   border-radius: var(--br-accommodation-pics); /* It's the same value */
   background-color: var(--color-button-blue);
   color: var(--color-white);
@@ -419,8 +423,8 @@ Because search result page is productDetail page. */
 }
 
 /* apartment city */
-.accommodation-pic2{
-  position: relative; 
+.accommodation-pic2 {
+  position: relative;
   width: 17.8125rem;
   height: 14.125rem;
   border-radius: var(--br-accommodation-pics);
@@ -429,7 +433,7 @@ Because search result page is productDetail page. */
   left: 33vw; /* Using viewport units for responsiveness */
 }
 
-.apartment-city{
+.apartment-city {
   position: relative;
   white-space: nowrap;
   font-size: var(--font-size-hotels);
@@ -438,18 +442,19 @@ Because search result page is productDetail page. */
   left: 57vw; /* Using viewport units for responsiveness */
 }
 
-.ranking2{
+.ranking2 {
   position: absolute;
   top: 48rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
   transform: translate(-50%, -50%);
-  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking)
+    var(--br-ranking-bottom);
   background: var(--color-raking-gray);
   width: 3.1875rem;
   height: 3.1875rem;
 }
 
-.ranking-text2{
+.ranking-text2 {
   position: absolute;
   top: 48rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
@@ -457,7 +462,7 @@ Because search result page is productDetail page. */
   white-space: nowrap;
 }
 
-.excellent2{
+.excellent2 {
   font-size: var(--font-size-footer);
   font-weight: 600;
   color: var(--color-button-blue);
@@ -466,7 +471,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.reviews2{
+.reviews2 {
   font-size: var(--font-size-footer);
   font-style: italic;
   font-weight: 400;
@@ -475,7 +480,7 @@ Because search result page is productDetail page. */
   left: 66vw; /* Using viewport units for responsiveness */
 }
 
-.close-to-the2{
+.close-to-the2 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -485,7 +490,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.barcelona-spain2{
+.barcelona-spain2 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   font-weight: 500;
@@ -494,10 +499,10 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.wifi-sign2{
+.wifi-sign2 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -506,7 +511,7 @@ Because search result page is productDetail page. */
   left: 58vw;
 }
 
-.wifi-text2{
+.wifi-text2 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -515,10 +520,10 @@ Because search result page is productDetail page. */
   left: 59vw;
 }
 
-.parking-sign2{
+.parking-sign2 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -527,7 +532,7 @@ Because search result page is productDetail page. */
   left: 64vw; /* Using viewport units for responsiveness */
 }
 
-.parking-text2{
+.parking-text2 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -536,7 +541,7 @@ Because search result page is productDetail page. */
   left: 64.7vw; /* Using viewport units for responsiveness */
 }
 
-.per-night2{
+.per-night2 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -547,7 +552,7 @@ Because search result page is productDetail page. */
   left: 86vw; /* Using viewport units for responsiveness */
 }
 
-.price2{
+.price2 {
   font-weight: 600;
   color: var(--color-button-price-orange);
   font-size: var(--font-size-big);
@@ -558,7 +563,7 @@ Because search result page is productDetail page. */
 }
 
 /* This is an actual button, it is connected to the next page. */
-.view-bookable-wrapper2{
+.view-bookable-wrapper2 {
   border-radius: var(--br-accommodation-pics); /* It's the same value */
   background-color: var(--color-button-blue);
   color: var(--color-white);
@@ -575,8 +580,8 @@ Because search result page is productDetail page. */
 }
 
 /* Holiday Inn Express (1) */
-.accommodation-pic3{
-  position: relative; 
+.accommodation-pic3 {
+  position: relative;
   width: 17.8125rem;
   height: 14.125rem;
   border-radius: var(--br-accommodation-pics);
@@ -585,7 +590,7 @@ Because search result page is productDetail page. */
   left: 33vw; /* Using viewport units for responsiveness */
 }
 
-.holiday-inn-express{
+.holiday-inn-express {
   position: relative;
   white-space: nowrap;
   font-size: var(--font-size-hotels);
@@ -594,18 +599,19 @@ Because search result page is productDetail page. */
   left: 57vw; /* Using viewport units for responsiveness */
 }
 
-.ranking3{
+.ranking3 {
   position: absolute;
   top: 66.5rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
   transform: translate(-50%, -50%);
-  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking)
+    var(--br-ranking-bottom);
   background: var(--color-raking-gray);
   width: 3.1875rem;
   height: 3.1875rem;
 }
 
-.ranking-text3{
+.ranking-text3 {
   position: absolute;
   top: 66.5rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
@@ -613,7 +619,7 @@ Because search result page is productDetail page. */
   white-space: nowrap;
 }
 
-.excellent3{
+.excellent3 {
   font-size: var(--font-size-footer);
   font-weight: 600;
   color: var(--color-button-blue);
@@ -622,7 +628,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.reviews3{
+.reviews3 {
   font-size: var(--font-size-footer);
   font-style: italic;
   font-weight: 400;
@@ -631,7 +637,7 @@ Because search result page is productDetail page. */
   left: 66vw; /* Using viewport units for responsiveness */
 }
 
-.close-to-the3{
+.close-to-the3 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -641,7 +647,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.barcelona-spain3{
+.barcelona-spain3 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   font-weight: 500;
@@ -650,10 +656,10 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.wifi-sign3{
+.wifi-sign3 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -662,7 +668,7 @@ Because search result page is productDetail page. */
   left: 58vw;
 }
 
-.wifi-text3{
+.wifi-text3 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -671,10 +677,10 @@ Because search result page is productDetail page. */
   left: 59vw;
 }
 
-.parking-sign3{
+.parking-sign3 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -683,7 +689,7 @@ Because search result page is productDetail page. */
   left: 64vw; /* Using viewport units for responsiveness */
 }
 
-.parking-text3{
+.parking-text3 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -692,7 +698,7 @@ Because search result page is productDetail page. */
   left: 64.7vw; /* Using viewport units for responsiveness */
 }
 
-.per-night3{
+.per-night3 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -703,7 +709,7 @@ Because search result page is productDetail page. */
   left: 86vw; /* Using viewport units for responsiveness */
 }
 
-.price3{
+.price3 {
   font-weight: 600;
   color: var(--color-button-price-orange);
   font-size: var(--font-size-big);
@@ -714,7 +720,7 @@ Because search result page is productDetail page. */
 }
 
 /* This is an actual button, it is connected to the next page. */
-.view-bookable-wrapper3{
+.view-bookable-wrapper3 {
   border-radius: var(--br-accommodation-pics); /* It's the same value */
   background-color: var(--color-button-blue);
   color: var(--color-white);
@@ -731,8 +737,8 @@ Because search result page is productDetail page. */
 }
 
 /* Scandinavian vila */
-.accommodation-pic4{
-  position: relative; 
+.accommodation-pic4 {
+  position: relative;
   width: 17.8125rem;
   height: 14.125rem;
   border-radius: var(--br-accommodation-pics);
@@ -741,7 +747,7 @@ Because search result page is productDetail page. */
   left: 33vw; /* Using viewport units for responsiveness */
 }
 
-.scandinavian-vila{
+.scandinavian-vila {
   position: relative;
   white-space: nowrap;
   font-size: var(--font-size-hotels);
@@ -750,18 +756,19 @@ Because search result page is productDetail page. */
   left: 57vw; /* Using viewport units for responsiveness */
 }
 
-.ranking4{
+.ranking4 {
   position: absolute;
   top: 84rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
   transform: translate(-50%, -50%);
-  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking)
+    var(--br-ranking-bottom);
   background: var(--color-raking-gray);
   width: 3.1875rem;
   height: 3.1875rem;
 }
 
-.ranking-text4{
+.ranking-text4 {
   position: absolute;
   top: 84rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
@@ -769,7 +776,7 @@ Because search result page is productDetail page. */
   white-space: nowrap;
 }
 
-.excellent4{
+.excellent4 {
   font-size: var(--font-size-footer);
   font-weight: 600;
   color: var(--color-button-blue);
@@ -778,7 +785,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.reviews4{
+.reviews4 {
   font-size: var(--font-size-footer);
   font-style: italic;
   font-weight: 400;
@@ -787,7 +794,7 @@ Because search result page is productDetail page. */
   left: 66vw; /* Using viewport units for responsiveness */
 }
 
-.close-to-the4{
+.close-to-the4 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -797,7 +804,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.barcelona-spain4{
+.barcelona-spain4 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   font-weight: 500;
@@ -806,10 +813,10 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.wifi-sign4{
+.wifi-sign4 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -818,7 +825,7 @@ Because search result page is productDetail page. */
   left: 58vw;
 }
 
-.wifi-text4{
+.wifi-text4 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -827,10 +834,10 @@ Because search result page is productDetail page. */
   left: 59vw;
 }
 
-.parking-sign4{
+.parking-sign4 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -839,7 +846,7 @@ Because search result page is productDetail page. */
   left: 64vw; /* Using viewport units for responsiveness */
 }
 
-.parking-text4{
+.parking-text4 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -848,7 +855,7 @@ Because search result page is productDetail page. */
   left: 64.7vw; /* Using viewport units for responsiveness */
 }
 
-.per-night4{
+.per-night4 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -859,7 +866,7 @@ Because search result page is productDetail page. */
   left: 86vw; /* Using viewport units for responsiveness */
 }
 
-.price4{
+.price4 {
   font-weight: 600;
   color: var(--color-button-price-orange);
   font-size: var(--font-size-big);
@@ -870,7 +877,7 @@ Because search result page is productDetail page. */
 }
 
 /* This is an actual button, it is connected to the next page. */
-.view-bookable-wrapper4{
+.view-bookable-wrapper4 {
   border-radius: var(--br-accommodation-pics); /* It's the same value */
   background-color: var(--color-button-blue);
   color: var(--color-white);
@@ -887,8 +894,8 @@ Because search result page is productDetail page. */
 }
 
 /* Amsterdam apartments */
-.accommodation-pic5{
-  position: relative; 
+.accommodation-pic5 {
+  position: relative;
   width: 17.8125rem;
   height: 14.125rem;
   border-radius: var(--br-accommodation-pics);
@@ -897,7 +904,7 @@ Because search result page is productDetail page. */
   left: 33vw; /* Using viewport units for responsiveness */
 }
 
-.amsterdam-apartments{
+.amsterdam-apartments {
   position: relative;
   white-space: nowrap;
   font-size: var(--font-size-hotels);
@@ -906,18 +913,19 @@ Because search result page is productDetail page. */
   left: 57vw; /* Using viewport units for responsiveness */
 }
 
-.ranking5{
+.ranking5 {
   position: absolute;
   top: 102rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
   transform: translate(-50%, -50%);
-  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking)
+    var(--br-ranking-bottom);
   background: var(--color-raking-gray);
   width: 3.1875rem;
   height: 3.1875rem;
 }
 
-.ranking-text5{
+.ranking-text5 {
   position: absolute;
   top: 102rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
@@ -925,7 +933,7 @@ Because search result page is productDetail page. */
   white-space: nowrap;
 }
 
-.excellent5{
+.excellent5 {
   font-size: var(--font-size-footer);
   font-weight: 600;
   color: var(--color-button-blue);
@@ -934,7 +942,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.reviews5{
+.reviews5 {
   font-size: var(--font-size-footer);
   font-style: italic;
   font-weight: 400;
@@ -943,7 +951,7 @@ Because search result page is productDetail page. */
   left: 66vw; /* Using viewport units for responsiveness */
 }
 
-.close-to-the5{
+.close-to-the5 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -953,7 +961,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.barcelona-spain5{
+.barcelona-spain5 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   font-weight: 500;
@@ -962,10 +970,10 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.wifi-sign5{
+.wifi-sign5 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -974,7 +982,7 @@ Because search result page is productDetail page. */
   left: 58vw;
 }
 
-.wifi-text5{
+.wifi-text5 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -983,10 +991,10 @@ Because search result page is productDetail page. */
   left: 59vw;
 }
 
-.parking-sign5{
+.parking-sign5 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -995,7 +1003,7 @@ Because search result page is productDetail page. */
   left: 64vw; /* Using viewport units for responsiveness */
 }
 
-.parking-text5{
+.parking-text5 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -1004,7 +1012,7 @@ Because search result page is productDetail page. */
   left: 64.7vw; /* Using viewport units for responsiveness */
 }
 
-.per-night5{
+.per-night5 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -1015,7 +1023,7 @@ Because search result page is productDetail page. */
   left: 86vw; /* Using viewport units for responsiveness */
 }
 
-.price5{
+.price5 {
   font-weight: 600;
   color: var(--color-button-price-orange);
   font-size: var(--font-size-big);
@@ -1026,7 +1034,7 @@ Because search result page is productDetail page. */
 }
 
 /* This is an actual button, it is connected to the next page. */
-.view-bookable-wrapper5{
+.view-bookable-wrapper5 {
   border-radius: var(--br-accommodation-pics); /* It's the same value */
   background-color: var(--color-button-blue);
   color: var(--color-white);
@@ -1043,8 +1051,8 @@ Because search result page is productDetail page. */
 }
 
 /* holiday inn express (2) */
-.accommodation-pic6{
-  position: relative; 
+.accommodation-pic6 {
+  position: relative;
   width: 17.8125rem;
   height: 14.125rem;
   border-radius: var(--br-accommodation-pics);
@@ -1053,7 +1061,7 @@ Because search result page is productDetail page. */
   left: 33vw; /* Using viewport units for responsiveness */
 }
 
-.holiday-inn-express2{
+.holiday-inn-express2 {
   position: relative;
   white-space: nowrap;
   font-size: var(--font-size-hotels);
@@ -1062,18 +1070,19 @@ Because search result page is productDetail page. */
   left: 57vw; /* Using viewport units for responsiveness */
 }
 
-.ranking6{
+.ranking6 {
   position: absolute;
   top: 120rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
   transform: translate(-50%, -50%);
-  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking)
+    var(--br-ranking-bottom);
   background: var(--color-raking-gray);
   width: 3.1875rem;
   height: 3.1875rem;
 }
 
-.ranking-text6{
+.ranking-text6 {
   position: absolute;
   top: 120rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
@@ -1081,7 +1090,7 @@ Because search result page is productDetail page. */
   white-space: nowrap;
 }
 
-.excellent6{
+.excellent6 {
   font-size: var(--font-size-footer);
   font-weight: 600;
   color: var(--color-button-blue);
@@ -1090,7 +1099,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.reviews6{
+.reviews6 {
   font-size: var(--font-size-footer);
   font-style: italic;
   font-weight: 400;
@@ -1099,7 +1108,7 @@ Because search result page is productDetail page. */
   left: 66vw; /* Using viewport units for responsiveness */
 }
 
-.close-to-the6{
+.close-to-the6 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -1109,7 +1118,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.barcelona-spain6{
+.barcelona-spain6 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   font-weight: 500;
@@ -1118,10 +1127,10 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.wifi-sign6{
+.wifi-sign6 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -1130,7 +1139,7 @@ Because search result page is productDetail page. */
   left: 58vw;
 }
 
-.wifi-text6{
+.wifi-text6 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -1139,10 +1148,10 @@ Because search result page is productDetail page. */
   left: 59vw;
 }
 
-.parking-sign6{
+.parking-sign6 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -1151,7 +1160,7 @@ Because search result page is productDetail page. */
   left: 64vw; /* Using viewport units for responsiveness */
 }
 
-.parking-text6{
+.parking-text6 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -1160,7 +1169,7 @@ Because search result page is productDetail page. */
   left: 64.7vw; /* Using viewport units for responsiveness */
 }
 
-.per-night6{
+.per-night6 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -1171,7 +1180,7 @@ Because search result page is productDetail page. */
   left: 86vw; /* Using viewport units for responsiveness */
 }
 
-.price6{
+.price6 {
   font-weight: 600;
   color: var(--color-button-price-orange);
   font-size: var(--font-size-big);
@@ -1182,7 +1191,7 @@ Because search result page is productDetail page. */
 }
 
 /* This is an actual button, it is connected to the next page. */
-.view-bookable-wrapper6{
+.view-bookable-wrapper6 {
   border-radius: var(--br-accommodation-pics); /* It's the same value */
   background-color: var(--color-button-blue);
   color: var(--color-white);
@@ -1199,8 +1208,8 @@ Because search result page is productDetail page. */
 }
 
 /* beach apartments */
-.accommodation-pic7{
-  position: relative; 
+.accommodation-pic7 {
+  position: relative;
   width: 17.8125rem;
   height: 14.125rem;
   border-radius: var(--br-accommodation-pics);
@@ -1209,7 +1218,7 @@ Because search result page is productDetail page. */
   left: 33vw; /* Using viewport units for responsiveness */
 }
 
-.beach-apartments{
+.beach-apartments {
   position: relative;
   white-space: nowrap;
   font-size: var(--font-size-hotels);
@@ -1218,18 +1227,19 @@ Because search result page is productDetail page. */
   left: 57vw; /* Using viewport units for responsiveness */
 }
 
-.ranking7{
+.ranking7 {
   position: absolute;
   top: 138rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
   transform: translate(-50%, -50%);
-  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking)
+    var(--br-ranking-bottom);
   background: var(--color-raking-gray);
   width: 3.1875rem;
   height: 3.1875rem;
 }
 
-.ranking-text7{
+.ranking-text7 {
   position: absolute;
   top: 138rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
@@ -1237,7 +1247,7 @@ Because search result page is productDetail page. */
   white-space: nowrap;
 }
 
-.excellent7{
+.excellent7 {
   font-size: var(--font-size-footer);
   font-weight: 600;
   color: var(--color-button-blue);
@@ -1246,7 +1256,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.reviews7{
+.reviews7 {
   font-size: var(--font-size-footer);
   font-style: italic;
   font-weight: 400;
@@ -1255,7 +1265,7 @@ Because search result page is productDetail page. */
   left: 66vw; /* Using viewport units for responsiveness */
 }
 
-.close-to-the7{
+.close-to-the7 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -1265,7 +1275,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.barcelona-spain7{
+.barcelona-spain7 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   font-weight: 500;
@@ -1274,10 +1284,10 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.wifi-sign7{
+.wifi-sign7 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -1286,7 +1296,7 @@ Because search result page is productDetail page. */
   left: 58vw;
 }
 
-.wifi-text7{
+.wifi-text7 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -1295,10 +1305,10 @@ Because search result page is productDetail page. */
   left: 59vw;
 }
 
-.parking-sign7{
+.parking-sign7 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -1307,7 +1317,7 @@ Because search result page is productDetail page. */
   left: 64vw; /* Using viewport units for responsiveness */
 }
 
-.parking-text7{
+.parking-text7 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -1316,7 +1326,7 @@ Because search result page is productDetail page. */
   left: 64.7vw; /* Using viewport units for responsiveness */
 }
 
-.per-night7{
+.per-night7 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -1327,7 +1337,7 @@ Because search result page is productDetail page. */
   left: 86vw; /* Using viewport units for responsiveness */
 }
 
-.price7{
+.price7 {
   font-weight: 600;
   color: var(--color-button-price-orange);
   font-size: var(--font-size-big);
@@ -1338,7 +1348,7 @@ Because search result page is productDetail page. */
 }
 
 /* This is an actual button, it is connected to the next page. */
-.view-bookable-wrapper7{
+.view-bookable-wrapper7 {
   border-radius: var(--br-accommodation-pics); /* It's the same value */
   background-color: var(--color-button-blue);
   color: var(--color-white);
@@ -1355,8 +1365,8 @@ Because search result page is productDetail page. */
 }
 
 /* luxury apartments */
-.accommodation-pic8{
-  position: relative; 
+.accommodation-pic8 {
+  position: relative;
   width: 17.8125rem;
   height: 14.125rem;
   border-radius: var(--br-accommodation-pics);
@@ -1365,7 +1375,7 @@ Because search result page is productDetail page. */
   left: 33vw; /* Using viewport units for responsiveness */
 }
 
-.luxury-apartments{
+.luxury-apartments {
   position: relative;
   white-space: nowrap;
   font-size: var(--font-size-hotels);
@@ -1374,18 +1384,19 @@ Because search result page is productDetail page. */
   left: 57vw; /* Using viewport units for responsiveness */
 }
 
-.ranking8{
+.ranking8 {
   position: absolute;
   top: 156rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
   transform: translate(-50%, -50%);
-  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking)
+    var(--br-ranking-bottom);
   background: var(--color-raking-gray);
   width: 3.1875rem;
   height: 3.1875rem;
 }
 
-.ranking-text8{
+.ranking-text8 {
   position: absolute;
   top: 156rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
@@ -1393,7 +1404,7 @@ Because search result page is productDetail page. */
   white-space: nowrap;
 }
 
-.excellent8{
+.excellent8 {
   font-size: var(--font-size-footer);
   font-weight: 600;
   color: var(--color-button-blue);
@@ -1402,7 +1413,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.reviews8{
+.reviews8 {
   font-size: var(--font-size-footer);
   font-style: italic;
   font-weight: 400;
@@ -1411,7 +1422,7 @@ Because search result page is productDetail page. */
   left: 66vw; /* Using viewport units for responsiveness */
 }
 
-.close-to-the8{
+.close-to-the8 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -1421,7 +1432,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.barcelona-spain8{
+.barcelona-spain8 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   font-weight: 500;
@@ -1430,10 +1441,10 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.wifi-sign8{
+.wifi-sign8 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -1442,7 +1453,7 @@ Because search result page is productDetail page. */
   left: 58vw;
 }
 
-.wifi-text8{
+.wifi-text8 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -1451,10 +1462,10 @@ Because search result page is productDetail page. */
   left: 59vw;
 }
 
-.parking-sign8{
+.parking-sign8 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -1463,7 +1474,7 @@ Because search result page is productDetail page. */
   left: 64vw; /* Using viewport units for responsiveness */
 }
 
-.parking-text8{
+.parking-text8 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -1472,7 +1483,7 @@ Because search result page is productDetail page. */
   left: 64.7vw; /* Using viewport units for responsiveness */
 }
 
-.per-night8{
+.per-night8 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -1483,7 +1494,7 @@ Because search result page is productDetail page. */
   left: 86vw; /* Using viewport units for responsiveness */
 }
 
-.price8{
+.price8 {
   font-weight: 600;
   color: var(--color-button-price-orange);
   font-size: var(--font-size-big);
@@ -1494,7 +1505,7 @@ Because search result page is productDetail page. */
 }
 
 /* This is an actual button, it is connected to the next page. */
-.view-bookable-wrapper8{
+.view-bookable-wrapper8 {
   border-radius: var(--br-accommodation-pics); /* It's the same value */
   background-color: var(--color-button-blue);
   color: var(--color-white);
@@ -1511,8 +1522,8 @@ Because search result page is productDetail page. */
 }
 
 /* mambo beach apartments */
-.accommodation-pic9{
-  position: relative; 
+.accommodation-pic9 {
+  position: relative;
   width: 17.8125rem;
   height: 14.125rem;
   border-radius: var(--br-accommodation-pics);
@@ -1521,7 +1532,7 @@ Because search result page is productDetail page. */
   left: 33vw; /* Using viewport units for responsiveness */
 }
 
-.mambo-beach-apartments{
+.mambo-beach-apartments {
   position: relative;
   white-space: nowrap;
   font-size: var(--font-size-hotels);
@@ -1530,18 +1541,19 @@ Because search result page is productDetail page. */
   left: 57vw; /* Using viewport units for responsiveness */
 }
 
-.ranking9{
+.ranking9 {
   position: absolute;
   top: 173rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
   transform: translate(-50%, -50%);
-  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking)
+    var(--br-ranking-bottom);
   background: var(--color-raking-gray);
   width: 3.1875rem;
   height: 3.1875rem;
 }
 
-.ranking-text9{
+.ranking-text9 {
   position: absolute;
   top: 173rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
@@ -1549,7 +1561,7 @@ Because search result page is productDetail page. */
   white-space: nowrap;
 }
 
-.excellent9{
+.excellent9 {
   font-size: var(--font-size-footer);
   font-weight: 600;
   color: var(--color-button-blue);
@@ -1558,7 +1570,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.reviews9{
+.reviews9 {
   font-size: var(--font-size-footer);
   font-style: italic;
   font-weight: 400;
@@ -1567,7 +1579,7 @@ Because search result page is productDetail page. */
   left: 66vw; /* Using viewport units for responsiveness */
 }
 
-.close-to-the9{
+.close-to-the9 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -1577,7 +1589,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.barcelona-spain9{
+.barcelona-spain9 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   font-weight: 500;
@@ -1586,10 +1598,10 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.wifi-sign9{
+.wifi-sign9 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -1598,7 +1610,7 @@ Because search result page is productDetail page. */
   left: 58vw;
 }
 
-.wifi-text9{
+.wifi-text9 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -1607,10 +1619,10 @@ Because search result page is productDetail page. */
   left: 59vw;
 }
 
-.parking-sign9{
+.parking-sign9 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -1619,7 +1631,7 @@ Because search result page is productDetail page. */
   left: 64vw; /* Using viewport units for responsiveness */
 }
 
-.parking-text9{
+.parking-text9 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -1628,7 +1640,7 @@ Because search result page is productDetail page. */
   left: 64.7vw; /* Using viewport units for responsiveness */
 }
 
-.per-night9{
+.per-night9 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -1639,7 +1651,7 @@ Because search result page is productDetail page. */
   left: 86vw; /* Using viewport units for responsiveness */
 }
 
-.price9{
+.price9 {
   font-weight: 600;
   color: var(--color-button-price-orange);
   font-size: var(--font-size-big);
@@ -1650,7 +1662,7 @@ Because search result page is productDetail page. */
 }
 
 /* This is an actual button, it is connected to the next page. */
-.view-bookable-wrapper9{
+.view-bookable-wrapper9 {
   border-radius: var(--br-accommodation-pics); /* It's the same value */
   background-color: var(--color-button-blue);
   color: var(--color-white);
@@ -1667,8 +1679,8 @@ Because search result page is productDetail page. */
 }
 
 /* eden garden apartments */
-.accommodation-pic10{
-  position: relative; 
+.accommodation-pic10 {
+  position: relative;
   width: 17.8125rem;
   height: 14.125rem;
   border-radius: var(--br-accommodation-pics);
@@ -1677,7 +1689,7 @@ Because search result page is productDetail page. */
   left: 33vw; /* Using viewport units for responsiveness */
 }
 
-.eden-garden-apartments{
+.eden-garden-apartments {
   position: relative;
   white-space: nowrap;
   font-size: var(--font-size-hotels);
@@ -1686,18 +1698,19 @@ Because search result page is productDetail page. */
   left: 57vw; /* Using viewport units for responsiveness */
 }
 
-.ranking10{
+.ranking10 {
   position: absolute;
   top: 191rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
   transform: translate(-50%, -50%);
-  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking) var(--br-ranking-bottom);
+  border-radius: var(--br-ranking) var(--br-ranking) var(--br-ranking)
+    var(--br-ranking-bottom);
   background: var(--color-raking-gray);
   width: 3.1875rem;
   height: 3.1875rem;
 }
 
-.ranking-text10{
+.ranking-text10 {
   position: absolute;
   top: 191rem; /* Adjust this value to center vertically */
   left: 93vw; /* Using viewport units for responsiveness */
@@ -1705,7 +1718,7 @@ Because search result page is productDetail page. */
   white-space: nowrap;
 }
 
-.excellent10{
+.excellent10 {
   font-size: var(--font-size-footer);
   font-weight: 600;
   color: var(--color-button-blue);
@@ -1714,7 +1727,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.reviews10{
+.reviews10 {
   font-size: var(--font-size-footer);
   font-style: italic;
   font-weight: 400;
@@ -1723,7 +1736,7 @@ Because search result page is productDetail page. */
   left: 66vw; /* Using viewport units for responsiveness */
 }
 
-.close-to-the10{
+.close-to-the10 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -1733,7 +1746,7 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.barcelona-spain10{
+.barcelona-spain10 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   font-weight: 500;
@@ -1742,10 +1755,10 @@ Because search result page is productDetail page. */
   left: 57.5vw;
 }
 
-.wifi-sign10{
+.wifi-sign10 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -1754,7 +1767,7 @@ Because search result page is productDetail page. */
   left: 58vw;
 }
 
-.wifi-text10{
+.wifi-text10 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -1763,10 +1776,10 @@ Because search result page is productDetail page. */
   left: 59vw;
 }
 
-.parking-sign10{
+.parking-sign10 {
   border-radius: 0.625rem;
   background-color: var(--color-white);
-  border: 1px solid #0D374F; /* Set soild, otherwise not visible and 1px means border line */ 
+  border: 1px solid #0d374f; /* Set soild, otherwise not visible and 1px means border line */
   box-sizing: border-box;
   width: 4.6875rem;
   height: 1.6875rem;
@@ -1775,7 +1788,7 @@ Because search result page is productDetail page. */
   left: 64vw; /* Using viewport units for responsiveness */
 }
 
-.parking-text10{
+.parking-text10 {
   font-size: var(--font-size-normal);
   font-weight: 500;
   position: absolute;
@@ -1784,7 +1797,7 @@ Because search result page is productDetail page. */
   left: 64.7vw; /* Using viewport units for responsiveness */
 }
 
-.per-night10{
+.per-night10 {
   white-space: nowrap;
   font-size: var(--font-size-footer);
   color: var(--color-close-to-font);
@@ -1795,7 +1808,7 @@ Because search result page is productDetail page. */
   left: 86vw; /* Using viewport units for responsiveness */
 }
 
-.price10{
+.price10 {
   font-weight: 600;
   color: var(--color-button-price-orange);
   font-size: var(--font-size-big);
@@ -1806,7 +1819,7 @@ Because search result page is productDetail page. */
 }
 
 /* This is an actual button, it is connected to the next page. */
-.view-bookable-wrapper10{
+.view-bookable-wrapper10 {
   border-radius: var(--br-accommodation-pics); /* It's the same value */
   background-color: var(--color-button-blue);
   color: var(--color-white);
@@ -1825,7 +1838,7 @@ Because search result page is productDetail page. */
 /* SIDE SECTION */
 /* SIDE SECTION - frame */
 /* Include all elements into the side section frame */
-.side-section-frame{
+.side-section-frame {
   position: absolute;
   border-radius: var(--br-accommodation-pics);
   top: 29rem;
@@ -1833,12 +1846,12 @@ Because search result page is productDetail page. */
   background-color: var(--color-white);
   border: 1px solid var(--color-button-blue);
   box-sizing: border-box;
-  width: 22.25rem; /* Made it a bit bigger because of text */ 
+  width: 22.25rem; /* Made it a bit bigger because of text */
   height: 99rem;
 }
 
 /* SIDE SECTION - popular-filters TEXT*/
-.popular-filters{
+.popular-filters {
   position: absolute;
   top: 19.38rem;
   left: 1.94rem;
@@ -1847,7 +1860,7 @@ Because search result page is productDetail page. */
 }
 
 /* SIDE SECTION - rating-filters TEXT*/
-.rating-filters{
+.rating-filters {
   position: absolute;
   top: 19.38rem;
   left: 1.94rem;
@@ -1857,7 +1870,7 @@ Because search result page is productDetail page. */
 }
 
 /* SIDE SECTION - activities-filters TEXT*/
-.activities-filters{
+.activities-filters {
   position: absolute;
   top: 19.38rem;
   left: 1.94rem;
@@ -1867,7 +1880,7 @@ Because search result page is productDetail page. */
 }
 
 /* SIDE SECTION - amenities-filters TEXT*/
-.amenities-filters{
+.amenities-filters {
   position: absolute;
   top: 19.38rem;
   left: 1.94rem;
@@ -1877,7 +1890,7 @@ Because search result page is productDetail page. */
 }
 
 /* SIDE SECTION - accessibility-filters TEXT*/
-.accessibility-filters{
+.accessibility-filters {
   position: absolute;
   top: 19.38rem;
   left: 1.94rem;
@@ -1887,25 +1900,26 @@ Because search result page is productDetail page. */
 }
 
 /* SHOW ON MAP */
-.map-section{
+.map-section {
   position: relative;
   bottom: 98rem;
 }
 
-.map-pic, .frame-show-on-map{
+.map-pic,
+.frame-show-on-map {
   position: absolute;
   left: 2rem; /* Center it in side frame */
   width: 18.25rem;
 }
 
-.map-pic{
+.map-pic {
   top: 4.19rem; /* Refer to Figma*/
   border-radius: var(--br-accommodation-pics);
   height: 9.31rem;
   object-fit: cover;
 }
 
-.frame-show-on-map{
+.frame-show-on-map {
   top: 13rem;
   border-radius: 0 0 var(--br-accommodation-pics) var(--br-accommodation-pics);
   background-color: #ececec; /* This color is used only once */
@@ -1916,14 +1930,14 @@ Because search result page is productDetail page. */
   box-sizing: border-box;
 }
 
-.show-on-map{
+.show-on-map {
   top: 10.81rem; /* Refer to Figma*/
   font-weight: 600;
   color: var(--color-font);
 }
 
 /* Pet friendly */
-.filters-group1{
+.filters-group1 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -1939,7 +1953,7 @@ Because search result page is productDetail page. */
 }
 
 /* Square check box */
-.check-box-frame1{
+.check-box-frame1 {
   border-radius: var(--br-check-box);
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -1948,12 +1962,13 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.check-box-frame1, .popular-filters-text1{
+.check-box-frame1,
+.popular-filters-text1 {
   position: relative;
 }
 
 /* Wheelchair accessible */
-.filters-group2{
+.filters-group2 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -1968,7 +1983,7 @@ Because search result page is productDetail page. */
   color: var(--color-font);
 }
 
-.check-box-frame2{
+.check-box-frame2 {
   border-radius: var(--br-check-box);
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -1977,13 +1992,14 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.check-box-frame2, .popular-filters-text2{
+.check-box-frame2,
+.popular-filters-text2 {
   position: relative;
   margin-top: 5rem; /* Position 'wheelchair accessible' text */
 }
 
 /* Ocean view */
-.filters-group3{
+.filters-group3 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -1998,7 +2014,7 @@ Because search result page is productDetail page. */
   color: var(--color-font);
 }
 
-.check-box-frame3{
+.check-box-frame3 {
   border-radius: var(--br-check-box);
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2007,13 +2023,14 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.check-box-frame3, .popular-filters-text3{
+.check-box-frame3,
+.popular-filters-text3 {
   position: relative;
   margin-top: 10rem; /* Position 'wheelchair accessible' text */
 }
 
 /* Breakfast included */
-.filters-group4{
+.filters-group4 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2028,7 +2045,7 @@ Because search result page is productDetail page. */
   color: var(--color-font);
 }
 
-.check-box-frame4{
+.check-box-frame4 {
   border-radius: var(--br-check-box);
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2037,14 +2054,15 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.check-box-frame4, .popular-filters-text4{
+.check-box-frame4,
+.popular-filters-text4 {
   position: relative;
   margin-top: 15rem; /* Position 'wheelchair accessible' text */
 }
 
 /* LEFT SIDE SECTION - Rating */
 /* Any */
-.filters-group5{
+.filters-group5 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2060,7 +2078,7 @@ Because search result page is productDetail page. */
 }
 
 /* Round radio button */
-.radio-button-frame5{
+.radio-button-frame5 {
   border-radius: var(--br-round); /* Make it round */
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2069,14 +2087,15 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.radio-button-frame5, .popular-filters-text5{
+.radio-button-frame5,
+.popular-filters-text5 {
   position: relative;
   margin-top: 32rem;
 }
 
 /* Excellent */
 /* Deleted width. If not, the text will be shown two seperate sentences. */
-.filters-group6{
+.filters-group6 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2092,7 +2111,7 @@ Because search result page is productDetail page. */
 }
 
 /* Round radio button */
-.radio-button-frame6{
+.radio-button-frame6 {
   border-radius: var(--br-round); /* Make it round */
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2101,14 +2120,15 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.radio-button-frame6, .popular-filters-text6{
+.radio-button-frame6,
+.popular-filters-text6 {
   position: relative;
   margin-top: 37rem;
 }
 
 /* Outstanding */
 /* Deleted width. If not, the text will be shown two seperate sentences. */
-.filters-group7{
+.filters-group7 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2124,7 +2144,7 @@ Because search result page is productDetail page. */
 }
 
 /* Round radio button */
-.radio-button-frame7{
+.radio-button-frame7 {
   border-radius: var(--br-round); /* Make it round */
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2133,13 +2153,14 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.radio-button-frame7, .popular-filters-text7{
+.radio-button-frame7,
+.popular-filters-text7 {
   position: relative;
   margin-top: 42rem;
 }
 
 /* Good */
-.filters-group8{
+.filters-group8 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2155,7 +2176,7 @@ Because search result page is productDetail page. */
 }
 
 /* Round radio button */
-.radio-button-frame8{
+.radio-button-frame8 {
   border-radius: var(--br-round); /* Make it round */
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2164,13 +2185,14 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.radio-button-frame8, .popular-filters-text8{
+.radio-button-frame8,
+.popular-filters-text8 {
   position: relative;
   margin-top: 47rem;
 }
 
 /* Average */
-.filters-group9{
+.filters-group9 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2186,7 +2208,7 @@ Because search result page is productDetail page. */
 }
 
 /* Round radio button */
-.radio-button-frame9{
+.radio-button-frame9 {
   border-radius: var(--br-round); /* Make it round */
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2195,14 +2217,15 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.radio-button-frame9, .popular-filters-text9{
+.radio-button-frame9,
+.popular-filters-text9 {
   position: relative;
   margin-top: 52rem;
 }
 
 /* LEFT SIDE SECTION - Activities */
 /* Skiing */
-.filters-group10{
+.filters-group10 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2217,7 +2240,7 @@ Because search result page is productDetail page. */
   color: var(--color-font);
 }
 
-.check-box-frame10{
+.check-box-frame10 {
   border-radius: var(--br-check-box);
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2226,14 +2249,15 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.check-box-frame10, .popular-filters-text10{
+.check-box-frame10,
+.popular-filters-text10 {
   position: relative;
   margin-top: 64rem;
 }
 
 /* LEFT SIDE SECTION - Activities */
 /* Horse riding */
-.filters-group11{
+.filters-group11 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2248,7 +2272,7 @@ Because search result page is productDetail page. */
   color: var(--color-font);
 }
 
-.check-box-frame11{
+.check-box-frame11 {
   border-radius: var(--br-check-box);
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2257,13 +2281,14 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.check-box-frame11, .popular-filters-text11{
+.check-box-frame11,
+.popular-filters-text11 {
   position: relative;
   margin-top: 69rem;
 }
 
 /* Yoga */
-.filters-group12{
+.filters-group12 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2278,7 +2303,7 @@ Because search result page is productDetail page. */
   color: var(--color-font);
 }
 
-.check-box-frame12{
+.check-box-frame12 {
   border-radius: var(--br-check-box);
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2287,13 +2312,14 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.check-box-frame12, .popular-filters-text12{
+.check-box-frame12,
+.popular-filters-text12 {
   position: relative;
   margin-top: 74rem;
 }
 
 /* Cycling */
-.filters-group13{
+.filters-group13 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2308,7 +2334,7 @@ Because search result page is productDetail page. */
   color: var(--color-font);
 }
 
-.check-box-frame13{
+.check-box-frame13 {
   border-radius: var(--br-check-box);
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2317,14 +2343,15 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.check-box-frame13, .popular-filters-text13{
+.check-box-frame13,
+.popular-filters-text13 {
   position: relative;
   margin-top: 79rem;
 }
 
 /* LEFT SIDE SECTION - Amenities */
 /* Pool */
-.filters-group14{
+.filters-group14 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2339,7 +2366,7 @@ Because search result page is productDetail page. */
   color: var(--color-font);
 }
 
-.check-box-frame14{
+.check-box-frame14 {
   border-radius: var(--br-check-box);
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2348,13 +2375,14 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.check-box-frame14, .popular-filters-text14{
+.check-box-frame14,
+.popular-filters-text14 {
   position: relative;
   margin-top: 98rem;
 }
 
 /* Refrigerator */
-.filters-group15{
+.filters-group15 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2369,7 +2397,7 @@ Because search result page is productDetail page. */
   color: var(--color-font);
 }
 
-.check-box-frame15{
+.check-box-frame15 {
   border-radius: var(--br-check-box);
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2378,13 +2406,14 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.check-box-frame15, .popular-filters-text15{
+.check-box-frame15,
+.popular-filters-text15 {
   position: relative;
   margin-top: 103rem;
 }
 
 /* Air conditioner */
-.filters-group16{
+.filters-group16 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2399,7 +2428,7 @@ Because search result page is productDetail page. */
   color: var(--color-font);
 }
 
-.check-box-frame16{
+.check-box-frame16 {
   border-radius: var(--br-check-box);
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2408,13 +2437,14 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.check-box-frame16, .popular-filters-text16{
+.check-box-frame16,
+.popular-filters-text16 {
   position: relative;
   margin-top: 108rem;
 }
 
 /* Air conditioner */
-.filters-group17{
+.filters-group17 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2429,7 +2459,7 @@ Because search result page is productDetail page. */
   color: var(--color-font);
 }
 
-.check-box-frame17{
+.check-box-frame17 {
   border-radius: var(--br-check-box);
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2438,14 +2468,15 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.check-box-frame17, .popular-filters-text17{
+.check-box-frame17,
+.popular-filters-text17 {
   position: relative;
   margin-top: 113rem;
 }
 
 /* LEFT SIDE SECTION - Accessibility */
 /* Elevator */
-.filters-group18{
+.filters-group18 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2460,7 +2491,7 @@ Because search result page is productDetail page. */
   color: var(--color-font);
 }
 
-.check-box-frame18{
+.check-box-frame18 {
   border-radius: var(--br-check-box);
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2469,13 +2500,14 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.check-box-frame18, .popular-filters-text18{
+.check-box-frame18,
+.popular-filters-text18 {
   position: relative;
   margin-top: 132rem;
 }
 
 /* Wheelchair accessibility parking */
-.filters-group19{
+.filters-group19 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2490,7 +2522,7 @@ Because search result page is productDetail page. */
   color: var(--color-font);
 }
 
-.check-box-frame19{
+.check-box-frame19 {
   border-radius: var(--br-check-box);
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2499,13 +2531,14 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.check-box-frame19, .popular-filters-text19{
+.check-box-frame19,
+.popular-filters-text19 {
   position: relative;
   margin-top: 137rem;
 }
 
 /* Wheelchair accessibility parking */
-.filters-group20{
+.filters-group20 {
   position: absolute;
   top: 21.69rem;
   left: 2.31rem;
@@ -2520,7 +2553,7 @@ Because search result page is productDetail page. */
   color: var(--color-font);
 }
 
-.check-box-frame20{
+.check-box-frame20 {
   border-radius: var(--br-check-box);
   background-color: var(--color-white);
   border: 2px solid var(--color-font);
@@ -2529,14 +2562,15 @@ Because search result page is productDetail page. */
   height: 1.69rem;
 }
 
-.check-box-frame20, .popular-filters-text20{
+.check-box-frame20,
+.popular-filters-text20 {
   position: relative;
   margin-top: 142rem;
 }
 
 /* Show all TEXTS */
 /* Popular filter */
-.show-all1{
+.show-all1 {
   text-decoration: underline; /* Apply underline style */
   cursor: pointer; /* Change it to point cursor - clickable */
   margin-top: 32em; /* Positioning */
@@ -2544,7 +2578,7 @@ Because search result page is productDetail page. */
 }
 
 /* Activities */
-.show-all2{
+.show-all2 {
   text-decoration: underline; /* Apply underline style */
   cursor: pointer; /* Change it to point cursor - clickable */
   margin-top: 31rem; /* Positioning */
@@ -2552,7 +2586,7 @@ Because search result page is productDetail page. */
 }
 
 /* Amenities */
-.show-all3{
+.show-all3 {
   text-decoration: underline; /* Apply underline style */
   cursor: pointer; /* Change it to point cursor - clickable */
   margin-top: 16rem; /* Positioning */
@@ -2560,7 +2594,7 @@ Because search result page is productDetail page. */
 }
 
 /* Accessibility */
-.show-all4{
+.show-all4 {
   text-decoration: underline; /* Apply underline style */
   cursor: pointer; /* Change it to point cursor - clickable */
   margin-top: 13rem; /* Positioning */
@@ -2568,34 +2602,34 @@ Because search result page is productDetail page. */
 }
 
 /* FOOTER */
-footer{
+footer {
   width: 100%;
   height: 18rem;
   background: var(--color-footer);
 }
 
-.media-icon-container{
+.media-icon-container {
   display: flex;
   justify-content: center;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
 
-.facebook-icon{
+.facebook-icon {
   width: 2.75rem;
   height: 3rem;
   flex-shrink: 0;
   margin-right: 2.56rem;
 }
 
-.twitter-icon{
+.twitter-icon {
   width: 2.6875rem;
   height: 2.6875rem;
   flex-shrink: 0;
   margin-top: 5px;
 }
 
-.youtube-icon{
+.youtube-icon {
   width: 2.875rem;
   height: 2.875rem;
   flex-shrink: 0;
@@ -2603,7 +2637,7 @@ footer{
   margin-top: 5px;
 }
 
-.txt-footer-menu{
+.txt-footer-menu {
   color: var(--color-white);
   font-size: 1.5625rem;
   font-weight: 700;
@@ -2611,48 +2645,48 @@ footer{
   margin-top: 0;
 }
 
-.txt-footer-email{
+.txt-footer-email {
   color: var(--color-white);
   font-size: 1rem;
   font-weight: 500;
   text-align: center;
 }
 
-.txt-footer{
+.txt-footer {
   color: var(--color-white);
   text-align: center;
   font-size: 1.25rem;
   font-weight: 700;
 }
 
-@media (min-width: 992px) and (max-width: 1199px){
-  .trapple-logo{
+@media (min-width: 992px) and (max-width: 1199px) {
+  .trapple-logo {
     margin: 0;
     margin-left: 2rem;
     margin-top: 0.5rem;
   }
 
-  .nav-menu{
+  .nav-menu {
     font-size: 1.4vw;
   }
 
   .sign-up,
   .sign-up-wrapper,
   .log-in,
-  .log-in-wrapper{
+  .log-in-wrapper {
     width: auto;
     height: auto;
     font-size: 0.9rem;
   }
 
-  .frame-search-boxes{
+  .frame-search-boxes {
     top: 19.31rem;
     left: 9vw;
     width: 80%;
     font-size: 1rem;
   }
 
-  .search-wrapper{
+  .search-wrapper {
     font-size: 1rem;
     display: flex;
     padding: 2.5rem; /* center Search text */
@@ -2667,22 +2701,23 @@ footer{
   .accommodation-pic7,
   .accommodation-pic8,
   .accommodation-pic9,
-  .accommodation-pic10{
+  .accommodation-pic10 {
     width: 14rem;
     height: 11rem;
     margin-left: 3rem;
     margin-top: 1rem;
   }
 
-  .side-section-frame{
+  .side-section-frame {
     width: 30vw;
   }
 
-  .map-pic, .frame-show-on-map{
+  .map-pic,
+  .frame-show-on-map {
     width: 24vw;
   }
 
-  .show-on-map{
+  .show-on-map {
     font-size: 0.9rem;
   }
 
@@ -2705,7 +2740,7 @@ footer{
   .filters-group17,
   .filters-group18,
   .filters-group19,
-  .filters-group20{
+  .filters-group20 {
     font-size: 0.9rem;
   }
 
@@ -2718,7 +2753,7 @@ footer{
   .beach-apartments,
   .luxury-apartments,
   .mambo-beach-apartments,
-  .eden-garden-apartments{
+  .eden-garden-apartments {
     font-size: 1.8vw;
     margin-left: 2rem;
   }
@@ -2732,48 +2767,48 @@ footer{
   .barcelona-spain7,
   .barcelona-spain8,
   .barcelona-spain9,
-  .barcelona-spain10{
+  .barcelona-spain10 {
     font-size: 1.4vw;
     margin-left: 2rem;
   }
 
-  .barcelona-spain1{
+  .barcelona-spain1 {
     margin-top: -1.5vw;
   }
 
-  .barcelona-spain2{
+  .barcelona-spain2 {
     margin-top: 2.5vw;
   }
 
-  .barcelona-spain3{
+  .barcelona-spain3 {
     margin-top: -8.5vw;
   }
 
-  .barcelona-spain4{
+  .barcelona-spain4 {
     margin-top: -12.5vw;
   }
 
-  .barcelona-spain5{
+  .barcelona-spain5 {
     margin-top: -17.5vw;
   }
 
-  .barcelona-spain6{
+  .barcelona-spain6 {
     margin-top: -20.5vw;
   }
 
-  .barcelona-spain7{
+  .barcelona-spain7 {
     margin-top: -25.5vw;
   }
 
-  .barcelona-spain8{
+  .barcelona-spain8 {
     margin-top: -27.5vw;
   }
 
-  .barcelona-spain9{
+  .barcelona-spain9 {
     margin-top: -32.5vw;
   }
 
-  .barcelona-spain10{
+  .barcelona-spain10 {
     margin-top: -36.5vw;
   }
 
@@ -2786,45 +2821,45 @@ footer{
   .close-to-the7,
   .close-to-the8,
   .close-to-the9,
-  .close-to-the10{
+  .close-to-the10 {
     font-size: 1.2vw;
     margin-left: 2rem;
   }
 
-  .close-to-the2{
-    margin-top: -3rem; 
+  .close-to-the2 {
+    margin-top: -3rem;
   }
 
-  .close-to-the3{
-    margin-top: -5rem; 
+  .close-to-the3 {
+    margin-top: -5rem;
   }
 
-  .close-to-the4{
-    margin-top: -7rem; 
+  .close-to-the4 {
+    margin-top: -7rem;
   }
 
-  .close-to-the5{
-    margin-top: -11rem; 
+  .close-to-the5 {
+    margin-top: -11rem;
   }
 
-  .close-to-the6{
-    margin-top: -13rem; 
+  .close-to-the6 {
+    margin-top: -13rem;
   }
 
-  .close-to-the7{
-    margin-top: -16rem; 
+  .close-to-the7 {
+    margin-top: -16rem;
   }
 
-  .close-to-the8{
-    margin-top: -19rem; 
+  .close-to-the8 {
+    margin-top: -19rem;
   }
 
-  .close-to-the9{
-    margin-top: -22rem; 
+  .close-to-the9 {
+    margin-top: -22rem;
   }
 
-  .close-to-the10{
-    margin-top: -25rem; 
+  .close-to-the10 {
+    margin-top: -25rem;
   }
 
   .per-night1,
@@ -2836,44 +2871,44 @@ footer{
   .per-night7,
   .per-night8,
   .per-night9,
-  .per-night10{
+  .per-night10 {
     font-size: 1.2vw;
     margin-left: 2rem;
   }
 
-  .per-night2{
+  .per-night2 {
     margin-top: -3rem;
   }
 
-  .per-night3{
+  .per-night3 {
     margin-top: -5rem;
   }
 
-  .per-night4{
+  .per-night4 {
     margin-top: -7rem;
   }
 
-  .per-night5{
+  .per-night5 {
     margin-top: -11rem;
   }
 
-  .per-night6{
+  .per-night6 {
     margin-top: -13rem;
   }
 
-  .per-night7{
+  .per-night7 {
     margin-top: -16rem;
   }
 
-  .per-night8{
+  .per-night8 {
     margin-top: -19rem;
   }
 
-  .per-night9{
+  .per-night9 {
     margin-top: -22rem;
   }
 
-  .per-night10{
+  .per-night10 {
     margin-top: -25rem;
   }
 
@@ -2886,44 +2921,44 @@ footer{
   .price7,
   .price8,
   .price9,
-  .price10{
+  .price10 {
     font-size: 1.4vw;
     margin-left: 1rem;
   }
 
-  .price2{
+  .price2 {
     margin-top: -3rem;
   }
 
-  .price3{
+  .price3 {
     margin-top: -5rem;
   }
 
-  .price4{
+  .price4 {
     margin-top: -7rem;
   }
 
-  .price5{
+  .price5 {
     margin-top: -11rem;
   }
 
-  .price6{
+  .price6 {
     margin-top: -13rem;
   }
 
-  .price7{
+  .price7 {
     margin-top: -16rem;
   }
 
-  .price8{
+  .price8 {
     margin-top: -19rem;
   }
 
-  .price9{
+  .price9 {
     margin-top: -22rem;
   }
 
-  .price10{
+  .price10 {
     margin-top: -25.5rem;
   }
 
@@ -2936,7 +2971,7 @@ footer{
   .wifi-sign7,
   .wifi-sign8,
   .wifi-sign9,
-  .wifi-sign10{
+  .wifi-sign10 {
     display: none;
   }
 
@@ -2949,7 +2984,7 @@ footer{
   .wifi-text7,
   .wifi-text8,
   .wifi-text9,
-  .wifi-text10{
+  .wifi-text10 {
     display: none;
   }
 
@@ -2962,7 +2997,7 @@ footer{
   .parking-sign7,
   .parking-sign8,
   .parking-sign9,
-  .parking-sign10{
+  .parking-sign10 {
     display: none;
   }
 
@@ -2975,65 +3010,65 @@ footer{
   .parking-text7,
   .parking-text8,
   .parking-text9,
-  .parking-text10{
+  .parking-text10 {
     display: none;
   }
 
-  .excellent1{
+  .excellent1 {
     font-size: 1.4vw;
     margin-top: -1rem;
     margin-left: 2rem;
   }
 
-  .excellent2{
+  .excellent2 {
     font-size: 16px;
     margin-top: -4rem;
     margin-left: 2rem;
   }
 
-  .excellent3{
+  .excellent3 {
     font-size: 16px;
     margin-top: -6rem;
     margin-left: 2rem;
   }
 
-  .excellent4{
+  .excellent4 {
     font-size: 16px;
     margin-top: -8.5rem;
     margin-left: 2rem;
   }
 
-  .excellent5{
+  .excellent5 {
     font-size: 16px;
     margin-top: -12rem;
     margin-left: 2rem;
   }
 
-  .excellent6{
+  .excellent6 {
     font-size: 16px;
     margin-top: -15rem;
     margin-left: 2rem;
   }
 
-  .excellent7{
+  .excellent7 {
     font-size: 16px;
     margin-top: -18rem;
     margin-left: 2rem;
   }
 
-  .excellent8{
+  .excellent8 {
     font-size: 16px;
     margin-top: -21rem;
     margin-left: 2rem;
   }
 
-  .excellent9{
+  .excellent9 {
     font-size: 16px;
     margin-top: -24rem;
     margin-left: 2rem;
   }
 
-  .excellent10{
+  .excellent10 {
     font-size: 16px;
     margin-top: -27rem;
     margin-left: 2rem;
@@ -3048,48 +3083,48 @@ footer{
   .reviews7,
   .reviews8,
   .reviews9,
-  .reviews10{
+  .reviews10 {
     font-size: 1.2vw;
     margin-left: 3rem;
   }
 
-  .reviews1{
+  .reviews1 {
     margin-top: -1rem;
   }
-  
-  .reviews2{
+
+  .reviews2 {
     margin-top: -4rem;
   }
 
-  .reviews3{
+  .reviews3 {
     margin-top: -6rem;
   }
 
-  .reviews4{
+  .reviews4 {
     margin-top: -8.5rem;
   }
 
-  .reviews5{
+  .reviews5 {
     margin-top: -12rem;
   }
 
-  .reviews6{
+  .reviews6 {
     margin-top: -15rem;
   }
 
-  .reviews7{
+  .reviews7 {
     margin-top: -18rem;
   }
 
-  .reviews8{
+  .reviews8 {
     margin-top: -21rem;
   }
 
-  .reviews9{
+  .reviews9 {
     margin-top: -24rem;
   }
 
-  .reviews10{
+  .reviews10 {
     margin-top: -27rem;
   }
 
@@ -3102,7 +3137,7 @@ footer{
   .ranking7,
   .ranking8,
   .ranking9,
-  .ranking10{
+  .ranking10 {
     display: none;
   }
 
@@ -3115,7 +3150,7 @@ footer{
   .ranking-text7,
   .ranking-text8,
   .ranking-text9,
-  .ranking-text10{
+  .ranking-text10 {
     display: none;
   }
 
@@ -3128,82 +3163,82 @@ footer{
   .view-bookable-wrapper7,
   .view-bookable-wrapper8,
   .view-bookable-wrapper9,
-  .view-bookable-wrapper10{
+  .view-bookable-wrapper10 {
     width: auto;
     height: 2rem;
     font-size: 1vw;
     padding-top: 0.5rem;
   }
 
-  .view-bookable-wrapper1{
+  .view-bookable-wrapper1 {
     margin-top: -2rem;
   }
-  
-  .view-bookable-wrapper2{
+
+  .view-bookable-wrapper2 {
     margin-top: -5rem;
   }
 
-  .view-bookable-wrapper3{
+  .view-bookable-wrapper3 {
     margin-top: -7rem;
   }
 
-  .view-bookable-wrapper4{
+  .view-bookable-wrapper4 {
     margin-top: -9.5rem;
   }
 
-  .view-bookable-wrapper5{
+  .view-bookable-wrapper5 {
     margin-top: -13.5rem;
   }
 
-  .view-bookable-wrapper6{
+  .view-bookable-wrapper6 {
     margin-top: -15.5rem;
   }
 
-  .view-bookable-wrapper7{
+  .view-bookable-wrapper7 {
     margin-top: -18rem;
   }
 
-  .view-bookable-wrapper8{
+  .view-bookable-wrapper8 {
     margin-top: -21rem;
   }
 
-  .view-bookable-wrapper9{
+  .view-bookable-wrapper9 {
     margin-top: -24.5rem;
   }
 
-  .view-bookable-wrapper10{
+  .view-bookable-wrapper10 {
     margin-top: -27.5rem;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px){
-  .trapple-logo{
+@media (min-width: 768px) and (max-width: 991px) {
+  .trapple-logo {
     transform: scale(0.9); /* Adjust the size of logo */
-    margin-left: 0; 
+    margin-left: 0;
     margin-top: 0.5rem;
-}
+  }
 
-  .nav-menu{
+  .nav-menu {
     font-size: 1.4vw;
   }
 
   .sign-up,
   .sign-up-wrapper,
   .log-in,
-  .log-in-wrapper{
+  .log-in-wrapper {
     width: auto;
     height: auto;
     font-size: 0.9rem;
   }
 
-  .frame-search-boxes{
+  .frame-search-boxes {
     top: 19.31rem;
     left: 9.5vw;
     width: 80%;
     font-size: 0.9rem;
   }
 
-  .search-wrapper{
+  .search-wrapper {
     font-size: 1rem;
     display: flex;
     padding: 2.5rem; /* center Search text */
@@ -3218,22 +3253,23 @@ footer{
   .accommodation-pic7,
   .accommodation-pic8,
   .accommodation-pic9,
-  .accommodation-pic10{
+  .accommodation-pic10 {
     width: 14rem;
     height: 11rem;
     margin-left: 3rem;
     margin-top: 1rem;
   }
 
-  .side-section-frame{
+  .side-section-frame {
     width: 30vw;
   }
 
-  .map-pic, .frame-show-on-map{
+  .map-pic,
+  .frame-show-on-map {
     width: 24vw;
   }
 
-  .show-on-map{
+  .show-on-map {
     font-size: 0.9rem;
   }
 
@@ -3256,7 +3292,7 @@ footer{
   .filters-group17,
   .filters-group18,
   .filters-group19,
-  .filters-group20{
+  .filters-group20 {
     font-size: 0.9rem;
   }
 
@@ -3269,7 +3305,7 @@ footer{
   .beach-apartments,
   .luxury-apartments,
   .mambo-beach-apartments,
-  .eden-garden-apartments{
+  .eden-garden-apartments {
     font-size: 1.1rem;
     margin-left: 4rem;
   }
@@ -3283,48 +3319,48 @@ footer{
   .barcelona-spain7,
   .barcelona-spain8,
   .barcelona-spain9,
-  .barcelona-spain10{
+  .barcelona-spain10 {
     font-size: 1.4vw;
     margin-left: 4rem;
   }
 
-  .barcelona-spain1{
+  .barcelona-spain1 {
     margin-top: -1.5vw;
   }
 
-  .barcelona-spain2{
+  .barcelona-spain2 {
     margin-top: 2.5vw;
   }
 
-  .barcelona-spain3{
+  .barcelona-spain3 {
     margin-top: -6rem;
   }
 
-  .barcelona-spain4{
+  .barcelona-spain4 {
     margin-top: -9rem;
   }
 
-  .barcelona-spain5{
+  .barcelona-spain5 {
     margin-top: -13rem;
   }
 
-  .barcelona-spain6{
+  .barcelona-spain6 {
     margin-top: -16rem;
   }
 
-  .barcelona-spain7{
+  .barcelona-spain7 {
     margin-top: -19.5rem;
   }
 
-  .barcelona-spain8{
+  .barcelona-spain8 {
     margin-top: -22rem;
   }
 
-  .barcelona-spain9{
+  .barcelona-spain9 {
     margin-top: -25.5rem;
   }
 
-  .barcelona-spain10{
+  .barcelona-spain10 {
     margin-top: -29rem;
   }
 
@@ -3337,45 +3373,45 @@ footer{
   .close-to-the7,
   .close-to-the8,
   .close-to-the9,
-  .close-to-the10{
+  .close-to-the10 {
     font-size: 1.2vw;
     margin-left: 4rem;
   }
 
-  .close-to-the2{
-    margin-top: -3rem; 
+  .close-to-the2 {
+    margin-top: -3rem;
   }
 
-  .close-to-the3{
-    margin-top: -5rem; 
+  .close-to-the3 {
+    margin-top: -5rem;
   }
 
-  .close-to-the4{
-    margin-top: -7rem; 
+  .close-to-the4 {
+    margin-top: -7rem;
   }
 
-  .close-to-the5{
-    margin-top: -11rem; 
+  .close-to-the5 {
+    margin-top: -11rem;
   }
 
-  .close-to-the6{
-    margin-top: -14rem; 
+  .close-to-the6 {
+    margin-top: -14rem;
   }
 
-  .close-to-the7{
-    margin-top: -17rem; 
+  .close-to-the7 {
+    margin-top: -17rem;
   }
 
-  .close-to-the8{
-    margin-top: -21rem; 
+  .close-to-the8 {
+    margin-top: -21rem;
   }
 
-  .close-to-the9{
-    margin-top: -24rem; 
+  .close-to-the9 {
+    margin-top: -24rem;
   }
 
-  .close-to-the10{
-    margin-top: -27rem; 
+  .close-to-the10 {
+    margin-top: -27rem;
   }
 
   .per-night1,
@@ -3387,44 +3423,44 @@ footer{
   .per-night7,
   .per-night8,
   .per-night9,
-  .per-night10{
+  .per-night10 {
     font-size: 1.2vw;
     margin-left: 2rem;
   }
 
-  .per-night2{
+  .per-night2 {
     margin-top: -3rem;
   }
 
-  .per-night3{
+  .per-night3 {
     margin-top: -5rem;
   }
 
-  .per-night4{
+  .per-night4 {
     margin-top: -7rem;
   }
 
-  .per-night5{
+  .per-night5 {
     margin-top: -11rem;
   }
 
-  .per-night6{
+  .per-night6 {
     margin-top: -14rem;
   }
 
-  .per-night7{
+  .per-night7 {
     margin-top: -17rem;
   }
 
-  .per-night8{
+  .per-night8 {
     margin-top: -21rem;
   }
 
-  .per-night9{
+  .per-night9 {
     margin-top: -24rem;
   }
 
-  .per-night10{
+  .per-night10 {
     margin-top: -27rem;
   }
 
@@ -3437,48 +3473,48 @@ footer{
   .price7,
   .price8,
   .price9,
-  .price10{
+  .price10 {
     font-size: 1.4vw;
     margin-left: 1rem;
   }
 
-  .price1{
+  .price1 {
     margin-top: -1rem;
   }
 
-  .price2{
+  .price2 {
     margin-top: -4rem;
   }
 
-  .price3{
+  .price3 {
     margin-top: -6rem;
   }
 
-  .price4{
+  .price4 {
     margin-top: -8rem;
   }
 
-  .price5{
+  .price5 {
     margin-top: -12rem;
   }
 
-  .price6{
+  .price6 {
     margin-top: -15rem;
   }
 
-  .price7{
+  .price7 {
     margin-top: -18rem;
   }
 
-  .price8{
+  .price8 {
     margin-top: -22rem;
   }
 
-  .price9{
+  .price9 {
     margin-top: -25rem;
   }
 
-  .price10{
+  .price10 {
     margin-top: -28.5rem;
   }
 
@@ -3491,7 +3527,7 @@ footer{
   .wifi-sign7,
   .wifi-sign8,
   .wifi-sign9,
-  .wifi-sign10{
+  .wifi-sign10 {
     display: none;
   }
 
@@ -3504,7 +3540,7 @@ footer{
   .wifi-text7,
   .wifi-text8,
   .wifi-text9,
-  .wifi-text10{
+  .wifi-text10 {
     display: none;
   }
 
@@ -3517,7 +3553,7 @@ footer{
   .parking-sign7,
   .parking-sign8,
   .parking-sign9,
-  .parking-sign10{
+  .parking-sign10 {
     display: none;
   }
 
@@ -3530,65 +3566,65 @@ footer{
   .parking-text7,
   .parking-text8,
   .parking-text9,
-  .parking-text10{
+  .parking-text10 {
     display: none;
   }
 
-  .excellent1{
+  .excellent1 {
     font-size: 0.8rem;
     margin-top: -1rem;
     margin-left: 4rem;
   }
 
-  .excellent2{
+  .excellent2 {
     font-size: 0.8rem;
     margin-top: -4.5rem;
     margin-left: 4rem;
   }
 
-  .excellent3{
+  .excellent3 {
     font-size: 0.8rem;
     margin-top: -6.5rem;
     margin-left: 4rem;
   }
 
-  .excellent4{
+  .excellent4 {
     font-size: 0.8rem;
     margin-top: -9.5rem;
     margin-left: 4rem;
   }
 
-  .excellent5{
+  .excellent5 {
     font-size: 0.8rem;
     margin-top: -13rem;
     margin-left: 4rem;
   }
 
-  .excellent6{
+  .excellent6 {
     font-size: 0.8rem;
     margin-top: -16rem;
     margin-left: 4rem;
   }
 
-  .excellent7{
+  .excellent7 {
     font-size: 0.8rem;
     margin-top: -19rem;
     margin-left: 4rem;
   }
 
-  .excellent8{
+  .excellent8 {
     font-size: 0.8rem;
     margin-top: -22.5rem;
     margin-left: 4rem;
   }
 
-  .excellent9{
+  .excellent9 {
     font-size: 0.8rem;
     margin-top: -25.5rem;
     margin-left: 4rem;
   }
 
-  .excellent10{
+  .excellent10 {
     font-size: 0.8rem;
     margin-top: -29rem;
     margin-left: 4rem;
@@ -3603,48 +3639,48 @@ footer{
   .reviews7,
   .reviews8,
   .reviews9,
-  .reviews10{
+  .reviews10 {
     font-size: 0.8rem;
     margin-left: 4rem;
   }
 
-  .reviews1{
+  .reviews1 {
     margin-top: -1rem;
   }
-  
-  .reviews2{
+
+  .reviews2 {
     margin-top: -4.5rem;
   }
 
-  .reviews3{
+  .reviews3 {
     margin-top: -6.5rem;
   }
 
-  .reviews4{
+  .reviews4 {
     margin-top: -9.5rem;
   }
 
-  .reviews5{
+  .reviews5 {
     margin-top: -13rem;
   }
 
-  .reviews6{
+  .reviews6 {
     margin-top: -16rem;
   }
 
-  .reviews7{
+  .reviews7 {
     margin-top: -19rem;
   }
 
-  .reviews8{
+  .reviews8 {
     margin-top: -22.5rem;
   }
 
-  .reviews9{
+  .reviews9 {
     margin-top: -25.5rem;
   }
 
-  .reviews10{
+  .reviews10 {
     margin-top: -29rem;
   }
 
@@ -3657,7 +3693,7 @@ footer{
   .ranking7,
   .ranking8,
   .ranking9,
-  .ranking10{
+  .ranking10 {
     display: none;
   }
 
@@ -3670,7 +3706,7 @@ footer{
   .ranking-text7,
   .ranking-text8,
   .ranking-text9,
-  .ranking-text10{
+  .ranking-text10 {
     display: none;
   }
 
@@ -3683,82 +3719,82 @@ footer{
   .view-bookable-wrapper7,
   .view-bookable-wrapper8,
   .view-bookable-wrapper9,
-  .view-bookable-wrapper10{
+  .view-bookable-wrapper10 {
     width: auto;
     height: 2rem;
     font-size: 1vw;
     padding-top: 0.5rem;
   }
 
-  .view-bookable-wrapper1{
+  .view-bookable-wrapper1 {
     margin-top: -2rem;
   }
-  
-  .view-bookable-wrapper2{
+
+  .view-bookable-wrapper2 {
     margin-top: -6rem;
   }
 
-  .view-bookable-wrapper3{
+  .view-bookable-wrapper3 {
     margin-top: -7.5rem;
   }
 
-  .view-bookable-wrapper4{
+  .view-bookable-wrapper4 {
     margin-top: -10.5rem;
   }
 
-  .view-bookable-wrapper5{
+  .view-bookable-wrapper5 {
     margin-top: -14.5rem;
   }
 
-  .view-bookable-wrapper6{
+  .view-bookable-wrapper6 {
     margin-top: -17.5rem;
   }
 
-  .view-bookable-wrapper7{
+  .view-bookable-wrapper7 {
     margin-top: -20rem;
   }
 
-  .view-bookable-wrapper8{
+  .view-bookable-wrapper8 {
     margin-top: -23.5rem;
   }
 
-  .view-bookable-wrapper9{
+  .view-bookable-wrapper9 {
     margin-top: -27rem;
   }
 
-  .view-bookable-wrapper10{
+  .view-bookable-wrapper10 {
     margin-top: -30.5rem;
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px){
-  .trapple-logo{
+@media (min-width: 576px) and (max-width: 767px) {
+  .trapple-logo {
     transform: scale(0.7); /* Adjust the size of logo */
-    margin-left: 0; 
+    margin-left: 0;
     margin-top: 0.5rem;
-}
+  }
 
- .sign-up,
- .sign-up-wrapper,
- .log-in,
- .log-in-wrapper{
+  .sign-up,
+  .sign-up-wrapper,
+  .log-in,
+  .log-in-wrapper {
     width: auto;
     height: auto;
     font-size: 0.5rem;
-}
+  }
 
-  .nav-menu{
+  .nav-menu {
     font-size: 1.4vw;
   }
 
-  .frame-search-boxes{
+  .frame-search-boxes {
     top: 19.31rem;
     left: 9.5vw;
     width: 80%;
     font-size: 0.9rem;
   }
 
-  .search-wrapper{
+  .search-wrapper {
     font-size: 0.8rem;
     display: flex;
     padding: 2.5rem; /* center Search text */
@@ -3773,24 +3809,25 @@ footer{
   .accommodation-pic7,
   .accommodation-pic8,
   .accommodation-pic9,
-  .accommodation-pic10{
+  .accommodation-pic10 {
     width: 11rem;
     height: 10rem;
     margin-left: 3rem;
     margin-top: 1rem;
   }
 
-  .side-section-frame{
+  .side-section-frame {
     width: 15rem;
     height: 99rem;
   }
 
-  .map-pic, .frame-show-on-map{
+  .map-pic,
+  .frame-show-on-map {
     width: 11rem;
     margin-top: 0;
   }
 
-  .show-on-map{
+  .show-on-map {
     font-size: 0.8rem;
   }
 
@@ -3802,7 +3839,7 @@ footer{
   .filters-group6,
   .filters-group7,
   .filters-group8,
-  .filters-group9{
+  .filters-group9 {
     font-size: 0.7rem;
     margin-top: -3rem;
   }
@@ -3817,7 +3854,7 @@ footer{
   .filters-group17,
   .filters-group18,
   .filters-group19,
-  .filters-group20{
+  .filters-group20 {
     font-size: 0.7rem;
     margin-top: 0;
   }
@@ -3826,42 +3863,42 @@ footer{
   .rating-filters,
   .activities-filters,
   .amenities-filters,
-  .accessibility-filters{
+  .accessibility-filters {
     font-size: 0.7rem;
   }
 
-  .popular-filters{
+  .popular-filters {
     margin-top: -3rem;
   }
 
-  .rating-filters{
+  .rating-filters {
     margin-top: 13rem;
   }
 
-  .activities-filters{
+  .activities-filters {
     margin-top: 32rem;
   }
 
   .show-all1,
   .show-all2,
   .show-all3,
-  .show-all4{
+  .show-all4 {
     font-size: 0.7rem;
   }
 
-  .show-all1{
+  .show-all1 {
     margin-top: 29rem;
   }
 
-  .show-all2{
+  .show-all2 {
     margin-top: 34rem;
   }
 
-  .show-all3{
-    margin-top: 16rem;;
+  .show-all3 {
+    margin-top: 16rem;
   }
 
-  .show-all4{
+  .show-all4 {
     margin-top: 14rem;
   }
 
@@ -3874,7 +3911,7 @@ footer{
   .beach-apartments,
   .luxury-apartments,
   .mambo-beach-apartments,
-  .eden-garden-apartments{
+  .eden-garden-apartments {
     font-size: 1rem;
     margin-left: 4rem;
   }
@@ -3888,48 +3925,48 @@ footer{
   .barcelona-spain7,
   .barcelona-spain8,
   .barcelona-spain9,
-  .barcelona-spain10{
+  .barcelona-spain10 {
     font-size: 1.4vw;
     margin-left: 4rem;
   }
 
-  .barcelona-spain1{
+  .barcelona-spain1 {
     margin-top: -2.5rem;
   }
 
-  .barcelona-spain2{
+  .barcelona-spain2 {
     margin-top: 1.5rem;
   }
 
-  .barcelona-spain3{
+  .barcelona-spain3 {
     margin-top: -10rem;
   }
 
-  .barcelona-spain4{
+  .barcelona-spain4 {
     margin-top: -15rem;
   }
 
-  .barcelona-spain5{
+  .barcelona-spain5 {
     margin-top: -19rem;
   }
 
-  .barcelona-spain6{
+  .barcelona-spain6 {
     margin-top: -23rem;
   }
 
-  .barcelona-spain7{
+  .barcelona-spain7 {
     margin-top: -27rem;
   }
 
-  .barcelona-spain8{
+  .barcelona-spain8 {
     margin-top: -31rem;
   }
 
-  .barcelona-spain9{
+  .barcelona-spain9 {
     margin-top: -35rem;
   }
 
-  .barcelona-spain10{
+  .barcelona-spain10 {
     margin-top: -40rem;
   }
 
@@ -3942,45 +3979,45 @@ footer{
   .close-to-the7,
   .close-to-the8,
   .close-to-the9,
-  .close-to-the10{
+  .close-to-the10 {
     font-size: 1.2vw;
     margin-left: 4rem;
   }
 
-  .close-to-the2{
-    margin-top: -5rem; 
+  .close-to-the2 {
+    margin-top: -5rem;
   }
 
-  .close-to-the3{
-    margin-top: -8rem; 
+  .close-to-the3 {
+    margin-top: -8rem;
   }
 
-  .close-to-the4{
-    margin-top: -12rem; 
+  .close-to-the4 {
+    margin-top: -12rem;
   }
 
-  .close-to-the5{
-    margin-top: -16rem; 
+  .close-to-the5 {
+    margin-top: -16rem;
   }
 
-  .close-to-the6{
-    margin-top: -20rem; 
+  .close-to-the6 {
+    margin-top: -20rem;
   }
 
-  .close-to-the7{
-    margin-top: -24rem; 
+  .close-to-the7 {
+    margin-top: -24rem;
   }
 
-  .close-to-the8{
-    margin-top: -29rem; 
+  .close-to-the8 {
+    margin-top: -29rem;
   }
 
-  .close-to-the9{
-    margin-top: -32rem; 
+  .close-to-the9 {
+    margin-top: -32rem;
   }
 
-  .close-to-the10{
-    margin-top: -37rem; 
+  .close-to-the10 {
+    margin-top: -37rem;
   }
 
   .per-night1,
@@ -3992,44 +4029,44 @@ footer{
   .per-night7,
   .per-night8,
   .per-night9,
-  .per-night10{
+  .per-night10 {
     font-size: 1.2vw;
     margin-left: 2rem;
   }
 
-  .per-night2{
+  .per-night2 {
     margin-top: -5rem;
   }
 
-  .per-night3{
+  .per-night3 {
     margin-top: -8rem;
   }
 
-  .per-night4{
+  .per-night4 {
     margin-top: -12rem;
   }
 
-  .per-night5{
+  .per-night5 {
     margin-top: -16rem;
   }
 
-  .per-night6{
+  .per-night6 {
     margin-top: -20rem;
   }
 
-  .per-night7{
+  .per-night7 {
     margin-top: -24rem;
   }
 
-  .per-night8{
+  .per-night8 {
     margin-top: -29rem;
   }
 
-  .per-night9{
+  .per-night9 {
     margin-top: -32rem;
   }
 
-  .per-night10{
+  .per-night10 {
     margin-top: -37rem;
   }
 
@@ -4042,48 +4079,48 @@ footer{
   .price7,
   .price8,
   .price9,
-  .price10{
+  .price10 {
     font-size: 1.4vw;
     margin-left: 1rem;
   }
 
-  .price1{
+  .price1 {
     margin-top: -1rem;
   }
 
-  .price2{
+  .price2 {
     margin-top: -6rem;
   }
 
-  .price3{
+  .price3 {
     margin-top: -9rem;
   }
 
-  .price4{
+  .price4 {
     margin-top: -13rem;
   }
 
-  .price5{
+  .price5 {
     margin-top: -17rem;
   }
 
-  .price6{
+  .price6 {
     margin-top: -21rem;
   }
 
-  .price7{
+  .price7 {
     margin-top: -25rem;
   }
 
-  .price8{
+  .price8 {
     margin-top: -30rem;
   }
 
-  .price9{
+  .price9 {
     margin-top: -33rem;
   }
 
-  .price10{
+  .price10 {
     margin-top: -38.5rem;
   }
 
@@ -4096,7 +4133,7 @@ footer{
   .wifi-sign7,
   .wifi-sign8,
   .wifi-sign9,
-  .wifi-sign10{
+  .wifi-sign10 {
     display: none;
   }
 
@@ -4109,7 +4146,7 @@ footer{
   .wifi-text7,
   .wifi-text8,
   .wifi-text9,
-  .wifi-text10{
+  .wifi-text10 {
     display: none;
   }
 
@@ -4122,7 +4159,7 @@ footer{
   .parking-sign7,
   .parking-sign8,
   .parking-sign9,
-  .parking-sign10{
+  .parking-sign10 {
     display: none;
   }
 
@@ -4135,65 +4172,65 @@ footer{
   .parking-text7,
   .parking-text8,
   .parking-text9,
-  .parking-text10{
+  .parking-text10 {
     display: none;
   }
 
-  .excellent1{
+  .excellent1 {
     font-size: 0.8rem;
     margin-top: -1.5rem;
     margin-left: 4rem;
   }
 
-  .excellent2{
+  .excellent2 {
     font-size: 0.8rem;
     margin-top: -6rem;
     margin-left: 4rem;
   }
 
-  .excellent3{
+  .excellent3 {
     font-size: 0.8rem;
     margin-top: -8.5rem;
     margin-left: 4rem;
   }
 
-  .excellent4{
+  .excellent4 {
     font-size: 0.8rem;
     margin-top: -12.5rem;
     margin-left: 4rem;
   }
 
-  .excellent5{
+  .excellent5 {
     font-size: 0.8rem;
     margin-top: -17rem;
     margin-left: 4rem;
   }
 
-  .excellent6{
+  .excellent6 {
     font-size: 0.8rem;
     margin-top: -21.5rem;
     margin-left: 4rem;
   }
 
-  .excellent7{
+  .excellent7 {
     font-size: 0.8rem;
     margin-top: -26rem;
     margin-left: 4rem;
   }
 
-  .excellent8{
+  .excellent8 {
     font-size: 0.8rem;
     margin-top: -30rem;
     margin-left: 4rem;
   }
 
-  .excellent9{
+  .excellent9 {
     font-size: 0.8rem;
     margin-top: -34rem;
     margin-left: 4rem;
   }
 
-  .excellent10{
+  .excellent10 {
     font-size: 0.8rem;
     margin-top: -38.5rem;
     margin-left: 4rem;
@@ -4208,48 +4245,48 @@ footer{
   .reviews7,
   .reviews8,
   .reviews9,
-  .reviews10{
+  .reviews10 {
     font-size: 0.8rem;
     margin-left: 4rem;
   }
 
-  .reviews1{
+  .reviews1 {
     margin-top: -1.5rem;
   }
-  
-  .reviews2{
+
+  .reviews2 {
     margin-top: -6rem;
   }
 
-  .reviews3{
+  .reviews3 {
     margin-top: -8.5rem;
   }
 
-  .reviews4{
+  .reviews4 {
     margin-top: -12.5rem;
   }
 
-  .reviews5{
+  .reviews5 {
     margin-top: -17rem;
   }
 
-  .reviews6{
+  .reviews6 {
     margin-top: -21.5rem;
   }
 
-  .reviews7{
+  .reviews7 {
     margin-top: -26rem;
   }
 
-  .reviews8{
+  .reviews8 {
     margin-top: -30rem;
   }
 
-  .reviews9{
+  .reviews9 {
     margin-top: -34rem;
   }
 
-  .reviews10{
+  .reviews10 {
     margin-top: -38.5rem;
   }
 
@@ -4262,7 +4299,7 @@ footer{
   .ranking7,
   .ranking8,
   .ranking9,
-  .ranking10{
+  .ranking10 {
     display: none;
   }
 
@@ -4275,7 +4312,7 @@ footer{
   .ranking-text7,
   .ranking-text8,
   .ranking-text9,
-  .ranking-text10{
+  .ranking-text10 {
     display: none;
   }
 
@@ -4288,91 +4325,91 @@ footer{
   .view-bookable-wrapper7,
   .view-bookable-wrapper8,
   .view-bookable-wrapper9,
-  .view-bookable-wrapper10{
+  .view-bookable-wrapper10 {
     width: auto;
     height: 1rem;
     font-size: 1vw;
     padding-top: 0.5rem;
   }
 
-  .view-bookable-wrapper1{
+  .view-bookable-wrapper1 {
     margin-top: -3rem;
   }
-  
-  .view-bookable-wrapper2{
+
+  .view-bookable-wrapper2 {
     margin-top: -8rem;
   }
 
-  .view-bookable-wrapper3{
+  .view-bookable-wrapper3 {
     margin-top: -11rem;
   }
 
-  .view-bookable-wrapper4{
+  .view-bookable-wrapper4 {
     margin-top: -16rem;
   }
 
-  .view-bookable-wrapper5{
+  .view-bookable-wrapper5 {
     margin-top: -20rem;
   }
 
-  .view-bookable-wrapper6{
+  .view-bookable-wrapper6 {
     margin-top: -24rem;
   }
 
-  .view-bookable-wrapper7{
+  .view-bookable-wrapper7 {
     margin-top: -27.5rem;
   }
 
-  .view-bookable-wrapper8{
+  .view-bookable-wrapper8 {
     margin-top: -32.5rem;
   }
 
-  .view-bookable-wrapper9{
+  .view-bookable-wrapper9 {
     margin-top: -36rem;
   }
 
-  .view-bookable-wrapper10{
+  .view-bookable-wrapper10 {
     margin-top: -41rem;
   }
 
   .txt-footer,
   .txt-footer-email,
-  .txt-footer-menu{
+  .txt-footer-menu {
     font-size: 1rem;
   }
 
-  .media-icon-container{
+  .media-icon-container {
     transform: scale(0.7); /* Adjust the size of logo */
   }
 }
 
-@media (max-width: 575px){
-  .side-section-frame{
+@media (max-width: 575px) {
+  .side-section-frame {
     display: none;
   }
 
-  .trapple-logo{
+  .trapple-logo {
     transform: scale(0.5); /* Adjust the size of logo */
-    margin-left: 0; 
+    margin-left: 0;
     margin-top: 0.5rem;
- }
+  }
 
- .home{
+  .home {
     margin-left: 3rem;
- }
+  }
 
-  .nav-menu{
+  .nav-menu {
     font-size: 1.8vw;
   }
 
   .sign-up,
   .sign-up-wrapper,
   .log-in,
-  .log-in-wrapper{
+  .log-in-wrapper {
     display: none;
   }
 
-  .frame-search-boxes{
+  .frame-search-boxes {
     top: 19.31rem;
     left: 9.5vw;
     width: 80%;
@@ -4381,16 +4418,16 @@ footer{
   }
 
   .guest-wrapper,
-  .guest{
+  .guest {
     display: none;
   }
 
   .check-out-date-wrapper,
-  .check-out-date{
+  .check-out-date {
     display: none;
   }
 
-  .search-wrapper{
+  .search-wrapper {
     font-size: 0.8rem;
     display: flex;
     padding: 2.5rem; /* center Search text */
@@ -4405,14 +4442,14 @@ footer{
   .accommodation-pic7,
   .accommodation-pic8,
   .accommodation-pic9,
-  .accommodation-pic10{
+  .accommodation-pic10 {
     width: 11rem;
     height: 10rem;
     margin-left: -8rem;
     margin-top: 1rem;
   }
 
-  .side-section-frame{
+  .side-section-frame {
     display: none;
   }
 
@@ -4425,7 +4462,7 @@ footer{
   .beach-apartments,
   .luxury-apartments,
   .mambo-beach-apartments,
-  .eden-garden-apartments{
+  .eden-garden-apartments {
     font-size: 1rem;
     margin-left: -3.5rem;
   }
@@ -4439,48 +4476,48 @@ footer{
   .barcelona-spain7,
   .barcelona-spain8,
   .barcelona-spain9,
-  .barcelona-spain10{
+  .barcelona-spain10 {
     font-size: 1.4vw;
     margin-left: -3rem;
   }
 
-  .barcelona-spain1{
+  .barcelona-spain1 {
     margin-top: -2.5rem;
   }
 
-  .barcelona-spain2{
+  .barcelona-spain2 {
     margin-top: 1.5rem;
   }
 
-  .barcelona-spain3{
+  .barcelona-spain3 {
     margin-top: -10rem;
   }
 
-  .barcelona-spain4{
+  .barcelona-spain4 {
     margin-top: -15rem;
   }
 
-  .barcelona-spain5{
+  .barcelona-spain5 {
     margin-top: -19rem;
   }
 
-  .barcelona-spain6{
+  .barcelona-spain6 {
     margin-top: -23rem;
   }
 
-  .barcelona-spain7{
+  .barcelona-spain7 {
     margin-top: -27rem;
   }
 
-  .barcelona-spain8{
+  .barcelona-spain8 {
     margin-top: -31rem;
   }
 
-  .barcelona-spain9{
+  .barcelona-spain9 {
     margin-top: -35rem;
   }
 
-  .barcelona-spain10{
+  .barcelona-spain10 {
     margin-top: -40rem;
   }
 
@@ -4493,45 +4530,45 @@ footer{
   .close-to-the7,
   .close-to-the8,
   .close-to-the9,
-  .close-to-the10{
+  .close-to-the10 {
     font-size: 1.2vw;
     margin-left: -3rem;
   }
 
-  .close-to-the2{
-    margin-top: -5rem; 
+  .close-to-the2 {
+    margin-top: -5rem;
   }
 
-  .close-to-the3{
-    margin-top: -8rem; 
+  .close-to-the3 {
+    margin-top: -8rem;
   }
 
-  .close-to-the4{
-    margin-top: -12rem; 
+  .close-to-the4 {
+    margin-top: -12rem;
   }
 
-  .close-to-the5{
-    margin-top: -16rem; 
+  .close-to-the5 {
+    margin-top: -16rem;
   }
 
-  .close-to-the6{
-    margin-top: -20rem; 
+  .close-to-the6 {
+    margin-top: -20rem;
   }
 
-  .close-to-the7{
-    margin-top: -24rem; 
+  .close-to-the7 {
+    margin-top: -24rem;
   }
 
-  .close-to-the8{
-    margin-top: -29rem; 
+  .close-to-the8 {
+    margin-top: -29rem;
   }
 
-  .close-to-the9{
-    margin-top: -32rem; 
+  .close-to-the9 {
+    margin-top: -32rem;
   }
 
-  .close-to-the10{
-    margin-top: -37rem; 
+  .close-to-the10 {
+    margin-top: -37rem;
   }
 
   .per-night1,
@@ -4543,44 +4580,44 @@ footer{
   .per-night7,
   .per-night8,
   .per-night9,
-  .per-night10{
+  .per-night10 {
     font-size: 1.2vw;
     margin-left: -1rem;
   }
 
-  .per-night2{
+  .per-night2 {
     margin-top: -5rem;
   }
 
-  .per-night3{
+  .per-night3 {
     margin-top: -8rem;
   }
 
-  .per-night4{
+  .per-night4 {
     margin-top: -12rem;
   }
 
-  .per-night5{
+  .per-night5 {
     margin-top: -16rem;
   }
 
-  .per-night6{
+  .per-night6 {
     margin-top: -20rem;
   }
 
-  .per-night7{
+  .per-night7 {
     margin-top: -24rem;
   }
 
-  .per-night8{
+  .per-night8 {
     margin-top: -29rem;
   }
 
-  .per-night9{
+  .per-night9 {
     margin-top: -32rem;
   }
 
-  .per-night10{
+  .per-night10 {
     margin-top: -37rem;
   }
 
@@ -4593,48 +4630,48 @@ footer{
   .price7,
   .price8,
   .price9,
-  .price10{
+  .price10 {
     font-size: 1.4vw;
     margin-left: -1rem;
   }
 
-  .price1{
+  .price1 {
     margin-top: -1rem;
   }
 
-  .price2{
+  .price2 {
     margin-top: -6rem;
   }
 
-  .price3{
+  .price3 {
     margin-top: -9rem;
   }
 
-  .price4{
+  .price4 {
     margin-top: -13rem;
   }
 
-  .price5{
+  .price5 {
     margin-top: -17rem;
   }
 
-  .price6{
+  .price6 {
     margin-top: -21rem;
   }
 
-  .price7{
+  .price7 {
     margin-top: -25rem;
   }
 
-  .price8{
+  .price8 {
     margin-top: -30rem;
   }
 
-  .price9{
+  .price9 {
     margin-top: -33rem;
   }
 
-  .price10{
+  .price10 {
     margin-top: -38.5rem;
   }
 
@@ -4647,7 +4684,7 @@ footer{
   .wifi-sign7,
   .wifi-sign8,
   .wifi-sign9,
-  .wifi-sign10{
+  .wifi-sign10 {
     display: none;
   }
 
@@ -4660,7 +4697,7 @@ footer{
   .wifi-text7,
   .wifi-text8,
   .wifi-text9,
-  .wifi-text10{
+  .wifi-text10 {
     display: none;
   }
 
@@ -4673,7 +4710,7 @@ footer{
   .parking-sign7,
   .parking-sign8,
   .parking-sign9,
-  .parking-sign10{
+  .parking-sign10 {
     display: none;
   }
 
@@ -4686,65 +4723,65 @@ footer{
   .parking-text7,
   .parking-text8,
   .parking-text9,
-  .parking-text10{
+  .parking-text10 {
     display: none;
   }
 
-  .excellent1{
+  .excellent1 {
     font-size: 0.8rem;
     margin-top: -1.5rem;
     margin-left: -3rem;
   }
 
-  .excellent2{
+  .excellent2 {
     font-size: 0.8rem;
     margin-top: -6rem;
     margin-left: -3rem;
   }
 
-  .excellent3{
+  .excellent3 {
     font-size: 0.8rem;
     margin-top: -8.5rem;
     margin-left: -3rem;
   }
 
-  .excellent4{
+  .excellent4 {
     font-size: 0.8rem;
     margin-top: -12.5rem;
     margin-left: -3rem;
   }
 
-  .excellent5{
+  .excellent5 {
     font-size: 0.8rem;
     margin-top: -17rem;
     margin-left: -3rem;
   }
 
-  .excellent6{
+  .excellent6 {
     font-size: 0.8rem;
     margin-top: -21.5rem;
     margin-left: -3rem;
   }
 
-  .excellent7{
+  .excellent7 {
     font-size: 0.8rem;
     margin-top: -26rem;
     margin-left: -3rem;
   }
 
-  .excellent8{
+  .excellent8 {
     font-size: 0.8rem;
     margin-top: -30rem;
     margin-left: -3rem;
   }
 
-  .excellent9{
+  .excellent9 {
     font-size: 0.8rem;
     margin-top: -34rem;
     margin-left: -3rem;
   }
 
-  .excellent10{
+  .excellent10 {
     font-size: 0.8rem;
     margin-top: -38.5rem;
     margin-left: -3rem;
@@ -4759,48 +4796,48 @@ footer{
   .reviews7,
   .reviews8,
   .reviews9,
-  .reviews10{
+  .reviews10 {
     font-size: 0.8rem;
     margin-left: -1rem;
   }
 
-  .reviews1{
+  .reviews1 {
     margin-top: -1.5rem;
   }
-  
-  .reviews2{
+
+  .reviews2 {
     margin-top: -6rem;
   }
 
-  .reviews3{
+  .reviews3 {
     margin-top: -8.5rem;
   }
 
-  .reviews4{
+  .reviews4 {
     margin-top: -12.5rem;
   }
 
-  .reviews5{
+  .reviews5 {
     margin-top: -17rem;
   }
 
-  .reviews6{
+  .reviews6 {
     margin-top: -21.5rem;
   }
 
-  .reviews7{
+  .reviews7 {
     margin-top: -26rem;
   }
 
-  .reviews8{
+  .reviews8 {
     margin-top: -30rem;
   }
 
-  .reviews9{
+  .reviews9 {
     margin-top: -34rem;
   }
 
-  .reviews10{
+  .reviews10 {
     margin-top: -38.5rem;
   }
 
@@ -4813,7 +4850,7 @@ footer{
   .ranking7,
   .ranking8,
   .ranking9,
-  .ranking10{
+  .ranking10 {
     display: none;
   }
 
@@ -4826,7 +4863,7 @@ footer{
   .ranking-text7,
   .ranking-text8,
   .ranking-text9,
-  .ranking-text10{
+  .ranking-text10 {
     display: none;
   }
 
@@ -4839,7 +4876,7 @@ footer{
   .view-bookable-wrapper7,
   .view-bookable-wrapper8,
   .view-bookable-wrapper9,
-  .view-bookable-wrapper10{
+  .view-bookable-wrapper10 {
     width: auto;
     height: 1rem;
     font-size: 1vw;
@@ -4847,89 +4884,89 @@ footer{
     margin-left: -2rem;
   }
 
-  .view-bookable-wrapper1{
+  .view-bookable-wrapper1 {
     margin-top: -3rem;
   }
-  
-  .view-bookable-wrapper2{
+
+  .view-bookable-wrapper2 {
     margin-top: -8rem;
   }
 
-  .view-bookable-wrapper3{
+  .view-bookable-wrapper3 {
     margin-top: -11rem;
   }
 
-  .view-bookable-wrapper4{
+  .view-bookable-wrapper4 {
     margin-top: -16rem;
   }
 
-  .view-bookable-wrapper5{
+  .view-bookable-wrapper5 {
     margin-top: -20rem;
   }
 
-  .view-bookable-wrapper6{
+  .view-bookable-wrapper6 {
     margin-top: -24rem;
   }
 
-  .view-bookable-wrapper7{
+  .view-bookable-wrapper7 {
     margin-top: -27.5rem;
   }
 
-  .view-bookable-wrapper8{
+  .view-bookable-wrapper8 {
     margin-top: -32.5rem;
   }
 
-  .view-bookable-wrapper9{
+  .view-bookable-wrapper9 {
     margin-top: -36rem;
   }
 
-  .view-bookable-wrapper10{
+  .view-bookable-wrapper10 {
     margin-top: -41rem;
   }
 
   .txt-footer,
   .txt-footer-email,
-  .txt-footer-menu{
+  .txt-footer-menu {
     font-size: 0.9rem;
   }
 
-  .media-icon-container{
+  .media-icon-container {
     transform: scale(0.6); /* Adjust the size of logo */
   }
 }
 
-@media (max-width: 376px){
-  .side-section-frame{
+@media (max-width: 376px) {
+  .side-section-frame {
     display: none;
   }
 
-  .trapple-logo{
+  .trapple-logo {
     display: none;
- }
-    
-.nav-menu{
+  }
+
+  .nav-menu {
     font-size: 0.7rem;
     left: 10rem;
- }
+  }
 
   .sign-up,
   .sign-up-wrapper,
   .log-in,
-  .log-in-wrapper{
+  .log-in-wrapper {
     display: none;
   }
 
-  .frame-search-boxes{
+  .frame-search-boxes {
     display: none;
   }
 
   .guest-wrapper,
-  .guest{
+  .guest {
     display: none;
   }
 
   .check-out-date-wrapper,
-  .check-out-date{
+  .check-out-date {
     display: none;
   }
 
@@ -4942,14 +4979,14 @@ footer{
   .accommodation-pic7,
   .accommodation-pic8,
   .accommodation-pic9,
-  .accommodation-pic10{
+  .accommodation-pic10 {
     width: 9rem;
     height: 9rem;
     margin-left: -7.5rem;
     margin-top: 1rem;
   }
 
-  .side-section-frame{
+  .side-section-frame {
     display: none;
   }
 
@@ -4962,7 +4999,7 @@ footer{
   .beach-apartments,
   .luxury-apartments,
   .mambo-beach-apartments,
-  .eden-garden-apartments{
+  .eden-garden-apartments {
     font-size: 1rem;
     margin-left: -3.5rem;
   }
@@ -4976,48 +5013,48 @@ footer{
   .barcelona-spain7,
   .barcelona-spain8,
   .barcelona-spain9,
-  .barcelona-spain10{
+  .barcelona-spain10 {
     font-size: 3vw;
     margin-left: -3rem;
   }
 
-  .barcelona-spain1{
+  .barcelona-spain1 {
     margin-top: -3rem;
   }
 
-  .barcelona-spain2{
+  .barcelona-spain2 {
     margin-top: 2rem;
   }
 
-  .barcelona-spain3{
+  .barcelona-spain3 {
     margin-top: -12rem;
   }
 
-  .barcelona-spain4{
+  .barcelona-spain4 {
     margin-top: -17rem;
   }
 
-  .barcelona-spain5{
+  .barcelona-spain5 {
     margin-top: -23rem;
   }
 
-  .barcelona-spain6{
+  .barcelona-spain6 {
     margin-top: -28rem;
   }
 
-  .barcelona-spain7{
+  .barcelona-spain7 {
     margin-top: -34rem;
   }
 
-  .barcelona-spain8{
+  .barcelona-spain8 {
     margin-top: -38rem;
   }
 
-  .barcelona-spain9{
+  .barcelona-spain9 {
     margin-top: -44rem;
   }
 
-  .barcelona-spain10{
+  .barcelona-spain10 {
     margin-top: -49rem;
   }
 
@@ -5030,7 +5067,7 @@ footer{
   .close-to-the7,
   .close-to-the8,
   .close-to-the9,
-  .close-to-the10{
+  .close-to-the10 {
     display: none;
   }
 
@@ -5043,44 +5080,44 @@ footer{
   .per-night7,
   .per-night8,
   .per-night9,
-  .per-night10{
+  .per-night10 {
     font-size: 3vw;
-    margin-left: -1rem; 
+    margin-left: -1rem;
   }
 
-  .per-night2{
+  .per-night2 {
     margin-top: -5rem;
   }
 
-  .per-night3{
+  .per-night3 {
     margin-top: -8rem;
   }
 
-  .per-night4{
+  .per-night4 {
     margin-top: -14rem;
   }
 
-  .per-night5{
+  .per-night5 {
     margin-top: -19rem;
   }
 
-  .per-night6{
+  .per-night6 {
     margin-top: -25rem;
   }
 
-  .per-night7{
+  .per-night7 {
     margin-top: -30rem;
   }
 
-  .per-night8{
+  .per-night8 {
     margin-top: -35rem;
   }
 
-  .per-night9{
+  .per-night9 {
     margin-top: -40rem;
   }
 
-  .per-night10{
+  .per-night10 {
     margin-top: -46rem;
   }
 
@@ -5093,48 +5130,48 @@ footer{
   .price7,
   .price8,
   .price9,
-  .price10{
+  .price10 {
     font-size: 3vw;
     margin-left: -1rem;
   }
 
-  .price1{
+  .price1 {
     margin-top: -1rem;
   }
 
-  .price2{
+  .price2 {
     margin-top: -6rem;
   }
 
-  .price3{
+  .price3 {
     margin-top: -9rem;
   }
 
-  .price4{
+  .price4 {
     margin-top: -15rem;
   }
 
-  .price5{
+  .price5 {
     margin-top: -20rem;
   }
 
-  .price6{
+  .price6 {
     margin-top: -26rem;
   }
 
-  .price7{
+  .price7 {
     margin-top: -31rem;
   }
 
-  .price8{
+  .price8 {
     margin-top: -36rem;
   }
 
-  .price9{
+  .price9 {
     margin-top: -41rem;
   }
 
-  .price10{
+  .price10 {
     margin-top: -47.5rem;
   }
 
@@ -5147,7 +5184,7 @@ footer{
   .wifi-sign7,
   .wifi-sign8,
   .wifi-sign9,
-  .wifi-sign10{
+  .wifi-sign10 {
     display: none;
   }
 
@@ -5160,7 +5197,7 @@ footer{
   .wifi-text7,
   .wifi-text8,
   .wifi-text9,
-  .wifi-text10{
+  .wifi-text10 {
     display: none;
   }
 
@@ -5173,7 +5210,7 @@ footer{
   .parking-sign7,
   .parking-sign8,
   .parking-sign9,
-  .parking-sign10{
+  .parking-sign10 {
     display: none;
   }
 
@@ -5186,65 +5223,65 @@ footer{
   .parking-text7,
   .parking-text8,
   .parking-text9,
-  .parking-text10{
+  .parking-text10 {
     display: none;
   }
 
-  .excellent1{
+  .excellent1 {
     font-size: 0.8rem;
     margin-top: -1.5rem;
     margin-left: -3rem;
   }
 
-  .excellent2{
+  .excellent2 {
     font-size: 0.8rem;
     margin-top: -7rem;
     margin-left: -3rem;
   }
 
-  .excellent3{
+  .excellent3 {
     font-size: 0.8rem;
     margin-top: -10.5rem;
     margin-left: -3rem;
   }
 
-  .excellent4{
+  .excellent4 {
     font-size: 0.8rem;
     margin-top: -16rem;
     margin-left: -3rem;
   }
 
-  .excellent5{
+  .excellent5 {
     font-size: 0.8rem;
     margin-top: -21rem;
     margin-left: -3rem;
   }
 
-  .excellent6{
+  .excellent6 {
     font-size: 0.8rem;
     margin-top: -26.5rem;
     margin-left: -3rem;
   }
 
-  .excellent7{
+  .excellent7 {
     font-size: 0.8rem;
     margin-top: -32rem;
     margin-left: -3rem;
   }
 
-  .excellent8{
+  .excellent8 {
     font-size: 0.8rem;
     margin-top: -37.5rem;
     margin-left: -3rem;
   }
 
-  .excellent9{
+  .excellent9 {
     font-size: 0.8rem;
     margin-top: -42.5rem;
     margin-left: -3rem;
   }
 
-  .excellent10{
+  .excellent10 {
     font-size: 0.8rem;
     margin-top: -48rem;
     margin-left: -3rem;
@@ -5259,48 +5296,48 @@ footer{
   .reviews7,
   .reviews8,
   .reviews9,
-  .reviews10{
+  .reviews10 {
     font-size: 0.8rem;
     margin-left: -1rem;
   }
 
-  .reviews1{
+  .reviews1 {
     margin-top: -1.5rem;
   }
-  
-  .reviews2{
+
+  .reviews2 {
     margin-top: -7rem;
   }
 
-  .reviews3{
+  .reviews3 {
     margin-top: -10.5rem;
   }
 
-  .reviews4{
+  .reviews4 {
     margin-top: -16rem;
   }
 
-  .reviews5{
+  .reviews5 {
     margin-top: -21rem;
   }
 
-  .reviews6{
+  .reviews6 {
     margin-top: -26.5rem;
   }
 
-  .reviews7{
+  .reviews7 {
     margin-top: -32rem;
   }
 
-  .reviews8{
+  .reviews8 {
     margin-top: -37.5rem;
   }
 
-  .reviews9{
+  .reviews9 {
     margin-top: -42.5rem;
   }
 
-  .reviews10{
+  .reviews10 {
     margin-top: -48rem;
   }
 
@@ -5313,7 +5350,7 @@ footer{
   .ranking7,
   .ranking8,
   .ranking9,
-  .ranking10{
+  .ranking10 {
     display: none;
   }
 
@@ -5326,7 +5363,7 @@ footer{
   .ranking-text7,
   .ranking-text8,
   .ranking-text9,
-  .ranking-text10{
+  .ranking-text10 {
     display: none;
   }
 
@@ -5339,7 +5376,7 @@ footer{
   .view-bookable-wrapper7,
   .view-bookable-wrapper8,
   .view-bookable-wrapper9,
-  .view-bookable-wrapper10{
+  .view-bookable-wrapper10 {
     width: auto;
     height: 1rem;
     font-size: 2vw;
@@ -5347,53 +5384,53 @@ footer{
     margin-left: -2.5rem;
   }
 
-  .view-bookable-wrapper1{
+  .view-bookable-wrapper1 {
     margin-top: -4rem;
   }
-  
-  .view-bookable-wrapper2{
+
+  .view-bookable-wrapper2 {
     margin-top: -9rem;
   }
 
-  .view-bookable-wrapper3{
+  .view-bookable-wrapper3 {
     margin-top: -12rem;
   }
 
-  .view-bookable-wrapper4{
+  .view-bookable-wrapper4 {
     margin-top: -18.5rem;
   }
 
-  .view-bookable-wrapper5{
+  .view-bookable-wrapper5 {
     margin-top: -23.5rem;
   }
 
-  .view-bookable-wrapper6{
+  .view-bookable-wrapper6 {
     margin-top: -29.5rem;
   }
 
-  .view-bookable-wrapper7{
+  .view-bookable-wrapper7 {
     margin-top: -34rem;
   }
 
-  .view-bookable-wrapper8{
+  .view-bookable-wrapper8 {
     margin-top: -39rem;
   }
 
-  .view-bookable-wrapper9{
+  .view-bookable-wrapper9 {
     margin-top: -44.5rem;
   }
 
-  .view-bookable-wrapper10{
+  .view-bookable-wrapper10 {
     margin-top: -50.5rem;
   }
 
   .txt-footer,
   .txt-footer-email,
-  .txt-footer-menu{
+  .txt-footer-menu {
     font-size: 0.9rem;
   }
 
-  .media-icon-container{
+  .media-icon-container {
     transform: scale(0.6); /* Adjust the size of logo */
   }
 }
