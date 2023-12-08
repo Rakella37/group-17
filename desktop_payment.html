@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment</title>
+    <link rel="stylesheet" href="./desktop_payment.css" />
+  </head>
+
+  <body>
+    <!-- navigation -->
+<header>
+  <img
+    class="logo-icon"
+    src="./assets/images/logo-image.png"
+    alt="logo"
+  />
+
+  <nav>
+    <ul class="header-ul">
+      <a class="menu" href="landingPage.html">
+        <li class="header-li">HOME</li>
+      </a >
+
+      <a class="menu" href="desktop_productPage.html">
+        <li class="header-li">ACCOMMODATION</li>
+      </a >
+
+      <a class="menu" href="shoppingCart-vaildOrder.html">
+        <li class="header-li">CART</li>
+      </a >
+    </ul>
+  </nav>
+  
+<!-- sign up and log in button-->
+<a href="SignUp.html" class="a-button">
+  <button class="sign-up-button">Sign up</button>
+</a>
+<a href="LogIn.html" class="a-button">
+  <button class="log-in-button">Log in</button>
+</a>
+</header>
+
+<!-- main title -->
+    <section class="order-container">
+      <a href="#">
+      <div class="order-left-container">
+        <p>Confirm Order</p>
+      </div>
+      </a>
+
+      <div class="order-right-container">
+        <p>Payment Methods</p>
+      </div>
+    </section>
+
+    <!--payment methods-->
+    <section class="method-container">
+      <div class="method-card-container">
+        <p>Card</p>
+      </div>
+
+      <div class="method-klarna-container">
+        <p>Klarna</p>
+      </div>
+
+      <div class="method-paypal-container">
+        <p>Paypal</p>
+      </div>
+    </section>
+
+    <section class="method-img-container">
+      <img class="card-1" src="./assets/images/card-1.png" />
+      <img class="card-2" src="./assets/images/card-2.png" />
+      <img class="card-3" src="./assets/images/card-3.png" />
+    </section>
+
+    <!--payment detail choice-->
+    <h2 class="txt-payment-headline">Choose a Payment</h2>
+    <div class="payment-container">
+      <img
+        class="visa-icon"
+        src="./assets/images/visa-icon.png"
+        alt="payment icon"
+      />
+      <p class="card-number">***** 9867</p>
+      <p class="txt-verified">Verified</p>
+    </div>
+
+    <div class="payment-container">
+      <img
+        class="mc-icon"
+        src="./assets/images/mc-icon.png"
+        alt="payment icon"
+      />
+      <p class="card-number">***** 8894</p>
+      <p class="txt-verified">Verified</p>
+    </div>
+
+    <h2 class="txt-payment-headline">Register a Card</h2>
+
+    <!-- card detail -->
+    <div class="register-container">
+      <input
+        type="text"
+        id="card-holderInput"
+        class="txt-input"
+        placeholder="Card Holder"
+      />
+    </div>
+
+    <div class="register-container">
+      <input
+        type="text"
+        id="card-numberInput"
+        class="txt-input"
+        placeholder="Card Number"
+      />
+    </div>
+<div class="form-container">
+    <div class="register-container">
+      <input
+        type="text"
+        id="expiry-dateInput"
+        class="txt-input"
+        placeholder="Expiry Date"
+      />
+    </div>
+
+    <div class="cvv-container">
+      <input type="text" id="cvvInput" class="txt-input" placeholder="CVV" />
+    </div>
+</div>
+    <div class="save-container">
+      <label>
+        <input type="checkbox" name="save" value="yes" /> SAVE THIS CARD FOR
+        FUTURE TRANSACTIONS
+      </label>
+    </div>
+
+    <h2 class="txt-payment-headline">Promo Code</h2>
+    <div class="promo-container">
+      <input type="text" id="cvvInput" class="txt-input" />
+    </div>
+
+    <section class="total-price">
+      <h3 class="total">Total</h3>
+      <h3 class="price">1300KR</h3>
+    </section>
+
+
+    <!--cancel and confirm-->
+    <section class="cancel-confirm-btn">
+      <a href="DesktopConfirm.html" class="a-button">
+      <button class="cancel-btn">Cancel</button>
+      </a>
+      <a href="#" class="a-button">
+      <button class="confirm-btn">Confirm</button>
+      </a>
+    </section>
+
+    <!-- footer-->
+    <footer>
+      <div class="logo-container">
+        <img class="fb-icon" src="./assets/images/footer-fb.png" />
+
+        <img class="twi-icon" src="./assets/images/footer-twi.png" />
+
+        <img class="ytb-icon" src="./assets/images/footer-yt.png" />
+      </div>
+
+      <p class="footer-menu">Term of Use | Contact Us | Privacy Policy</p>
+
+      <p class="footer-email">travelwithtrapple@trapple.com</p>
+
+      <p class="copyright">Copyright © 2023 TRAPPLE</p>
+    </footer>
+  </body>
+</html>
