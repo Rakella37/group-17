@@ -56,6 +56,15 @@ a {
 .log-in-button {
   margin-right: 4.38rem;
 }
+
+.sign-up-button-link{
+  margin-left: 0;
+}
+
+.log-in-button-link{
+  margin-left: 0;
+}
+
 @media screen and (max-width: 700px) {
   header {
     flex-direction: column;
@@ -641,6 +650,7 @@ a {
   margin-top: 0.25rem;
 }
 
+
 @media screen and (max-width: 500px) {
   .txt-payment-headline {
     font-size: 1.2rem;
@@ -877,6 +887,7 @@ a {
   font-weight: 700;
   margin-left: 4.19rem;
   margin-top: 3.69rem;
+  margin-bottom: -1rem;
 }
 
 .txt-change-payment {
@@ -887,6 +898,10 @@ a {
   text-decoration: underline;
   margin-top: 2rem;
   margin-left: 4.19rem;
+}
+
+.txt-change-payment-link{
+  margin-top: 0 ;
 }
 
 .Check-out-button {
@@ -901,6 +916,10 @@ a {
   margin-top: 4.19rem;
   margin-right: 5.4rem;
   margin-left: 6.5rem;
+}
+
+.Check-out-button-link{
+  margin-left: 0;
 }
 
 @media screen and (max-width: 500px) {
